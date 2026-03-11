@@ -34,7 +34,14 @@
 
   <!-- Main content -->
   <main class="main-content">
-    <h1 class="chapter-title">Chapter 09</h1>
+    <!-- Chapter header row: label + name + PDF button -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.25rem;">
+      <div>
+        <h1 class="chapter-title" style="margin-bottom:.15rem;">Chapter 09</h1>
+        
+      </div>
+      <button onclick="downloadAsHtml()" title="Download all chapter content as HTML file" style="display:flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;white-space:nowrap;">📥 Download as HTML</button>
+    </div>
 
     <!-- Tab bar -->
     <div class="tab-bar" role="tablist">

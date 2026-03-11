@@ -113,62 +113,32 @@ function downloadAsHtml() {
       return;
     }
 
-    const html = '<!DOCTYPE html>
-<html lang="en">
-<head>
-' +
-      '<meta charset="UTF-8">
-' +
-      '<meta name="viewport" content="width=device-width,initial-scale=1">
-' +
-      '<title>' + fullTitle + '</title>
-' +
-      '<style>
-' +
-      '@media print{.section-sep{page-break-after:always}body{font-size:11pt}}
-' +
-      'body{font-family:"Segoe UI",Tahoma,sans-serif;max-width:820px;margin:0 auto;padding:24px 40px;color:#222;line-height:1.65}
-' +
-      '.doc-header{text-align:center;border-bottom:2px solid #1a1a2e;padding-bottom:14px;margin-bottom:28px}
-' +
-      '.doc-header h1{margin:0;font-size:20pt;color:#1a1a2e}
-' +
-      '.doc-header p{margin:4px 0 0;color:#666;font-size:9.5pt}
-' +
-      '.section-title{color:#16213e;font-size:14pt;margin:28px 0 8px;border-left:4px solid #ff4b4b;padding-left:10px}
-' +
-      '.section-body{margin-bottom:12px}
-' +
-      '.section-sep{border:none;border-top:1px solid #ddd;margin:20px 0}
-' +
-      'table{border-collapse:collapse;width:100%;margin:10px 0}
-' +
-      'th,td{border:1px solid #ccc;padding:7px 11px;text-align:left}
-' +
-      'th{background:#f0f0f0}
-' +
-      'pre,code{background:#f5f5f5;padding:2px 6px;border-radius:3px;font-size:10pt}
-' +
-      'pre{padding:12px;overflow-x:auto;white-space:pre-wrap}
-' +
-      'ol,ul{padding-left:22px}li{margin-bottom:4px}
-' +
-      'details summary{cursor:pointer}
-' +
-      'button{display:none!important}
-' +
-      '</style>
-</head>
-<body>
-' +
-      '<div class="doc-header"><h1>&#55357;&#56538; ' + fullTitle + '</h1>' +
-      '<p>Generated on ' + timestamp + ' | CBSE Class 7 Smart Portal</p></div>
-' +
-      bodyParts.join('
-') +
-      '
-</body>
-</html>';
+    var html = '<!DOCTYPE html><html lang="en"><head>' +
+      '<meta charset="UTF-8">' +
+      '<meta name="viewport" content="width=device-width,initial-scale=1">' +
+      '<title>' + fullTitle + '</title>' +
+      '<style>' +
+      '@media print{.section-sep{page-break-after:always}body{font-size:11pt}}' +
+      'body{font-family:"Segoe UI",Tahoma,sans-serif;max-width:820px;margin:0 auto;padding:24px 40px;color:#222;line-height:1.65}' +
+      '.doc-header{text-align:center;border-bottom:2px solid #1a1a2e;padding-bottom:14px;margin-bottom:28px}' +
+      '.doc-header h1{margin:0;font-size:20pt;color:#1a1a2e}' +
+      '.doc-header p{margin:4px 0 0;color:#666;font-size:9.5pt}' +
+      '.section-title{color:#16213e;font-size:14pt;margin:28px 0 8px;border-left:4px solid #ff4b4b;padding-left:10px}' +
+      '.section-body{margin-bottom:12px}' +
+      '.section-sep{border:none;border-top:1px solid #ddd;margin:20px 0}' +
+      'table{border-collapse:collapse;width:100%;margin:10px 0}' +
+      'th,td{border:1px solid #ccc;padding:7px 11px;text-align:left}' +
+      'th{background:#f0f0f0}' +
+      'pre,code{background:#f5f5f5;padding:2px 6px;border-radius:3px;font-size:10pt}' +
+      'pre{padding:12px;overflow-x:auto;white-space:pre-wrap}' +
+      'ol,ul{padding-left:22px}li{margin-bottom:4px}' +
+      'details summary{cursor:pointer}' +
+      'button{display:none!important}' +
+      '</style></head><body>' +
+      '<div class="doc-header"><h1>' + fullTitle + '</h1>' +
+      '<p>Generated on ' + timestamp + ' | CBSE Class 7 Smart Portal</p></div>' +
+      bodyParts.join('') +
+      '</body></html>';
 
     // Use data: URI — works on all browsers including GitHub Pages (no Blob URL restriction)
     const filename = fullTitle.replace(/[^\w\s-]/g, '').trim().replace(/\s+/g, '_') + '.html';

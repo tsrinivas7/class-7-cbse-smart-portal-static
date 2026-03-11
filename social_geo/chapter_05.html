@@ -34,7 +34,14 @@
 
   <!-- Main content -->
   <main class="main-content">
-    <h1 class="chapter-title">Chapter 05</h1>
+    <!-- Chapter header row: label + name + PDF button -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.25rem;">
+      <div>
+        <h1 class="chapter-title" style="margin-bottom:.15rem;">Chapter 05</h1>
+        <p style="margin:0;font-size:.95rem;color:var(--muted);font-weight:500;">Water</p>
+      </div>
+      <button onclick="downloadAsHtml()" title="Download all chapter content as HTML file" style="display:flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;white-space:nowrap;">📥 Download as HTML</button>
+    </div>
 
     <!-- Tab bar -->
     <div class="tab-bar" role="tablist">
@@ -44,7 +51,6 @@
     <!-- Tab panels -->
     <div class="tab-content">
       <div class="tab-panel active" id="tab-summary"><div class="content-body markdown-body"><h1 id="chapter-summary">Chapter Summary</h1>
-<h1 id="chapter-5-water">Chapter 5: Water</h1>
 <h2 id="introduction">Introduction</h2>
 <p>Our Earth is known as the <strong>Blue Planet</strong> or <strong>Watery Planet</strong>. When seen from space, it appears blue because of the vast amount of water covering its surface. About <strong>71%</strong> of the Earth's surface is covered with water, while only <strong>29%</strong> is land.</p>
 <h2 id="the-water-cycle">The Water Cycle</h2>
