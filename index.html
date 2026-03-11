@@ -22,12 +22,27 @@
   <div class="hero">
     <h1>Welcome, Student! 👋</h1>
     <p>Pick a subject below to access summaries, notes, keywords, solved exercises and practice questions.</p>
+    <div style="margin:.75rem auto 1rem;max-width:680px;padding:.75rem 1rem;background:rgba(255,75,75,0.08);border:1.5px solid rgba(255,75,75,0.35);border-radius:10px;color:#c0392b;font-size:.88rem;line-height:1.55;text-align:left;">
+      ⚠️ <strong>DISCLAIMER:</strong> The content on this portal is generated using AI tools and is intended as a supplementary study aid only.
+      Always consult your <strong>teacher or parent</strong> to verify answers and clarify doubts — some responses may be inaccurate.
+      Parental guidance is advised when using this portal.
+    </div>
     <input type="search" id="chapterSearch" placeholder="🔍 Search chapters..." class="search-box" aria-label="Search chapters">
   </div>
 
   <section class="subjects-grid">
     
-
+  <div class="subject-card">
+    <button class="subject-toggle" aria-expanded="false">
+      <span class="subject-icon">📚</span>
+      <span class="subject-name">Computerscience</span>
+      <span class="chapter-count">1 chapters</span>
+      <span class="chevron">▼</span>
+    </button>
+    <div class="chapter-list hidden">
+      <a href="computerscience/chapter_09.html" class="chapter-link">Chapter 09</a>
+    </div>
+  </div>
   <div class="subject-card">
     <button class="subject-toggle" aria-expanded="false">
       <span class="subject-icon">📚</span>
