@@ -169,31 +169,3 @@ body { font-family: var(--font); color: var(--text); background: var(--bg); min-
   }
   .sidebar-overlay.show { display: block; }
 }
-
-/* ── Print / PDF export ── */
-@media print {
-  /* Hide all navigation and UI chrome */
-  .site-header, .sidebar, .sidebar-toggle, .sidebar-overlay,
-  .tab-bar, .search-box, .site-footer { display: none !important; }
-
-  /* Hide the Export to PDF button itself */
-  button[onclick*="printAllTabs"] { display: none !important; }
-
-  /* Show ALL tab panels, stacked */
-  .tab-panel { display: block !important; break-inside: avoid-page; }
-
-  /* Add a printed section divider before each tab panel */
-  .tab-panel + .tab-panel { border-top: 2px solid #ccc; margin-top: 1.5rem; padding-top: 1rem; }
-
-  /* Full-width layout */
-  .page-layout { display: block; }
-  .main-content { margin: 0; padding: 0; max-width: 100%; }
-
-  /* Expand all collapsible answers */
-  details { display: block; }
-  details summary { display: none; }
-
-  /* Good typography for print */
-  body { font-size: 11pt; color: #000; background: #fff; }
-  a { color: inherit; text-decoration: none; }
-}

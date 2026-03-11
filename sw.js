@@ -21,7 +21,8 @@ const ASSETS = [
     "./maths/chapter_09.html",
     "./maths/chapter_08.html",
     "./maths/chapter_07.html",
-    "./maths/chapter_06.html"
+    "./maths/chapter_06.html",
+    "./computerscience/chapter_09.html"
 ];
 const VERSION_URL = './version.json';
 
