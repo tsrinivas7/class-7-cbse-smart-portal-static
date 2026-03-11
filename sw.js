@@ -4,6 +4,7 @@ const ASSETS = [
     "./index.html",
     "./assets/style.css",
     "./assets/app.js",
+    "./class10_history/chapter_01.html",
     "./science/chapter_11.html",
     "./science/chapter_05.html",
     "./science/chapter_18.html",
@@ -14,14 +15,14 @@ const ASSETS = [
     "./social_civics/chapter_07.html",
     "./it/chapter_09.html",
     "./it/chapter_02.html",
-    "./computerscience/chapter_09.html",
     "./social_geo/chapter_06.html",
     "./social_geo/chapter_05.html",
     "./maths/chapter_15.html",
     "./maths/chapter_09.html",
     "./maths/chapter_08.html",
     "./maths/chapter_07.html",
-    "./maths/chapter_06.html"
+    "./maths/chapter_06.html",
+    "./computerscience/chapter_09.html"
 ];
 const VERSION_URL = './version.json';
 
