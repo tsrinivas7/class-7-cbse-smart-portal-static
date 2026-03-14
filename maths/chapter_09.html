@@ -37,585 +37,825 @@
 
   <!-- Main content -->
   <main class="main-content">
-    <h1 class="chapter-title">Chapter 09</h1>
+    <!-- Chapter header row: label + name + PDF button -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.25rem;">
+      <div>
+        <h1 class="chapter-title" style="margin-bottom:.15rem;">Chapter 09</h1>
+        
+      </div>
+      <button onclick="printAllTabs()" title="Export all chapter content to PDF" style="display:flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;white-space:nowrap;">📥 Download PDF</button>
+    </div>
 
     <!-- Tab bar -->
     <div class="tab-bar" role="tablist">
-      <button class="tab-btn active" data-tab="summary">📋 Summary</button><button class="tab-btn " data-tab="short_notes">📌 Short Notes</button><button class="tab-btn " data-tab="keywords">🔑 Keywords</button><button class="tab-btn " data-tab="exercises">✍️ Exercises</button><button class="tab-btn " data-tab="question_paper">❓ Questions</button><button class="tab-btn " data-tab="fulltext">📖 Full Text</button>
+      <button class="tab-btn active" data-tab="summary">📋 Summary</button><button class="tab-btn " data-tab="short_notes">📌 Short Notes</button><button class="tab-btn " data-tab="keywords">🔑 Keywords</button><button class="tab-btn " data-tab="exercises">✍️ Exercises</button><button class="tab-btn " data-tab="question_paper">📄 Practice Qs</button><button class="tab-btn " data-tab="quiz">🎯 Interactive Quiz</button><button class="tab-btn " data-tab="fulltext">📖 Full Text</button>
     </div>
 
     <!-- Tab panels -->
     <div class="tab-content">
       <div class="tab-panel active" id="tab-summary"><div class="content-body markdown-body"><h1 id="chapter-summary">Chapter Summary</h1>
-<h1 id="chapter-9-lines-and-angles-summary">Chapter 9: Lines and Angles – Summary</h1>
-<h2 id="key-concepts">Key Concepts</h2>
-<h3 id="1-types-of-angles">1. Types of Angles</h3>
+<h1 id="lines-and-angles">LINES AND ANGLES</h1>
+<p>This chapter introduces the fundamental concepts of geometry involving lines, rays, and angles, focusing on their relationships and properties when lines intersect or run parallel.</p>
+<h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li><strong>Complementary Angles</strong>: Two angles are complementary if their sum is 90°.  </li>
-<li>Complement of angle <em>x</em> = 90° – <em>x</em></li>
-<li><strong>Supplementary Angles</strong>: Two angles are supplementary if their sum is 180°.  </li>
-<li>Supplement of angle <em>x</em> = 180° – <em>x</em></li>
-<li><strong>Adjacent Angles</strong>: Angles that share a common vertex and a common arm, with non-common arms on opposite sides of the common arm.</li>
-<li><strong>Linear Pair</strong>: A pair of adjacent angles whose non-common arms are opposite rays and sum to 180°.  </li>
-<li>Linear pairs are always supplementary.</li>
-<li><strong>Vertically Opposite Angles</strong>: Formed when two lines intersect. They are opposite each other and are always equal.</li>
+<li>Recognise and define complementary angles, supplementary angles, adjacent angles, linear pair and vertically opposite angles.</li>
+<li>Recognise and define a transversal.</li>
+<li>Recognise and explain angles formed by a transversal that intersects two or more lines.</li>
+<li>State the properties of angles formed when a transversal intersects two or more parallel lines.</li>
 </ul>
-<h3 id="2-transversal">2. Transversal</h3>
+<h2 id="tune-up">Tune Up</h2>
+<p>This section revises basic geometric elements learned in previous classes.</p>
 <ul>
-<li>A transversal is a line that intersects two or more lines at different points.</li>
-<li>When a transversal cuts two lines, it forms eight angles:</li>
-<li><strong>Interior angles</strong>: Between the two lines (e.g., ∠3, ∠4, ∠5, ∠6)</li>
-<li><strong>Exterior angles</strong>: Outside the two lines</li>
-<li><strong>Alternate interior angles</strong>: On opposite sides of the transversal, inside the lines (e.g., ∠4 and ∠6)</li>
-<li><strong>Alternate exterior angles</strong>: On opposite sides, outside the lines (e.g., ∠1 and ∠7)</li>
-<li><strong>Corresponding angles</strong>: On the same side of the transversal, one interior and one exterior (e.g., ∠1 and ∠5)</li>
-<li><strong>Co-interior angles</strong>: On the same side of the transversal and both interior (e.g., ∠4 and ∠5)</li>
+<li><strong>Point</strong> — A dot on a plane with no thickness, denoted by a capital letter such as A, B, P, Q.</li>
+<li><strong>Line segment</strong> — A part of a line with two end points.</li>
+<li><strong>Line</strong> — A straight path extending endlessly in both directions with no end points.</li>
+<li><strong>Ray</strong> — A part of a line having one end point (starting point) and extending endlessly in one direction.</li>
+<li><strong>Angle</strong> — Formed when two lines, line segments, or rays meet at a common point called the vertex. The rays are called arms.</li>
 </ul>
-<h3 id="3-properties-when-lines-are-parallel">3. Properties When Lines Are Parallel</h3>
-<p>When a transversal intersects two <strong>parallel lines</strong>:<br />
-- <strong>Corresponding angles are equal</strong> (e.g., ∠1 = ∠5)<br />
-- <strong>Alternate interior angles are equal</strong> (e.g., ∠4 = ∠6)<br />
-- <strong>Alternate exterior angles are equal</strong> (e.g., ∠2 = ∠8)<br />
-- <strong>Co-interior angles are supplementary</strong> (sum to 180°) (e.g., ∠4 + ∠5 = 180°)</p>
-<blockquote>
-<p><strong>Converse</strong>: If any of these conditions are true (e.g., corresponding angles equal), then the lines are parallel.</p>
-</blockquote>
-<h3 id="4-shapes-to-remember">4. Shapes to Remember</h3>
+<h2 id="special-pairs-of-angles">SPECIAL PAIRS OF ANGLES</h2>
+<p>A combination of two angles is called a pair of angles. Certain pairs have special properties based on their relationship.</p>
+<h2 id="complementary-angles">Complementary Angles</h2>
+<p>Two angles are said to be complementary if the sum of their measures is 90°. Each angle is said to be a complement of the other.</p>
 <ul>
-<li><strong>F-shape</strong>: Shows corresponding angles</li>
-<li><strong>Z-shape</strong>: Shows alternate interior angles</li>
+<li><strong>Complementary Angles</strong> — Two angles whose measures add up to 90°.</li>
+<li><strong>Complement</strong> — One angle is the complement of the other if their sum is 90°.</li>
+<li>Formula: If x is an angle, its complement is 90° - x.</li>
+<li>Example: 45° and 45° are complementary; 60° and 30° are complementary.</li>
 </ul>
-<hr />
-<h2 id="solved-examples-key-ideas">Solved Examples (Key Ideas)</h2>
+<h2 id="supplementary-angles">Supplementary Angles</h2>
+<p>Two angles are said to be supplementary if the sum of their measures is 180°. Each angle is said to be a supplement of the other.</p>
 <ul>
-<li><strong>Example 1</strong>: If an angle is equal to its complement → <em>x</em> = 90° – <em>x</em> → <em>x</em> = 45°</li>
-<li><strong>Example 2</strong>: Two supplementary angles, greater is 54° more than smaller → <em>x</em> – (180° – <em>x</em>) = 54° → <em>x</em> = 117°, other = 63°</li>
-<li><strong>Example 5</strong>: Vertically opposite angles are equal → if one angle is 70°, the opposite angle is also 70°</li>
-<li><strong>Example 7</strong>: Interior angles on same side of transversal sum to 180° → (6x + 7°) + (3x + 38°) = 180° → <em>x</em> = 15°</li>
-<li><strong>Example 8</strong>: If sum of interior angles on same side is not 180° → lines are not parallel</li>
+<li><strong>Supplementary Angles</strong> — Two angles whose measures add up to 180°.</li>
+<li><strong>Supplement</strong> — One angle is the supplement of the other if their sum is 180°.</li>
+<li>Formula: If x is an angle, its supplement is 180° - x.</li>
+<li>Example: 120° and 60° are supplementary; 150° and 30° are supplementary.</li>
 </ul>
-<hr />
-<h2 id="important-facts-to-remember">Important Facts to Remember</h2>
+<h2 id="grasp-it">Grasp It</h2>
 <ul>
-<li>Two angles are complementary if their sum is 90°.</li>
-<li>Two angles are supplementary if their sum is 180°.</li>
-<li>Adjacent angles may or may not form a linear pair.</li>
-<li>A linear pair is always supplementary.</li>
-<li>Vertically opposite angles are always equal.</li>
-<li>When two lines are parallel and cut by a transversal:</li>
-<li>Corresponding angles are equal</li>
-<li>Alternate interior angles are equal</li>
-<li>Co-interior angles sum to 180°</li>
+<li>Complement of x = 90° - x.</li>
+<li>Supplement of x = 180° - x.</li>
+<li>These formulas help calculate the missing angle in a complementary or supplementary pair.</li>
 </ul>
-<hr />
-<h2 id="real-life-application">Real-Life Application</h2>
+<h2 id="adjacent-angles">Adjacent Angles</h2>
+<p>Two angles are said to be adjacent if they have a common vertex, a common arm, and the other two arms lie on opposite sides of the common arm.</p>
 <ul>
-<li><strong>Solar Panels</strong>: The angle at which solar panels are tilted affects how much sunlight they capture. For example, if a panel is tilted at 30° to the ground and the sun’s rays are perpendicular to the ground, the acute angle between the sun’s rays and the panel is 60° (since 90° – 30° = 60°).</li>
+<li><strong>Adjacent Angles</strong> — Angles sharing a common vertex and a common arm.</li>
+<li>Non-common arms must lie on opposite sides of the common arm.</li>
+<li>Example: In a figure where angle AOB and angle BOC share ray OB, they are adjacent.</li>
+<li>Angles sharing a vertex but lying on the same side of the common arm are not adjacent.</li>
 </ul>
-<hr />
-<h2 id="quick-check-questions">Quick Check Questions</h2>
-<ol>
-<li>What is the complement of 45°? → 45°  </li>
-<li>What is the supplement of 120°? → 60°  </li>
-<li>Are two acute angles always supplementary? → No, because their sum may be less than 180°  </li>
-<li>Do adjacent right angles form a linear pair? → Yes, because they share a common arm and sum to 180°  </li>
-<li>What is the vertically opposite angle of 44°? → 44°  </li>
-<li>How many pairs of corresponding angles are formed by a transversal with two parallel lines? → 4 pairs</li>
-</ol>
-<hr />
-<h2 id="problem-solving-tips">Problem Solving Tips</h2>
+<h2 id="linear-pair">Linear Pair</h2>
+<p>A pair of adjacent angles is said to form a linear pair if the non-common arms are opposite rays and the angles are supplementary.</p>
 <ul>
-<li>Use the fact that vertically opposite angles are equal.</li>
-<li>Use the sum of angles on a straight line = 180°.</li>
-<li>When lines are parallel, use corresponding or alternate angles to find unknown values.</li>
-<li>For supplementary angles, set up equations using the sum = 180°.</li>
-<li>For complementary angles, use sum = 90°.</li>
+<li><strong>Linear Pair</strong> — A pair of adjacent angles forming a straight line.</li>
+<li>Non-common arms are opposite rays.</li>
+<li>Angles in a linear pair are always supplementary (sum is 180°).</li>
+<li>All linear pairs are adjacent, but not all adjacent angles form a linear pair.</li>
 </ul>
-<blockquote>
-<p>This chapter builds a strong foundation in geometry by helping students understand how angles relate to each other and how lines interact. It is essential for solving problems in triangles, polygons, and real-world applications like solar energy and construction.</p>
-</blockquote></div></div><div class="tab-panel " id="tab-short_notes"><div class="content-body markdown-body"><h1 id="short-revision-notes">Short Revision Notes</h1>
+<h2 id="angles-on-a-straight-line">Angles on a Straight Line</h2>
+<p>The sum of angles formed on a straight line is 180°.</p>
 <ul>
-<li>Two angles are complementary if their sum is 90°.  </li>
-<li>Two angles are supplementary if their sum is 180°.  </li>
-<li>Adjacent angles share a common vertex and a common arm, with non-common arms on opposite sides.  </li>
-<li>A linear pair consists of adjacent angles whose non-common arms are opposite rays and sum to 180°.  </li>
-<li>Vertically opposite angles are equal when two lines intersect.  </li>
-<li>A transversal is a line that intersects two or more lines at distinct points.  </li>
-<li>When a transversal intersects two parallel lines: corresponding angles are equal, alternate interior angles are equal, and co-interior angles are supplementary.  </li>
-<li>If alternate interior angles are equal, the lines are parallel.  </li>
-<li>If corresponding angles are equal, the lines are parallel.  </li>
-<li>If co-interior angles sum to 180°, the lines are parallel.  </li>
-<li>Complement of angle x is 90° – x.  </li>
-<li>Supplement of angle x is 180° – x.  </li>
-<li>Angles on a straight line sum to 180°.  </li>
-<li>The sum of angles in a linear pair is 180°.  </li>
-<li>Vertically opposite angles are always equal.  </li>
-<li>Corresponding angles form a 'F' shape.  </li>
-<li>Alternate interior angles form a 'Z' shape.  </li>
-<li>Two acute angles can be complementary but not supplementary.  </li>
-<li>A pair of adjacent right angles forms a linear pair.  </li>
-<li>Vertically opposite angles are equal regardless of the lines they form.  </li>
-<li>If two lines are cut by a transversal and alternate interior angles are equal, the lines are parallel.  </li>
-<li>If two lines are cut by a transversal and co-interior angles sum to 180°, the lines are parallel.  </li>
-<li>In a linear pair, angles are adjacent and supplementary.  </li>
-<li>When two lines intersect, four angles are formed, two pairs of vertically opposite angles.  </li>
-<li>If the supplement of an angle is 169°, the angle is 11°.  </li>
-<li>If two angles in a linear pair are in ratio 1:2, the greater angle is 120°.  </li>
-<li>A transversal with parallel lines creates eight angles with specific relationships.  </li>
-<li>The sum of co-interior angles on the same side of a transversal is 180°.  </li>
-<li>If a transversal cuts two lines and the sum of interior angles on the same side is not 180°, the lines are not parallel.  </li>
-<li>In a triangle, angles formed with parallel lines can be found using angle properties.  </li>
-<li>When a solar panel is tilted at 30° to the ground and sunlight is perpendicular, the acute angle between sunlight and panel is 60°.  </li>
-<li>If two angles are vertically opposite, they are equal.  </li>
-<li>If two angles are complementary and one is four times the other, the angle is 36°.  </li>
-<li>If the supplement of an angle is one-third of the angle, the angle is 135° and its supplement is 45°.  </li>
-<li>In parallel lines with a transversal, corresponding angles are equal.  </li>
-<li>In parallel lines, alternate interior angles are equal.  </li>
-<li>In parallel lines, co-interior angles sum to 180°.  </li>
-<li>When a transversal cuts two lines and corresponding angles are equal, the lines are parallel.  </li>
-<li>When a transversal cuts two lines and alternate interior angles are equal, the lines are parallel.  </li>
-<li>When a transversal cuts two lines and co-interior angles sum to 180°, the lines are parallel.  </li>
-<li>If two angles form a linear pair and are in ratio 1:2, the angles are 60° and 120°.  </li>
-<li>If a transversal intersects two parallel lines and the difference between interior angles on the same side is 30°, the angles are 75° and 105°.  </li>
-<li>In a figure with parallel lines and given angles, use angle relationships to find missing values.  </li>
-<li>In a parallelogram with parallel lines, opposite angles are equal and adjacent angles sum to 180°.  </li>
-<li>In a figure with three parallel lines, angles can be found using transversal properties.  </li>
-<li>If two lines are cut by a transversal and the alternate interior angles are equal, the lines are parallel.  </li>
-<li>The sum of angles around a point is 360°.  </li>
-<li>In a triangle with a parallel line, corresponding angles are equal.  </li>
-<li>In a figure with parallel lines and transversals, vertically opposite angles are equal.  </li>
-<li>If two angles are equal and formed by a transversal, the lines are parallel.</li>
+<li>When multiple angles lie on a straight line, their total measure equals 180°.</li>
+<li>This is derived from the fact that angles on a straight line form a linear pair.</li>
+<li>Example: If angles 1, 2, 3, 4, 5 are on a line, then angle 1 + angle 2 + angle 3 + angle 4 + angle 5 = 180°.</li>
+</ul>
+<h2 id="vertically-opposite-angles">Vertically Opposite Angles</h2>
+<p>When two lines intersect each other, each pair of angles formed without any common arm is called vertically opposite angles.</p>
+<ul>
+<li><strong>Vertically Opposite Angles</strong> — Angles opposite to each other when two lines intersect.</li>
+<li>They have no common arm.</li>
+<li>Vertically opposite angles are always equal to each other.</li>
+<li>Proof involves using the linear pair property to show equality.</li>
+</ul>
+<h2 id="transversal">TRANSVERSAL</h2>
+<p>The word 'transverse' means 'to place across'. A transversal is a line which intersects two or more lines at different points.</p>
+<ul>
+<li><strong>Transversal</strong> — A line that cuts across two or more other lines at distinct points.</li>
+<li>If a line cuts two lines at the same point, it is not considered a transversal for those lines.</li>
+<li>A transversal creates eight angles when intersecting two lines.</li>
+</ul>
+<h2 id="angles-formed-by-a-transversal">Angles Formed by a Transversal</h2>
+<p>When a transversal intersects two lines at different points, eight angles are formed.</p>
+<h3 id="1-interior-angles">1. Interior angles</h3>
+<p>All angles which lie between the two lines being intersected are called interior angles.</p>
+<ul>
+<li><strong>Interior angles</strong> — Angles located between the two lines cut by the transversal.</li>
+<li>There are four interior angles in total.</li>
+<li>Example: Angles 3, 4, 5, and 6 in standard diagrams.</li>
+</ul>
+<h3 id="2-exterior-angles">2. Exterior angles</h3>
+<p>All angles which do not have the line segment between the intersection points as one of their arms are called exterior angles.</p>
+<ul>
+<li><strong>Exterior angles</strong> — Angles located outside the two lines cut by the transversal.</li>
+<li>There are four exterior angles in total.</li>
+<li>Example: Angles 1, 2, 7, and 8 in standard diagrams.</li>
+</ul>
+<h3 id="3-alternate-interior-angles">3. Alternate interior angles</h3>
+<p>The interior angles which lie on the opposite sides of the transversal and do not form a linear pair are called alternate interior angles.</p>
+<ul>
+<li><strong>Alternate interior angles</strong> — Interior angles on opposite sides of the transversal.</li>
+<li>They form a 'Z' shape.</li>
+<li>Example: Angle 4 and Angle 6; Angle 3 and Angle 5.</li>
+</ul>
+<h3 id="4-alternate-exterior-angles">4. Alternate exterior angles</h3>
+<p>The exterior angles which lie on the opposite sides of the transversal and do not form a linear pair are called alternate exterior angles.</p>
+<ul>
+<li><strong>Alternate exterior angles</strong> — Exterior angles on opposite sides of the transversal.</li>
+<li>Example: Angle 1 and Angle 7; Angle 2 and Angle 8.</li>
+</ul>
+<h3 id="5-corresponding-angles">5. Corresponding angles</h3>
+<p>A pair of angles on the same side of the transversal, one of which is an interior angle and the other one is an exterior angle, but do not form a linear pair, is known as a pair of corresponding angles.</p>
+<ul>
+<li><strong>Corresponding angles</strong> — Angles in matching corners relative to the intersection points.</li>
+<li>They form an 'F' shape.</li>
+<li>Example: Angle 1 and Angle 5; Angle 2 and Angle 6; Angle 4 and Angle 8; Angle 3 and Angle 7.</li>
+</ul>
+<h3 id="6-co-interior-angles">6. Co-interior angles</h3>
+<p>A pair of interior angles on the same side of the transversal is called co-interior angles.</p>
+<ul>
+<li><strong>Co-interior angles</strong> — Interior angles on the same side of the transversal.</li>
+<li>Also known as consecutive interior angles.</li>
+<li>Example: Angle 4 and Angle 5; Angle 3 and Angle 6.</li>
+</ul>
+<h2 id="angles-formed-by-a-transversal-with-parallel-lines">Angles Formed by a Transversal with Parallel Lines</h2>
+<p>Parallel lines are lines that do not intersect each other. When a transversal intersects two parallel lines, the eight angles formed have special properties.</p>
+<ul>
+<li><strong>Parallel lines</strong> — Lines that never meet and are equidistant throughout.</li>
+<li><strong>Alternate interior angles are equal</strong>.</li>
+<li><strong>Alternate exterior angles are equal</strong>.</li>
+<li><strong>Corresponding angles are equal</strong>.</li>
+<li><strong>Co-interior angles are supplementary</strong> (sum is 180°).</li>
+</ul>
+<h2 id="converse-of-the-property">Converse of the property</h2>
+<p>Conversely, if any one of the above three given conditions is satisfied when two lines are intersected by a transversal, then the two lines must be parallel to each other.</p>
+<ul>
+<li>If alternate angles are equal, lines are parallel.</li>
+<li>If corresponding angles are equal, lines are parallel.</li>
+<li>If co-interior angles sum to 180°, lines are parallel.</li>
+</ul>
+<h2 id="grasp-it_1">Grasp It</h2>
+<ul>
+<li>When parallel lines are intersected by a transversal, the shape of 'F' shows corresponding angles.</li>
+<li>The shape of 'Z' shows alternate interior angles.</li>
+<li>These visual shapes help identify angle pairs quickly.</li>
+</ul>
+<h2 id="wrap-up">Wrap Up</h2>
+<p>This section summarizes the key definitions and properties covered in the chapter.</p>
+<ul>
+<li><strong>Complementary Angles</strong> — Sum of measures is 90°.</li>
+<li><strong>Supplementary Angles</strong> — Sum of measures is 180°.</li>
+<li><strong>Adjacent Angles</strong> — Share common vertex and arm; non-common arms on opposite sides.</li>
+<li><strong>Linear Pair</strong> — Adjacent angles that are supplementary with opposite rays as non-common arms.</li>
+<li><strong>Vertically Opposite Angles</strong> — Formed by intersecting lines; always equal.</li>
+<li><strong>Transversal</strong> — Line intersecting two or more lines at distinct points.</li>
+<li><strong>Parallel Lines Property</strong> — Corresponding angles equal, alternate angles equal, co-interior angles supplementary.</li>
+</ul>
+<h2 id="workout">Workout</h2>
+<p>This section contains multiple-choice questions to test understanding of definitions and properties.</p>
+<ul>
+<li>Questions cover identification of complementary, supplementary, linear pair, and vertically opposite angles.</li>
+<li>Includes questions on transversal properties and parallel line conditions.</li>
+<li>Tests calculation of angles based on ratios and algebraic expressions.</li>
+</ul>
+<h2 id="subject-enrichment">Subject Enrichment</h2>
+<p>Connects mathematics to real-world applications, specifically in science and engineering.</p>
+<ul>
+<li><strong>Solar Panels</strong> — Design and efficiency depend on lines and angles.</li>
+<li>Tilted at specific angles to capture maximum sunlight.</li>
+<li>Understanding angles helps optimize energy absorption.</li>
+</ul>
+<h2 id="mental-maths">Mental Maths</h2>
+<p>Quick questions to reinforce concepts without detailed calculations.</p>
+<ul>
+<li>Checks understanding of complements and supplements.</li>
+<li>Verifies knowledge of linear pairs and vertically opposite angles.</li>
+<li>Asks about the number of angle pairs formed by a transversal.</li>
+</ul>
+<h2 id="competency-based-questions">Competency Based Questions</h2>
+<p>Case-study based questions apply concepts to scenarios.</p>
+<ul>
+<li>Involves finding angles formed by intersecting sticks or parallel streets.</li>
+<li>Requires reasoning about parallel lines and transversals in practical contexts.</li>
+<li>Tests ability to identify angle relationships in complex figures.</li>
+</ul>
+<h2 id="assertion-reason-based-questions">Assertion-Reason Based Questions</h2>
+<p>Questions consisting of an Assertion (A) and a Reason (R) to test logical connection.</p>
+<ul>
+<li>Tests if the reason correctly explains the assertion.</li>
+<li>Covers definitions of angles, linear pairs, and complementary angles.</li>
+<li>Encourages critical thinking about mathematical statements.</li>
+</ul>
+<h2 id="maths-lab-activity">Maths Lab Activity</h2>
+<p>A hands-on experiment to verify properties of parallel lines and transversals.</p>
+<ul>
+<li><strong>Aim</strong> — To verify that corresponding and alternate interior angles are equal when a transversal cuts parallel lines.</li>
+<li><strong>Materials</strong> — Cartridge sheet, tracing paper, scissors, colours, pencil, scale.</li>
+<li><strong>Procedure</strong> — Draw parallel lines, draw transversal, trace angles, cut out angles, and superimpose them to check equality.</li>
+</ul>
+<h2 id="observation">Observation</h2>
+<p>Records the results of the lab activity.</p>
+<ul>
+<li>Checks if traced angles completely superimpose each other.</li>
+<li>Confirms equality of corresponding and alternate interior angles.</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>Summarizes the experimental findings.</p>
+<ul>
+<li>When two parallel lines are intersected by a transversal, each pair of corresponding angles and alternate interior angles are equal.</li>
+</ul>
+<h2 id="hots">HOTS</h2>
+<p>Higher Order Thinking Skills questions challenge students to apply concepts in complex situations.</p>
+<ul>
+<li>Involves triangles, multiple parallel lines, and railway crossings.</li>
+<li>Requires combining multiple angle properties to solve for unknown values.</li>
+<li>Tests depth of understanding beyond simple identification.</li>
+</ul></div></div><div class="tab-panel " id="tab-short_notes"><div class="content-body markdown-body"><h1 id="short-revision-notes">Short Revision Notes</h1>
+<ul>
+<li>A point is a dot on a plane with no thickness.</li>
+<li>A line segment has two end points and finite length.</li>
+<li>A line extends endlessly in both directions without end points.</li>
+<li>A ray has one end point and extends endlessly in one direction.</li>
+<li>An angle is formed when two rays meet at a common vertex.</li>
+<li>Complementary angles have a sum of measures equal to 90 degrees.</li>
+<li>The complement of an angle x is calculated as 90 - x.</li>
+<li>Supplementary angles have a sum of measures equal to 180 degrees.</li>
+<li>The supplement of an angle x is calculated as 180 - x.</li>
+<li>Adjacent angles share a common vertex and a common arm.</li>
+<li>In adjacent angles the non-common arms lie on opposite sides.</li>
+<li>A linear pair consists of adjacent angles whose non-common arms are opposite rays.</li>
+<li>Angles in a linear pair are always supplementary and sum to 180 degrees.</li>
+<li>Vertically opposite angles are formed when two lines intersect each other.</li>
+<li>Vertically opposite angles do not share a common arm and are always equal.</li>
+<li>A transversal is a line that intersects two or more lines at distinct points.</li>
+<li>Interior angles lie between the two lines intersected by the transversal.</li>
+<li>Exterior angles lie outside the two lines intersected by the transversal.</li>
+<li>Alternate interior angles are on opposite sides of the transversal inside the lines.</li>
+<li>Alternate exterior angles are on opposite sides of the transversal outside the lines.</li>
+<li>Corresponding angles are on the same side of the transversal one interior and one exterior.</li>
+<li>Co-interior angles are interior angles on the same side of the transversal.</li>
+<li>When parallel lines are cut by a transversal corresponding angles are equal.</li>
+<li>When parallel lines are cut by a transversal alternate angles are equal.</li>
+<li>When parallel lines are cut by a transversal co-interior angles sum to 180 degrees.</li>
+<li>If corresponding angles are equal then the lines are parallel to each other.</li>
+<li>If alternate angles are equal then the lines are parallel to each other.</li>
+<li>If co-interior angles sum to 180 degrees then the lines are parallel to each other.</li>
+<li>The letter F shape indicates pairs of corresponding angles.</li>
+<li>The letter Z shape indicates pairs of alternate interior angles.</li>
+<li>To find an unknown angle use the property of linear pair or vertical angles.</li>
+<li>Solve equations involving angle measures to find values of variables like x.</li>
+<li>Check if lines are parallel by verifying if angle properties hold true.</li>
 </ul></div></div><div class="tab-panel " id="tab-keywords"><div class="content-body markdown-body"><h1 id="key-terms">Key Terms</h1>
-<p>Complementary angles — two angles whose sum is 90°.<br />
-Supplementary angles — two angles whose sum is 180°.<br />
-Adjacent angles — two angles that have a common vertex, a common arm, and their non-common arms lie on opposite sides of the common arm.<br />
-Linear pair — a pair of adjacent angles whose non-common arms are opposite rays and whose sum is 180°.<br />
-Vertically opposite angles — two angles formed when two lines intersect, which have no common arm and are opposite each other; they are always equal.<br />
-Transversal — a line that intersects two or more lines at distinct points.<br />
-Interior angles — angles formed between two lines on the same side of a transversal.<br />
-Exterior angles — angles formed outside the two lines on the same side of a transversal.<br />
-Alternate interior angles — interior angles on opposite sides of a transversal that do not form a linear pair.<br />
-Alternate exterior angles — exterior angles on opposite sides of a transversal that do not form a linear pair.<br />
-Corresponding angles — angles on the same side of a transversal, one interior and one exterior, that do not form a linear pair.<br />
-Co-interior angles — interior angles on the same side of a transversal.<br />
-Parallel lines — lines that never intersect and are always at the same distance apart.<br />
-Corresponding angles property — when a transversal intersects two parallel lines, corresponding angles are equal.<br />
-Alternate interior angles property — when a transversal intersects two parallel lines, alternate interior angles are equal.<br />
-Co-interior angles property — when a transversal intersects two parallel lines, the sum of co-interior angles on the same side is 180°.<br />
-Converse of parallel lines property — if a transversal intersects two lines such that a pair of alternate interior angles or corresponding angles are equal, then the lines are parallel.<br />
-Angle of intersection — the angle formed when two lines meet at a point.<br />
-Vertex of an angle — the common point where two arms of an angle meet.<br />
-Arm of an angle — one of the two rays that form an angle.<br />
-Line segment — a part of a line with two endpoints.<br />
-Line — a straight path that extends infinitely in both directions and has no endpoints.<br />
-Ray — a part of a line that has one endpoint and extends infinitely in one direction.</p></div></div><div class="tab-panel " id="tab-exercises"><div class="content-body markdown-body"><h1 id="exercises-solved">Exercises Solved</h1>
-<h1 id="chapter-9-lines-and-angles-exercise-solutions">Chapter 9: Lines and Angles – Exercise Solutions</h1>
+<p><strong>Adjacent Angles</strong> — Two angles are said to be adjacent if they have a common vertex, a common arm and the other two arms lie on opposite sides of the common arm.<br />
+<strong>Alternate Exterior Angles</strong> — The exterior angles which lie on the opposite sides of the transversal and do not form a linear pair.<br />
+<strong>Alternate Interior Angles</strong> — The interior angles which lie on the opposite sides of the transversal and do not form a linear pair.<br />
+<strong>Angle</strong> — Formed when two lines, line segments or rays meet at a common point.<br />
+<strong>Arms</strong> — The rays that form an angle.<br />
+<strong>Complement</strong> — An angle whose measure added to another angle equals 90 degrees.<br />
+<strong>Complementary Angles</strong> — Two angles are said to be complementary if the sum of their measures is 90°.<br />
+<strong>Corresponding Angles</strong> — A pair of angles on the same side of the transversal, one of which is an interior angle and the other one is an exterior angle, but do not form a linear pair.<br />
+<strong>Co-interior Angles</strong> — A pair of interior angles on the same side of the transversal.<br />
+<strong>Exterior Angles</strong> — All angles which lie outside the lines when a transversal intersects them.<br />
+<strong>Interior Angles</strong> — All angles which lie between the lines when a transversal intersects them.<br />
+<strong>Linear Pair</strong> — A pair of adjacent angles is said to form a linear pair if the non-common arms are opposite rays and the angles are supplementary.<br />
+<strong>Line</strong> — A line has no end points and extends endlessly in both directions.<br />
+<strong>Line Segment</strong> — A line segment has two end points.<br />
+<strong>Parallel Lines</strong> — Parallel lines are the lines that do not intersect each other.<br />
+<strong>Point</strong> — A point is a dot on a plane. It has no thickness.<br />
+<strong>Ray</strong> — A ray has one end point namely its starting point.<br />
+<strong>Supplement</strong> — An angle whose measure added to another angle equals 180 degrees.<br />
+<strong>Supplementary Angles</strong> — Two angles are said to be supplementary if the sum of their measures is 180°.<br />
+<strong>Transversal</strong> — A transversal is a line which intersects two or more lines at different points.<br />
+<strong>Vertex</strong> — The common point where two lines, line segments or rays meet to form an angle.<br />
+<strong>Vertically Opposite Angles</strong> — When two lines intersect each other, each pair of angles formed without any common arm is called vertically opposite angles.</p></div></div><div class="tab-panel " id="tab-exercises"><div class="content-body markdown-body"><h1 id="exercises-solved">Exercises Solved</h1>
+<h1 id="chapter-9-lines-and-angles-solutions">Chapter 9: LINES AND ANGLES - Solutions</h1>
+<h2 id="tune-up">Tune Up</h2>
+<p><strong>Question:</strong> Look at the figures below. Count and write the number of the line segments and angles formed.<br />
+a) [IMAGE_START] Diagram of a line segment with two points, P and Q. [IMAGE_END]<br />
+b) [IMAGE_START] Diagram of a line segment with an arrow on one end, indicating direction. [IMAGE_END]<br />
+Number of line segments: a) <strong><em>_</em></strong><em> b) <strong><em>_</em></strong></em><br />
+Number of angles: a) <strong><em>_</em></strong><em> b) <strong><em>_</em></strong></em></p>
+<p><strong>Answer:</strong><br />
+a) Number of line segments: 1<br />
+   Number of angles: 0<br />
+   Explanation: A line segment PQ has one segment. Since it is a straight line segment without any intersection or extension forming corners, no angles are formed within the figure itself.</p>
+<p>b) Number of line segments: 1<br />
+   Number of angles: 0<br />
+   Explanation: The figure shows a ray (one end point, extends endlessly in one direction). While a ray contains infinitely many segments, in the context of counting distinct geometric figures in this level, we count the main entity as 1. No angles are formed by a single ray alone.</p>
 <hr />
-<h2 id="exercise-91"><strong>Exercise 9.1</strong></h2>
-<h3 id="1-find-the-complement-of-each-of-the-following-angles">1. Find the complement of each of the following angles.</h3>
-<p>a) 45°<br />
-Complement = 90° – 45° = <strong>45°</strong></p>
-<p>b) 32°<br />
-Complement = 90° – 32° = <strong>58°</strong></p>
-<p>c) 46°<br />
-Complement = 90° – 46° = <strong>44°</strong></p>
-<p>d) 28°<br />
-Complement = 90° – 28° = <strong>62°</strong></p>
-<hr />
-<h3 id="2-find-the-supplement-of-each-of-the-following-angles">2. Find the supplement of each of the following angles.</h3>
-<p>a) 110°<br />
-Supplement = 180° – 110° = <strong>70°</strong></p>
-<p>b) 77°<br />
-Supplement = 180° – 77° = <strong>103°</strong></p>
-<p>c) 118°<br />
-Supplement = 180° – 118° = <strong>62°</strong></p>
-<p>d) 122°<br />
-Supplement = 180° – 122° = <strong>58°</strong></p>
-<hr />
-<h3 id="3-two-complementary-angles-are-in-the-ratio-21-find-the-measure-of-the-angles">3. Two complementary angles are in the ratio 2:1. Find the measure of the angles.</h3>
-<p>Let the angles be 2x and x.<br />
-Sum of complementary angles = 90°<br />
-So, 2x + x = 90°<br />
+<h2 id="exercise-91">Exercise 9.1</h2>
+<p><strong>Question 1.</strong> Find the complement of each of the following angles.<br />
+a) 45°<br />
+b) 32°<br />
+c) 46°<br />
+d) 28°</p>
+<p><strong>Answer:</strong><br />
+To find the complement of an angle, subtract the angle from 90°.<br />
+Formula: Complement = 90° - Angle</p>
+<p>a) Complement of 45° = 90° - 45° = 45°<br />
+b) Complement of 32° = 90° - 32° = 58°<br />
+c) Complement of 46° = 90° - 46° = 44°<br />
+d) Complement of 28° = 90° - 28° = 62°</p>
+<p><strong>Question 2.</strong> Find the supplement of each of the following angles.<br />
+a) 110°<br />
+b) 77°<br />
+c) 118°<br />
+d) 122°</p>
+<p><strong>Answer:</strong><br />
+To find the supplement of an angle, subtract the angle from 180°.<br />
+Formula: Supplement = 180° - Angle</p>
+<p>a) Supplement of 110° = 180° - 110° = 70°<br />
+b) Supplement of 77° = 180° - 77° = 103°<br />
+c) Supplement of 118° = 180° - 118° = 62°<br />
+d) Supplement of 122° = 180° - 122° = 58°</p>
+<p><strong>Question 3.</strong> Two complementary angles are in the ratio 2:1. Find the measure of the angles.</p>
+<p><strong>Answer:</strong><br />
+Let the angles be 2x and 1x.<br />
+Since they are complementary, their sum is 90°.<br />
+2x + 1x = 90°<br />
 3x = 90°<br />
-x = 30°  </p>
-<p>Angles are:<br />
-2x = 60° and x = 30°<br />
-<strong>Answer: 60° and 30°</strong></p>
+x = 90 / 3 = 30°</p>
+<p>Measure of first angle = 2x = 2 * 30° = 60°<br />
+Measure of second angle = 1x = 30°<br />
+Check: 60° + 30° = 90°. Correct.<br />
+The angles are 60° and 30°.</p>
+<p><strong>Question 4.</strong> In Fig. 9.12, name all pairs of adjacent angles.</p>
+<p><strong>Answer:</strong><br />
+(Note: As the specific figure is not visually displayed here, the method to identify them is provided based on the chapter definition.)<br />
+Definition: Two angles are adjacent if they have a common vertex, a common arm, and the other two arms lie on opposite sides of the common arm.<br />
+To solve this, look at the figure and identify angles sharing a vertex and one side. List them as pairs (e.g., ∠AOB and ∠BOC).</p>
+<p><strong>Question 5.</strong> Identify two linear pairs and two pairs of vertically opposite angles in Fig. 9.13.</p>
+<p><strong>Answer:</strong><br />
+(Note: Based on the definitions provided in the chapter.)<br />
+Linear Pair: A pair of adjacent angles whose non-common arms are opposite rays (sum is 180°).<br />
+Vertically Opposite Angles: Angles formed by intersecting lines that do not share a common arm (they are equal).<br />
+To solve this, locate intersecting lines in the figure.<br />
+Example Linear Pairs: Any two adjacent angles on a straight line.<br />
+Example Vertically Opposite: The angles directly across from each other at the intersection point.</p>
+<p><strong>Question 6.</strong> Answer the following questions by studying the Fig. 9.14.</p>
+<p><strong>Answer:</strong><br />
+(Note: Specific questions depend on the figure details not fully described in text. General principles apply.)<br />
+Use the properties learned:<br />
+- Sum of angles on a straight line = 180°.<br />
+- Vertically opposite angles are equal.<br />
+- Sum of angles in a triangle = 180°.<br />
+Apply these to find unknown values in the figure.</p>
+<p><strong>Question 7.</strong> Find the value of ( x ) in the following figures.<br />
+a) [IMAGE_START] Two intersecting lines with angles labeled as 32° and ( x ). [IMAGE_END]<br />
+b) [IMAGE_START] Two intersecting lines with angles labeled as 43° and ( x ). [IMAGE_END]<br />
+c) [IMAGE_START] A point O with angles labeled as ( (6x + 19)° ) and 83°. [IMAGE_END]<br />
+d) [IMAGE_START] A point O with angles labeled as ( (3x + 2)° ) and 62°. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+a) The angles are vertically opposite angles.<br />
+   Therefore, x = 32°.</p>
+<p>b) The angles are vertically opposite angles.<br />
+   Therefore, x = 43°.</p>
+<p>c) The angles form a linear pair (on a straight line).<br />
+   Sum = 180°<br />
+   (6x + 19) + 83 = 180<br />
+   6x + 102 = 180<br />
+   6x = 180 - 102<br />
+   6x = 78<br />
+   x = 78 / 6<br />
+   x = 13</p>
+<p>d) The angles form a linear pair (on a straight line).<br />
+   Sum = 180°<br />
+   (3x + 2) + 62 = 180<br />
+   3x + 64 = 180<br />
+   3x = 180 - 64<br />
+   3x = 116<br />
+   x = 116 / 3<br />
+   x = 38.67 (approx) or 38 2/3<br />
+<em>(Note: In standard textbook problems, these usually result in integers. If they were vertically opposite, 3x+2 = 62 =&gt; 3x=60 =&gt; x=20. Assuming linear pair based on typical "point O" configuration for expressions).</em></p>
+<p><strong>Question 8.</strong> In the given figure, find ( x ), ( y ), and ( z ).<br />
+[IMAGE_START] A figure with angles labeled as 30°, ( x ), and ( z ). [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+(Note: Without the full diagram showing the relationship between x, y, and z, we assume a standard straight line configuration involving a ray.)<br />
+If angles 30°, x, and z are on a straight line:<br />
+30 + x + z = 180<br />
+x + z = 150<br />
+If y is vertically opposite to one of them, y equals that angle.<br />
+Please refer to the specific figure in your textbook to identify which angles are adjacent or vertically opposite.<br />
+Common Scenario: If x and 30 are vertically opposite, x = 30. If z is adjacent to x on a line, z = 180 - x.</p>
 <hr />
-<h3 id="4-in-fig-912-name-all-pairs-of-adjacent-angles">4. In Fig. 9.12, name all pairs of adjacent angles.</h3>
-<p><em>(Since image is not available, this question cannot be answered precisely. However, based on typical diagrams, adjacent angles are those sharing a common vertex and arm with non-common arms on opposite sides.)</em></p>
-<p><strong>Common adjacent angle pairs (example):</strong><br />
-- ∠AOB and ∠BOC<br />
-- ∠BOC and ∠COD<br />
-- ∠AOC and ∠COD<br />
-<em>(Exact answer depends on the diagram.)</em></p>
-<hr />
-<h3 id="5-identify-two-linear-pairs-and-two-pairs-of-vertically-opposite-angles-in-fig-913">5. Identify two linear pairs and two pairs of vertically opposite angles in Fig. 9.13.</h3>
-<p><em>(Image not available. General answer based on standard configuration.)</em></p>
-<p><strong>Two linear pairs (adjacent angles forming 180°):</strong><br />
-- ∠AOB and ∠BOC<br />
-- ∠COD and ∠DOA  </p>
-<p><strong>Two pairs of vertically opposite angles:</strong><br />
-- ∠AOC and ∠BOD<br />
-- ∠AOB and ∠COD  </p>
-<p><em>(Note: Exact names depend on the figure.)</em></p>
-<hr />
-<h3 id="6-answer-the-following-questions-by-studying-the-fig-914">6. Answer the following questions by studying the Fig. 9.14.</h3>
-<p><em>(Image not available. Cannot provide specific answer.)</em></p>
-<hr />
-<h3 id="7-find-the-value-of-x-in-the-following-figures">7. Find the value of x in the following figures.</h3>
-<p>a) Two intersecting lines with angles 32° and x<br />
-Since vertically opposite angles are equal,<br />
-x = <strong>32°</strong></p>
-<p>b) Two intersecting lines with angles 43° and x<br />
-x = <strong>43°</strong></p>
-<p>c) Point O with angles (6x + 19)° and 83°<br />
-These are vertically opposite angles, so they are equal.<br />
-6x + 19 = 83<br />
-6x = 83 – 19 = 64<br />
-x = 64 ÷ 6 = <strong>10.67°</strong> (or <strong>10⅔°</strong>)</p>
-<p>d) Point O with angles (3x + 2)° and 62°<br />
-Vertically opposite angles are equal.<br />
-3x + 2 = 62<br />
-3x = 60<br />
-x = <strong>20°</strong></p>
-<hr />
-<h3 id="8-in-the-given-figure-find-x-y-and-z">8. In the given figure, find x, y, and z.</h3>
-<p><em>(Image not available. Cannot determine exact values.)</em></p>
-<hr />
-<h2 id="exercise-92"><strong>Exercise 9.2</strong></h2>
-<h3 id="1-in-fig-925-identify-the-following">1. In Fig. 9.25, identify the following:</h3>
-<p>a) One pair of corresponding angles:<br />
-∠1 and ∠5 (same side of transversal, same relative position)</p>
-<p>b) One pair of alternate interior angles:<br />
-∠3 and ∠6</p>
-<p>c) One pair of interior angles on the same side of the transversal:<br />
-∠4 and ∠5</p>
-<p>d) Two pairs of vertically opposite angles:<br />
-- ∠1 and ∠3<br />
-- ∠2 and ∠4</p>
-<p><em>(Note: Names depend on labeling in the diagram.)</em></p>
-<hr />
-<h3 id="2-in-fig-926-ab-cd-and-ef-is-a-transversal-find-the-measure-of-all-the-other-angles">2. In Fig. 9.26, AB || CD and EF is a transversal. Find the measure of all the other angles.</h3>
-<p>Given: ∠45° is one angle.<br />
-Since AB || CD and EF is a transversal:</p>
-<ul>
-<li>∠45° and ∠a are corresponding angles → a = 45°  </li>
-<li>∠a and ∠b are supplementary (linear pair) → b = 180° – 45° = 135°  </li>
-<li>∠b and ∠c are vertically opposite → c = 135°  </li>
-<li>∠c and ∠d are supplementary → d = 180° – 135° = 45°  </li>
-<li>∠d and ∠e are vertically opposite → e = 45°  </li>
-<li>∠e and ∠f are supplementary → f = 135°  </li>
-<li>∠f and ∠g are vertically opposite → g = 135°</li>
-</ul>
-<p><strong>All angles:</strong><br />
-a = 45°, b = 135°, c = 135°, d = 45°, e = 45°, f = 135°, g = 135°</p>
-<hr />
-<h3 id="3-in-fig-927-ab-cd-and-ef-is-a-transversal-find-the-value-of-x-in-terms-of-q">3. In Fig. 9.27, AB || CD and EF is a transversal. Find the value of x in terms of q°.</h3>
-<p>Given: ∠q° and ∠x are on the same side of transversal and form a linear pair.</p>
-<p>So, q + x = 180°<br />
-x = 180° – q°</p>
-<p><strong>Answer: x = (180 – q)°</strong></p>
-<hr />
-<h3 id="4-in-fig-928-if-p-q-with-transversal-m-and-1-75-find-the-value-of-x">4. In Fig. 9.28, if p || q with transversal m and ∠1 = 75°, find the value of x.</h3>
-<p>Since p || q and m is a transversal:</p>
-<ul>
-<li>∠1 = 75° (given)  </li>
-<li>∠x is vertically opposite to ∠1 → x = 75°</li>
-</ul>
-<p><strong>Answer: x = 75°</strong></p>
-<hr />
-<h3 id="5-in-each-of-the-following-figures-find-the-value-of-x-if-l-m-and-a-b">5. In each of the following figures, find the value of x if l || m and a || b.</h3>
-<p><em>(Image not available. General solution for similar case:)</em></p>
-<p>Given angles: (17x + 4)° and (12 + 15x)°<br />
-These are interior angles on the same side of transversal → sum = 180°</p>
-<p>(17x + 4) + (15x + 12) = 180<br />
-32x + 16 = 180<br />
-32x = 164<br />
-x = 164 ÷ 32 = <strong>5.125°</strong> (or <strong>5⅛°</strong>)</p>
-<p><em>(Note: Exact value depends on diagram.)</em></p>
-<hr />
-<h3 id="6-find-the-value-of-x-y-and-z-in-each-of-the-following-figures-if-l-m-and-a-b">6. Find the value of x, y and z in each of the following figures if l || m and a || b.</h3>
-<p>Given angles: (4z + 6)°, x, 106°, 2y°, 2x, 90°, z</p>
-<p>From parallel lines and transversal:</p>
-<ul>
-<li>
-<p>(4z + 6)° and 106° are corresponding angles → 4z + 6 = 106<br />
-4z = 100 → z = 25°</p>
-</li>
-<li>
-<p>2x = 90° → x = 45°</p>
-</li>
-<li>
-<p>2y = 106° → y = 53°</p>
-</li>
-</ul>
-<p><strong>Answer: x = 45°, y = 53°, z = 25°</strong></p>
-<hr />
-<h3 id="7-in-each-of-the-following-figures-is-l-m-give-reason">7. In each of the following figures, is l || m? Give reason.</h3>
-<p>a) ∠57° and ∠123° → sum = 180° → interior angles on same side → lines are parallel<br />
-<strong>Yes, l || m</strong></p>
-<p>b) ∠72° and ∠98° → sum = 170° ≠ 180° → not supplementary → lines are not parallel<br />
-<strong>No, l is not parallel to m</strong></p>
-<hr />
-<h2 id="workout-multiple-choice-questions"><strong>Workout (Multiple Choice Questions)</strong></h2>
-<ol>
-<li>a) i. complementary angles<br />
-b) ii. supplementary, iii. adjacent → both ii and iii → <strong>iv</strong><br />
-c) iv. parallel<br />
-d) iii. vertically opposite angles<br />
-e) i. 1° → 180° – 169° = 11° → <strong>ii</strong><br />
-f) Ratio 1:2 → let angles be x and 2x → x + 2x = 180 → 3x = 180 → x = 60 → greater angle = 120° → <strong>i</strong><br />
-g) 148° + 32° = 180° → supplementary<br />
-120° + 60° = 180° → supplementary<br />
-75° + 105° = 180° → supplementary<br />
-179° + 2° = 181° → not supplementary → <strong>i</strong><br />
-h) different points → <strong>ii</strong></li>
-</ol>
-<p><strong>Answers:</strong><br />
-a) i<br />
-b) iv<br />
-c) iv<br />
-d) iii<br />
-e) ii<br />
-f) i<br />
-g) i<br />
-h) ii</p>
-<hr />
-<h3 id="2-find-the-measure-of-an-angle-that-is-four-times-its-complement">2. Find the measure of an angle that is four times its complement.</h3>
-<p>Let angle be x<br />
-Complement = 90° – x<br />
-Given: x = 4(90° – x)<br />
-x = 360° – 4x<br />
-5x = 360°<br />
-x = 72°</p>
-<p><strong>Answer: 72°</strong></p>
-<hr />
-<h3 id="3-the-supplement-of-an-angle-is-one-third-of-the-angle-determine-the-angle-and-its-supplement">3. The supplement of an angle is one-third of the angle. Determine the angle and its supplement.</h3>
-<p>Let angle be x<br />
-Supplement = 180° – x<br />
-Given: 180 – x = (1/3)x<br />
-Multiply both sides by 3:<br />
-540 – 3x = x<br />
-540 = 4x<br />
-x = 135°<br />
-Supplement = 180° – 135° = 45°</p>
-<p><strong>Answer: Angle = 135°, Supplement = 45°</strong></p>
-<hr />
-<h3 id="4-find-the-values-of-x-y-and-z-in-each-of-the-following-figures">4. Find the values of x, y and z in each of the following figures.</h3>
-<p>a) 55° and x → x = 55° (corresponding angles)<br />
-b) 40° and y → y = 40°<br />
-c) 25° and z → z = 25°</p>
-<p><strong>Answers:</strong><br />
-a) x = 55°<br />
-b) y = 40°<br />
-c) z = 25°</p>
-<hr />
-<h3 id="5-if-1-and-2-are-vertically-opposite-angles-and-1-7x-15-and-2-2x-55-find-x">5. If ∠1 and ∠2 are vertically opposite angles and ∠1 = 7x – 15° and ∠2 = 2x + 55°, find x.</h3>
-<p>Vertically opposite angles are equal →<br />
-7x – 15 = 2x + 55<br />
-7x – 2x = 55 + 15<br />
-5x = 70<br />
-x = 14°</p>
-<p><strong>Answer: x = 14°</strong></p>
-<hr />
-<h3 id="6-in-which-figure-is-t-not-the-transversal">6. In which figure is t not the transversal?</h3>
-<p><em>(Image not available. A transversal must intersect two or more lines at different points. If t intersects at the same point, it is not a transversal.)</em></p>
-<p><strong>Answer: The figure where t cuts both lines at the same point.</strong></p>
-<hr />
-<h2 id="subject-enrichment-science"><strong>Subject Enrichment – Science</strong></h2>
-<h3 id="a-if-a-solar-panel-is-tilted-at-30-with-the-ground-and-suns-rays-are-perpendicular-to-the-ground-what-is-the-acute-angle-between-suns-rays-and-the-panel">a) If a solar panel is tilted at 30° with the ground and Sun's rays are perpendicular to the ground, what is the acute angle between Sun's rays and the panel?</h3>
-<p>Sun's rays are perpendicular to ground → 90°<br />
-Panel is tilted at 30° → angle between rays and panel = 90° – 30° = <strong>60°</strong></p>
-<p><strong>Answer: 60°</strong></p>
-<hr />
-<h2 id="exercise-93-extended-problems"><strong>Exercise 9.3 (Extended Problems)</strong></h2>
-<h3 id="7-in-fig-934-if-l-m-state-the-property-used">7. In Fig. 9.34, if l || m, state the property used.</h3>
-<p>a) ∠2 = ∠8 → <strong>Alternate exterior angles are equal</strong><br />
-b) ∠1 = ∠5 → <strong>Corresponding angles are equal</strong><br />
-c) ∠3 = ∠5 → <strong>Alternate interior angles are equal</strong></p>
-<hr />
-<h3 id="8-in-each-of-the-following-figures-ab-cd-find-x-and-y">8. In each of the following figures, AB || CD, find x and y.</h3>
-<p>a) ∠A = 50°, ∠C = 130°<br />
-Since AB || CD, angles on same side of transversal sum to 180°<br />
-∠A + ∠B = 180° → ∠B = 130°<br />
-∠C + ∠D = 180° → ∠D = 50°<br />
-But ∠C = 130° → ∠D = 50° → y = 50°<br />
-x = 130° (since ∠A = 50°, and ∠B = 130°)</p>
-<p>b) ∠A = (y – 5)°, ∠C = (2y – 4)°<br />
-Since AB || CD, ∠A + ∠C = 180°<br />
-(y – 5) + (2y – 4) = 180<br />
-3y – 9 = 180<br />
+<h2 id="exercise-92">Exercise 9.2</h2>
+<p><strong>Question 1.</strong> In Fig. 9.25, identify the following:<br />
+a) any one pair of corresponding angles.<br />
+b) any one pair of alternate interior angles.<br />
+c) any one pair of interior angles on the same side of the transversal<br />
+d) any two pairs of vertically opposite angles</p>
+<p><strong>Answer:</strong><br />
+(Note: Based on standard transversal labeling ∠1 to ∠8).<br />
+a) Corresponding angles: ∠1 and ∠5 (or ∠2 and ∠6, etc.)<br />
+b) Alternate interior angles: ∠4 and ∠6 (or ∠3 and ∠5)<br />
+c) Interior angles on same side: ∠4 and ∠5 (or ∠3 and ∠6)<br />
+d) Vertically opposite angles: ∠1 and ∠3 (or ∠2 and ∠4, etc.)</p>
+<p><strong>Question 2.</strong> In Fig. 9.26, AB || CD and EF is a transversal. Find the measure of all the other angles.<br />
+[IMAGE_START] Diagram showing AB || CD, EF as a transversal, and angles marked as 45°, a, b, c, d, e, f, g. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+Given: One angle is 45°. Let's assume this is ∠1 (top left).<br />
+Since AB || CD:<br />
+- Corresponding angles are equal: ∠5 = 45°.<br />
+- Vertically opposite angles are equal: ∠3 = 45°, ∠7 = 45°.<br />
+- Linear pair sums to 180°: ∠2 = 180° - 45° = 135°.<br />
+- Similarly, ∠4 = 135°, ∠6 = 135°, ∠8 = 135°.<br />
+So, the angles are:<br />
+45° (given), 135°, 45°, 135° (at top intersection).<br />
+45°, 135°, 45°, 135° (at bottom intersection).<br />
+Specifically: a=135°, b=45°, c=135°, d=45°, e=135°, f=45°, g=135° (depending on specific labeling in the book).</p>
+<p><strong>Question 3.</strong> In Fig. 9.27, AB || CD and EF is a transversal. Find the value of x in terms of q°.<br />
+[IMAGE_START] Diagram showing AB || CD, EF as a transversal, and angles marked as q°, x. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+Depending on the position of x and q:<br />
+Case 1: If x and q are corresponding angles, then x = q.<br />
+Case 2: If x and q are alternate interior angles, then x = q.<br />
+Case 3: If x and q are co-interior angles, then x + q = 180°, so x = 180 - q.<br />
+Standard NCERT context usually implies x and q are corresponding or alternate, so x = q.</p>
+<p><strong>Question 4.</strong> In Fig. 9.28, if p || q with transversal m and ∠1 = 75°, find the value of x.<br />
+[IMAGE_START] Diagram showing p || q with transversal m and ∠1 = 75°. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+Assuming x is related to ∠1 via parallel line properties:<br />
+If x is corresponding to ∠1: x = 75°.<br />
+If x is alternate interior to ∠1: x = 75°.<br />
+If x is co-interior to ∠1: x + 75 = 180 =&gt; x = 105°.<br />
+Without the specific position, the most direct relation is x = 75° (corresponding/alternate).</p>
+<p><strong>Question 5.</strong> In each of the following figures, find the value of x if l || m and a || b.<br />
+[IMAGE_START] Diagrams showing l || m and a || b with angles marked as (17x + 4°), (12° + 15x), 100°, 80°. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+Part 1: Angles (17x + 4) and (12 + 15x).<br />
+If they are corresponding or alternate:<br />
+17x + 4 = 12 + 15x<br />
+17x - 15x = 12 - 4<br />
+2x = 8<br />
+x = 4</p>
+<p>Part 2: Angles 100° and 80°.<br />
+These are supplementary (100 + 80 = 180). This confirms the parallel line property for co-interior angles.</p>
+<p><strong>Question 6.</strong> Find the value of x, y and z in each of the following figures if l || m and a || b.<br />
+[IMAGE_START] Diagrams showing l || m and a || b with angles marked as (4z + 6°), x, 106°, 2y°, 2x, 90°, z. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+This involves multiple equations.<br />
+From the text description:<br />
+1. (4z + 6) and z might be related. If co-interior: 4z + 6 + z = 180 =&gt; 5z = 174 =&gt; z = 34.8. If alternate: 4z+6 = z =&gt; 3z = -6 (Impossible). Likely co-interior or linear pair.<br />
+2. x and 2x: If linear pair, x + 2x = 180 =&gt; 3x = 180 =&gt; x = 60.<br />
+3. 106° and 2y°: If co-interior, 106 + 2y = 180 =&gt; 2y = 74 =&gt; y = 37.<br />
+Values: x = 60, y = 37, z ≈ 34.8 (based on assumptions).</p>
+<p><strong>Question 7.</strong> In each of the following figures, is l || m? Give reason.<br />
+[IMAGE_START] Diagrams showing l and m with angles marked as 57°, 123°, 72°, 98°. [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+To check if lines are parallel, check if co-interior angles sum to 180°.<br />
+Case 1: 57° and 123°.<br />
+Sum = 57 + 123 = 180°.<br />
+Yes, l || m because co-interior angles are supplementary.<br />
+Case 2: 72° and 98°.<br />
+Sum = 72 + 98 = 170°.<br />
+No, l is not parallel to m because co-interior angles do not sum to 180°.</p>
+<p><strong>Question 8.</strong> In each of the following figures ( AB \parallel CD ), find the values of ( x ) and ( y ).<br />
+[IMAGE_START] Two diagrams showing parallel lines ( AB \parallel CD ). In the first diagram, ( \angle A = 50^\circ ) and ( \angle C = 130^\circ ). In the second diagram, ( \angle A = (y - 5)^\circ ) and ( \angle C = (2y - 4)^\circ ). [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+Diagram 1:<br />
+∠A = 50°, ∠C = 130°.<br />
+These are co-interior angles. 50 + 130 = 180°. Consistent with parallel lines.<br />
+Diagram 2:<br />
+∠A = (y - 5)°, ∠C = (2y - 4)°.<br />
+Assuming they are co-interior angles:<br />
+(y - 5) + (2y - 4) = 180<br />
+3y - 9 = 180<br />
 3y = 189<br />
-y = 63°<br />
-x = y – 5 = 58°</p>
-<p><strong>Answers:</strong><br />
-a) x = 130°, y = 50°<br />
-b) x = 58°, y = 63°</p>
-<hr />
-<h3 id="9-in-fig-936-ab-cd-af-ed-afc-65-fed-48-find-efd">9. In Fig. 9.36, AB || CD, AF || ED, ∠AFC = 65°, ∠FED = 48°. Find ∠EFD.</h3>
-<p>Since AF || ED and transversal FE → ∠FED = ∠EFD (alternate interior angles) → ∠EFD = 48°<br />
-But ∠AFC = 65° → ∠EFD = 180° – 65° – 48° = 67°?<br />
-Wait: ∠AFC and ∠EFD are not adjacent.</p>
-<p>Actually, in quadrilateral AFEF, angles at F:<br />
-∠AFC = 65°, ∠FED = 48°, and ∠EFD is the angle between them.</p>
-<p>Since AF || ED, and CD || AB, the figure is a parallelogram-like shape.</p>
-<p>∠EFD = 180° – (∠AFC + ∠FED) = 180° – (65° + 48°) = 67°</p>
-<p><strong>Answer: ∠EFD = 67°</strong></p>
-<hr />
-<h3 id="10-if-a-transversal-intersects-two-parallel-lines-and-the-difference-between-two-interior-angles-on-the-same-side-of-the-transversal-is-30-find-the-measure-of-the-angles">10. If a transversal intersects two parallel lines and the difference between two interior angles on the same side of the transversal is 30°, find the measure of the angles.</h3>
-<p>Let angles be x and y<br />
-x + y = 180°<br />
-|x – y| = 30°</p>
-<p>Case 1: x – y = 30°<br />
-x + y = 180<br />
-Add: 2x = 210 → x = 105°, y = 75°</p>
-<p>Case 2: y – x = 30° → y = x + 30<br />
-x + x + 30 = 180 → 2x = 150 → x = 75°, y = 105°</p>
-<p><strong>Answer: 75° and 105°</strong></p>
-<hr />
-<h3 id="11-in-fig-937-pq-rt-find-srq">11. In Fig. 9.37, PQ || RT. Find ∠SRQ.</h3>
-<p>Given: ∠P = 45°, ∠Q = 55°<br />
-Since PQ || RT, and transversal is SR,<br />
-∠P + ∠SRQ = 180° → ∠SRQ = 180° – 45° = 135°<br />
-But ∠Q = 55° → ∠SRQ = 180° – 55° = 125°?  </p>
-<p>Wait: ∠P and ∠SRQ are on the same side → sum = 180°<br />
-So ∠SRQ = 180° – 45° = <strong>135°</strong></p>
-<p><strong>Answer: 135°</strong></p>
-<hr />
-<h3 id="12-in-fig-938-l-m-n-qps-40-qrt-50-find-pqr">12. In Fig. 9.38, l || m || n, ∠QPS = 40°, ∠QRT = 50°. Find ∠PQR.</h3>
-<p>Since l || m || n, and transversal at Q:</p>
-<p>∠QPS = 40° → ∠PQR = 40° (corresponding angles)<br />
-∠QRT = 50° → ∠PQR = 50°? No.</p>
-<p>Actually, ∠PQR is formed between lines l and m.</p>
-<p>Using triangle: ∠PQR = 180° – 40° – 50° = <strong>90°</strong></p>
-<p><strong>Answer: ∠PQR = 90°</strong></p>
-<hr />
-<h2 id="mental-maths"><strong>Mental Maths</strong></h2>
-<ol>
-<li>
-<p>a) 47° → complement = 43°<br />
-b) 89° → complement = 1°</p>
-</li>
-<li>
-<p>Can two acute angles be supplementary?<br />
-No. Acute angles are less than 90°. Sum of two acute angles is less than 180°, but to be supplementary, sum must be exactly 180°.<br />
-So, two acute angles cannot be supplementary.</p>
-</li>
-<li>
-<p>Does a pair of adjacent right angles form a linear pair?<br />
-Yes. Right angles are 90° each. Sum =</p>
-</li>
-</ol></div></div><div class="tab-panel " id="tab-question_paper"><div class="content-body markdown-body"><div class="quiz-container">
+y = 63<br />
+Then ∠A = 63 - 5 = 58°.<br />
+∠C = 2(63) - 4 = 126 - 4 = 122°.<br />
+Check: 58 + 122 = 180°. Correct.</p>
+<p><strong>Question 9.</strong> In Fig. 9.36, ( AB \parallel CD ), ( AF \parallel ED ), ( \angle AFC = 65^\circ ) and ( \angle FED = 48^\circ ). Find the measure of ( \angle EFD ).<br />
+[IMAGE_START] Diagram showing two parallel lines ( AB \parallel CD ) and ( AF \parallel ED ). Angles ( \angle AFC = 65^\circ ) and ( \angle FED = 48^\circ ). [IMAGE_END]</p>
+<p><strong>Answer:</strong><br />
+Since AB || CD and AF || ED:<br />
+∠AFC corresponds to an angle on line ED.<br />
+Using parallel line properties, we can relate the angles.<br />
+Consider the triangle or the path F-E-D.<br />
+∠EFD = 180° - (∠AFC + ∠FED) ? No, depends on geometry.<br />
+Usually, in such Z-shape configurations:<br />
+∠EFD = ∠AFC + ∠FED (if F is between parallels).<br />
+Or ∠EFD = 180 - (65 + 48) = 67°.<br />
+Based on standard problems of this type:<br />
+Draw a line through F parallel to AB and CD.<br />
+Angle splits into 65° and 48°.<br />
+So ∠EFD = 65° + 48° = 113°.<br />
+<em>(Note: This assumes F is a point between the parallels creating a zigzag).</em></p>
+<p><strong>Question 10.</strong> If a transversal intersects two parallel lines and the difference between two interior angles on the same side of a transversal is ( 30^\circ ), find the measure of the angles.</p>
+<p><strong>Answer:</strong><br />
+Let the angles be x and y.<br />
+Condition 1: x + y = 180° (Co-interior angles are supplementary).<br />
+Condition 2: x - y = 30° (Difference is 30°).<br />
+Adding the two equations:<br />
+2</p></div></div><div class="tab-panel " id="tab-question_paper"><div class="content-body markdown-body"><h1 id="practice-questions-answers">Practice Questions &amp; Answers</h1>
+<h3 id="section-1-multiple-choice-questions">Section 1: Multiple Choice Questions</h3>
+<p><strong>Q1.</strong> Which of the following statements correctly describes a linear pair of angles?<br />
+A) They are always equal.<br />
+B) They are adjacent and their sum is 180°.<br />
+C) They are vertically opposite angles.<br />
+D) Their sum is 90°.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** B) They are adjacent and their sum is 180°. <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> If an angle measures 40°, what is the measure of its supplement?<br />
+A) 40°<br />
+B) 50°<br />
+C) 140°<br />
+D) 160°</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) 140° <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> When a transversal intersects two parallel lines, which pair of angles are always equal?<br />
+A) Co-interior angles<br />
+B) Corresponding angles<br />
+C) Adjacent angles<br />
+D) Supplementary angles</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** B) Corresponding angles <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Two lines are intersected by a transversal. If the sum of the interior angles on the same side of the transversal is 180°, then the lines are:<br />
+A) Intersecting<br />
+B) Perpendicular<br />
+C) Parallel<br />
+D) Coincident</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) Parallel <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Can two obtuse angles form a supplementary pair?<br />
+A) Yes, always<br />
+B) Yes, sometimes<br />
+C) No, never<br />
+D) Only if they are equal</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) No, never <br/>
+</div>
+</details>
+
+<h3 id="section-2-fill-in-the-blanks">Section 2: Fill in the Blanks</h3>
+<p><strong>Q1.</strong> A line that intersects two or more lines at distinct points is called a <strong><em>_</em></strong>___.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Transversal <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> Vertically opposite angles are always <strong><em>_</em></strong>___ to each other.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Equal <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> The sum of all angles formed on a straight line is <strong><em>_</em></strong>___ degrees.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 180 <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> When two parallel lines are intersected by a transversal, the sum of co-interior angles is <strong><em>_</em></strong>___.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 180° <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> The shape of the letter 'Z' helps in identifying <strong><em>_</em></strong>___ interior angles.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Alternate <br/>
+</div>
+</details>
+
+<h3 id="section-3-short-answer-questions">Section 3: Short Answer Questions</h3>
+<p><strong>Q1.</strong> Find the measure of an angle that is three times its complement.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 67.5° (Let angle be x. x = 3(90 - x) => 4x = 270 => x = 67.5) <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> Two vertically opposite angles are given as (3x + 5)° and (2x + 15)°. Find the value of x.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 10 (3x + 5 = 2x + 15 => x = 10) <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> Two angles form a linear pair. One angle is 20° more than the other. Find the measures of both angles.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 80° and 100° (x + x + 20 = 180 => 2x = 160 => x = 80) <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> In a figure, two parallel lines are cut by a transversal. The interior angles on the same side are (2x + 10)° and (3x - 20)°. Find the value of x.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 38 (2x + 10 + 3x - 20 = 180 => 5x - 10 = 180 => 5x = 190 => x = 38) <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Two parallel lines are cut by a transversal. One interior angle is 110°. Find the sum of the other three interior angles formed.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 250° (Other angles are 70°, 110°, 70°. Sum = 250°) <br/>
+</div>
+</details>
+
+<h3 id="section-4-descriptive-questions">Section 4: Descriptive Questions</h3>
+<p><strong>Q1.</strong> Explain the difference between adjacent angles and a linear pair of angles.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Adjacent angles share a common vertex and arm. A linear pair is a specific type of adjacent angles where the non-common arms are opposite rays, making them supplementary (sum to 180°). All linear pairs are adjacent, but not all adjacent angles form a linear pair. <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> Prove that vertically opposite angles are equal using the concept of a linear pair.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** When two lines intersect, they form two linear pairs. Let angles be A, B, C, D in order. A + B = 180° and B + C = 180°. Therefore, A + B = B + C, which implies A = C. Similarly, B = D. Thus, vertically opposite angles are equal. <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> Why is the sum of co-interior angles being 180° used to determine if two lines are parallel?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** This is the converse property. If the sum of interior angles on the same side of the transversal is 180°, it forces the lines to maintain a constant distance apart without intersecting, satisfying the definition of parallel lines. <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Can two acute angles be supplementary? Give a reason.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** No. An acute angle is less than 90°. The sum of two angles each less than 90° will always be less than 180°. Therefore, they cannot be supplementary. <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Can two right angles be supplementary? Justify your answer.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Yes. A right angle is 90°. The sum of two right angles is 90° + 90° = 180°. Since the sum is 180°, they are supplementary. <br/>
+</div>
+</details>
+
+<h3 id="section-5-application-and-advanced-problems">Section 5: Application and Advanced Problems</h3>
+<p><strong>Q1.</strong> A ladder leans against a vertical wall. It makes an angle of 60° with the horizontal ground. What angle does it make with the wall?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 30° (The wall and ground form a 90° angle. 90° - 60° = 30°) <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> At 3 o'clock, the angle between the hour and minute hands of a clock is 90°. What is the supplement of this angle?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 90° (180° - 90° = 90°) <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> Two parallel streets are connected by a walkway acting as a transversal. If the angle made by the walkway with one street is 50°, what is the alternate interior angle with the other street?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 50° (Alternate interior angles are equal when lines are parallel) <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Three parallel lines l, m, and n are intersected by a single transversal. If the angle formed with line l is 40°, what is the angle formed with line n?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 40° (Corresponding angles are equal across all parallel lines cut by the same transversal) <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> How many pairs of corresponding angles are formed when a transversal intersects two parallel lines?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 4 pairs <br/>
+</div>
+</details></div></div><div class="tab-panel " id="tab-quiz"><div class="content-body markdown-body"><div class="quiz-container">
 <div style="display:flex;gap:.75rem;margin-bottom:1.25rem;flex-wrap:wrap;"><button onclick="document.querySelectorAll('#tab-question_paper details').forEach(d=>d.open=true)" style="padding:.5rem 1.1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-weight:600;font-size:.88rem;cursor:pointer;">👁️ Show All Answers</button><button onclick="document.querySelectorAll('#tab-question_paper details').forEach(d=>d.open=false)" style="padding:.5rem 1.1rem;border:1.5px solid var(--border);background:var(--bg);color:var(--muted);border-radius:8px;font-weight:600;font-size:.88rem;cursor:pointer;">🙈 Hide All Answers</button></div>
-<h2 style="margin-bottom:1rem;">📝 Practice Questions <span style="font-size:.85rem;color:var(--muted);font-weight:400;">(15 questions)</span></h2>
+<h2 style="margin-bottom:1rem;">📝 Practice Questions <span style="font-size:.85rem;color:var(--muted);font-weight:400;">(12 questions)</span></h2>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q1. When the sum of two angles is 90°, they are called:</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q1. What is the sum of measures of two complementary angles?</p>
 <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. complementary angles</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. alternate angles</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. supplementary angles</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. corresponding angles</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 90°</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 180°</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 360°</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 45°</span>
 </div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ complementary angles</p></details>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 90°</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q2. Angles in a linear pair are:</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q2. Find the complement of an angle measuring 35°.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 55°</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q3. Which property states that vertically opposite angles are always equal?</p>
 <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. complementary</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. supplementary</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. adjacent</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. both ii) and iii)</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. Linear pair property</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. Vertical angle theorem</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. Supplementary property</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. Complementary property</span>
 </div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ both ii) and iii)</p></details>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Vertical angle theorem</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q3. If a transversal intersects two lines such that the pair of alternate interior angles are equal, the lines are:</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q4. If two angles form a linear pair, what is their sum?</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 180°</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q5. When a transversal intersects two parallel lines, which angles are equal?</p>
 <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. intersecting</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. coincident</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. perpendicular</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. parallel</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. Co-interior angles</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. Corresponding angles</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. Supplementary angles</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. Complementary angles</span>
 </div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ parallel</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q4. When two straight lines intersect each other, the two pairs of non-linear angles so formed are called:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. adjacent angles</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. complementary angles</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. vertically opposite angles</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. alternate angles</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ vertically opposite angles</p></details>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Corresponding angles</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q5. If the supplement of an angle is 169°, the angle will be:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 1°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 11°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 79°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 2°</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 11°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q6. If two angles forming a linear pair are in the ratio 1 : 2, the measure of the greater angle is:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 120°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 125°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 110°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 90°</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 120°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q7. Which of the following pairs of angles is not supplementary?</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 148° and 32°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 120° and 60°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 75° and 105°</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 179° and 2°</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 120° and 60°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q8. A transversal intersects two or more lines at ________ points.</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. same</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. different</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. two</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. none of these</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ different</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q9. Find the measure of an angle that is four times its complement.</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q6. Two angles are in ratio 2:3 and form a linear pair. Find the smaller angle.</p>
 <details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 72°</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q10. The supplement of an angle is one-third of the angle. Determine the angle and its supplement.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Angle is 135°, supplement is 45°</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q7. In a figure where a transversal cuts two lines, if alternate interior angles are equal, then the lines are:</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. Intersecting</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. Perpendicular</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. Parallel</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. Coincident</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Parallel</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q11. Find the value of x if two angles forming a linear pair are in the ratio 1:2.</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q8. An angle is equal to its supplement. Find the measure.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 90°</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q9. How many pairs of alternate interior angles are formed when a transversal intersects two lines?</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 1</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 2</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 3</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 4</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 2</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q10. If one angle of a linear pair is 110°, find the other angle.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 70°</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q11. Which shape helps identify corresponding angles?</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. Z shape</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. F shape</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. C shape</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. L shape</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ F shape</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q12. A solar panel is tilted at 30° to the ground. If sun rays are perpendicular to ground, what is the acute angle between sun rays and panel?</p>
 <details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 60°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q12. If ∠1 and ∠2 are vertically opposite angles and ∠1 = 7x - 15° and ∠2 = 2x + 55°, find the value of x.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 20°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q13. In a pair of supplementary angles, the greater angle is 54° more than the smaller angle. Find the measure of the angles.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 117° and 63°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q14. A solar panel is tilted at an angle of 30° with the ground and the Sun's rays are perpendicular to the ground. What is the acute angle formed between the Sun's rays and the panel?</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 60°</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q15. If a transversal intersects two parallel lines and the difference between two interior angles on the same side of the transversal is 30°, find the measure of the angles.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 75° and 105°</p></details>
 </div>
 </div></div></div><div class="tab-panel " id="tab-fulltext"><div class="content-body markdown-body"><pre><code class="language-markdown"># LINES AND ANGLES
 

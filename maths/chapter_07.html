@@ -37,499 +37,754 @@
 
   <!-- Main content -->
   <main class="main-content">
-    <h1 class="chapter-title">Chapter 07</h1>
+    <!-- Chapter header row: label + name + PDF button -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.25rem;">
+      <div>
+        <h1 class="chapter-title" style="margin-bottom:.15rem;">Chapter 07</h1>
+        <p style="margin:0;font-size:.95rem;color:var(--muted);font-weight:500;">SIMPLE LINEAR EQUATIONS</p>
+      </div>
+      <button onclick="printAllTabs()" title="Export all chapter content to PDF" style="display:flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;white-space:nowrap;">📥 Download PDF</button>
+    </div>
 
     <!-- Tab bar -->
     <div class="tab-bar" role="tablist">
-      <button class="tab-btn active" data-tab="summary">📋 Summary</button><button class="tab-btn " data-tab="short_notes">📌 Short Notes</button><button class="tab-btn " data-tab="keywords">🔑 Keywords</button><button class="tab-btn " data-tab="exercises">✍️ Exercises</button><button class="tab-btn " data-tab="question_paper">❓ Questions</button><button class="tab-btn " data-tab="fulltext">📖 Full Text</button>
+      <button class="tab-btn active" data-tab="summary">📋 Summary</button><button class="tab-btn " data-tab="short_notes">📌 Short Notes</button><button class="tab-btn " data-tab="keywords">🔑 Keywords</button><button class="tab-btn " data-tab="exercises">✍️ Exercises</button><button class="tab-btn " data-tab="question_paper">📄 Practice Qs</button><button class="tab-btn " data-tab="quiz">🎯 Interactive Quiz</button><button class="tab-btn " data-tab="fulltext">📖 Full Text</button>
     </div>
 
     <!-- Tab panels -->
     <div class="tab-content">
       <div class="tab-panel active" id="tab-summary"><div class="content-body markdown-body"><h1 id="chapter-summary">Chapter Summary</h1>
-<h1 id="chapter-7-simple-linear-equations-summary">Chapter 7: Simple Linear Equations – Summary</h1>
-<h2 id="what-is-an-equation">What is an Equation?</h2>
+<h2 id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li>An <strong>equation</strong> is a mathematical statement that shows two expressions are equal, using the <strong>equal sign (=)</strong>.</li>
-<li>It must have a <strong>variable</strong> (an unknown value) and an <strong>equality sign</strong>.</li>
-<li>Example: $ x + 5 = 12 $</li>
+<li>State the meaning of an equation with examples.</li>
+<li>Frame equations with the given conditions.</li>
+<li>State the necessary conditions required for balancing an equation.</li>
+<li>Explain the meaning of the term root/solution of an equation and verify the equations by substituting their roots.</li>
+<li>Solve equations to find their solutions by trial and error method, systematic method and transposition method.</li>
+<li>Frame algebraic equations from the given solutions.</li>
+<li>Solve real-life problems using linear equations.</li>
 </ul>
-<h3 id="left-hand-side-lhs-and-right-hand-side-rhs">Left Hand Side (LHS) and Right Hand Side (RHS)</h3>
+<h2 id="tune-up">Tune Up</h2>
 <ul>
-<li>The part before the equal sign is called the <strong>LHS</strong>.</li>
-<li>The part after the equal sign is called the <strong>RHS</strong>.</li>
+<li>Recall the concept of equations through a weighing balance activity.</li>
+<li>Place unit cubes on both sides of a balance to understand equality.</li>
+<li>Represent the situation of balancing weights using mathematical equations.</li>
+<li>Understand that finding the value of the unknown variable means solving the equation.</li>
 </ul>
-<blockquote>
-<p>Example: In $ 3x - 4 = 11 $, $ 3x - 4 $ is the LHS and $ 11 $ is the RHS.</p>
-</blockquote>
-<h2 id="types-of-equations">Types of Equations</h2>
+<h2 id="equations">EQUATIONS</h2>
+<h3 id="equality-and-statement-of-equality">Equality and Statement of Equality</h3>
 <ul>
-<li><strong>Linear Equation</strong>: An equation where the highest power of the variable is 1.</li>
-<li><strong>Simple Linear Equation</strong>: A linear equation with only <strong>one variable</strong>.</li>
-<li>Examples: $ x - 4 = 13 $, $ \frac{x}{4} = 14 $</li>
+<li><strong>Equality</strong> — A mathematical expression which involves the sign of equality (= sign).</li>
+<li><strong>Statement of Equality</strong> — An expression such as 8 - 5 = 3, 6 + 3 = 9, or 9 * 5 = 45.</li>
+<li><strong>Equation</strong> — A statement of equality which involves variables.</li>
+<li>An equation must involve the equality sign; signs like greater than (&gt;) or smaller than (&lt;) do not make it an equation.</li>
+<li>An equation remains the same when the LHS and RHS are interchanged.</li>
 </ul>
-<blockquote>
-<p>Equations with signs like &gt; or &lt; are <strong>not</strong> equations.</p>
-</blockquote>
-<h2 id="key-concepts">Key Concepts</h2>
+<h3 id="components-of-an-equation">Components of an Equation</h3>
 <ul>
-<li><strong>Root or Solution</strong>: The value of the variable that makes the LHS equal to the RHS.</li>
-<li>A simple linear equation has <strong>only one root</strong>.</li>
-<li>Example: In $ 3x - 4 = 11 $, when $ x = 5 $, LHS = 11 = RHS → $ x = 5 $ is the solution.</li>
+<li><strong>Variable</strong> — An unknown quantity whose value varies from one problem to another.</li>
+<li><strong>Left Hand Side (LHS)</strong> — The part of the equation to the left of the equality sign.</li>
+<li><strong>Right Hand Side (RHS)</strong> — The part of the equation to the right of the equality sign.</li>
+<li>In general, an equation is a condition on a variable stating that LHS and RHS should have equal value.</li>
+<li>Example: In y + 5 = 13, (y + 5) is the LHS and 13 is the RHS.</li>
 </ul>
-<h2 id="methods-to-solve-equations">Methods to Solve Equations</h2>
-<h3 id="1-trial-and-error-method">1. Trial and Error Method</h3>
+<h3 id="types-of-equations">Types of Equations</h3>
 <ul>
-<li>Try different values of the variable until LHS = RHS.</li>
-<li>Best for simple equations with small integer roots.</li>
-<li>Example: For $ 2y - 5 = 7 $, try values of $ y $ until LHS becomes 7 → $ y = 6 $ is the solution.</li>
+<li><strong>Linear Equation</strong> — An equation in which the highest power of all variables is one.</li>
+<li><strong>Simple Linear Equation</strong> — An equation in which there is only one variable with its highest power as one.</li>
+<li>Examples of linear equations: x + y = 9, 3a - b = 67.</li>
+<li>Examples of simple linear equations: x - 4 = 13, x/4 = 14.</li>
+<li>Equations can have one or more variables and each variable can have a power of one or more.</li>
 </ul>
-<h3 id="2-method-of-balancing-systematic-method">2. Method of Balancing (Systematic Method)</h3>
+<h2 id="balancing-an-equation">Balancing an Equation</h2>
 <ul>
-<li>Apply the same operation (addition, subtraction, multiplication, division) to <strong>both sides</strong> of the equation.</li>
-<li>Rules:</li>
-<li>Add or subtract the same number from both sides.</li>
-<li>Multiply or divide both sides by the same non-zero number.</li>
+<li>An equation is similar to a weighing balance where equal weights are placed on both pans.</li>
+<li>Quantities of the same value are needed to be placed on both the pans of the weighing balance.</li>
+<li>If we want to perform some operation on an equation, this operation has to be performed on both sides.</li>
+<li>To maintain equality, whatever is done to one side must be done to the other side.</li>
+<li>This rule applies to addition, subtraction, multiplication, and division.</li>
 </ul>
-<blockquote>
-<p>Example: Solve $ x + 7 = 10 $<br />
-Step 1: Subtract 7 from both sides → $ x = 3 $</p>
-</blockquote>
-<h3 id="3-transposition-method">3. Transposition Method</h3>
+<h2 id="root-and-solution-of-an-equation">Root and Solution of an Equation</h2>
 <ul>
-<li>Move a number or variable from one side to the other by <strong>changing its sign</strong>.</li>
-<li>This is equivalent to adding or subtracting the same value on both sides.</li>
+<li><strong>Root</strong> — The value of the variable which satisfies an equation.</li>
+<li><strong>Solution</strong> — Another term for root; the value of the variable which makes LHS equal to RHS.</li>
+<li>There is only one root or solution of a simple linear equation.</li>
+<li>To verify a solution, substitute the value into the equation and check if LHS equals RHS.</li>
+<li>Example: In 3x - 4 = 11, substituting x = 5 gives LHS = 3 * 5 - 4 = 11 = RHS. Thus, x = 5 is the root.</li>
 </ul>
-<blockquote>
-<p>Rules:<br />
-- $ + $ becomes $ - $<br />
-- $ - $ becomes $ + $<br />
-- $ \times $ becomes $ \div $<br />
-- $ \div $ becomes $ \times $</p>
-<p>Example: Solve $ 12x + 1 = 25 $<br />
-$ 12x = 25 - 1 $ → $ 12x = 24 $ → $ x = 2 $</p>
-</blockquote>
-<h2 id="framing-equations-from-a-given-solution">Framing Equations from a Given Solution</h2>
+<h2 id="solving-an-equation">SOLVING AN EQUATION</h2>
 <ul>
-<li>Start with the solution and apply operations (add, multiply, etc.) to both sides to form an equation.</li>
-<li><strong>One solution can generate many equations</strong>.</li>
+<li>Solving an equation means to find its root or solution.</li>
+<li>The goal is to find the value of the variable which will make the LHS equal to the RHS.</li>
+<li>Methods to solve an equation include Trial and Error, Systematic, and Transposition methods.</li>
 </ul>
-<blockquote>
-<p>Example: For $ x = 2 $<br />
-- $ x + 4 = 6 $<br />
-- $ 3x = 6 $<br />
-- $ 5(x + 4) = 30 $</p>
-</blockquote>
-<h2 id="solving-word-problems-using-linear-equations">Solving Word Problems Using Linear Equations</h2>
-<p>Follow these steps:</p>
-<ol>
-<li>Read the problem carefully.</li>
-<li>Identify what is given and what is to be found.</li>
-<li>Let the unknown quantity be a variable.</li>
-<li>Frame an equation based on the given information.</li>
-<li>Solve the equation.</li>
-<li>Check the solution by substituting it back.</li>
-</ol>
-<blockquote>
-<p>Example: Box A has $ x $ balls, Box B has $ x + 30 $ balls. Total = 150<br />
-Equation: $ x + (x + 30) = 150 $ → $ 2x + 30 = 150 $ → $ x = 60 $</p>
-</blockquote>
-<h2 id="real-life-applications">Real-Life Applications</h2>
+<h3 id="trial-and-error-method">Trial and Error Method</h3>
 <ul>
-<li>Age problems</li>
-<li>Money and cost problems</li>
-<li>Length and perimeter problems</li>
-<li>Number and consecutive number problems</li>
+<li><strong>Trial and Error Method</strong> — A method where different values are substituted for the variable till LHS becomes equal to RHS.</li>
+<li>Substitute different values for the variable until the correct root is found.</li>
+<li>This value of the variable is known as the root or solution of the equation.</li>
+<li>Applicable when the equation is very simple and the root is a small integer.</li>
+<li>If the root is a fraction, it becomes impossible to guess using this method.</li>
 </ul>
-<blockquote>
-<p>Example: Soni’s brother is 8 years older than $ \frac{4}{5} $ of her age. If brother is 32, find Soni’s age.</p>
-</blockquote>
-<h2 id="key-takeaways">Key Takeaways</h2>
+<h3 id="systematic-method-by-separating-the-variable">Systematic Method by Separating the Variable</h3>
 <ul>
-<li>A simple linear equation has <strong>one variable</strong> and the <strong>highest power is 1</strong>.</li>
-<li>The <strong>root</strong> is the value that satisfies the equation.</li>
-<li>We can solve equations using <strong>trial and error</strong>, <strong>balancing</strong>, or <strong>transposition</strong>.</li>
-<li>Many equations can be formed from a single solution.</li>
-<li>Word problems are solved by forming and solving equations.</li>
+<li><strong>Systematic Method</strong> — A method based on the rules of balancing an equation to separate the variable.</li>
+<li>Perform opposite operations on both the sides to isolate the variable.</li>
+<li>We may have to carry out more than one mathematical operation to separate the variable.</li>
+<li>When multiplying one side by a non-zero number, multiply the other side also by the same number.</li>
+<li>When dividing one side by a number, divide the other side also by the same number.</li>
 </ul>
-<h2 id="fun-creative-learning">Fun &amp; Creative Learning</h2>
+<h3 id="transposing-method">Transposing Method</h3>
 <ul>
-<li><strong>Equation Artistry</strong>: Draw real-life scenes that match equations (e.g., bags of apples).</li>
-<li><strong>Mathematical Tambola</strong>: Create 20 linear equations with answers from 1 to 20 and play a game.</li>
+<li><strong>Transposition Method</strong> — A method involving shifting of a number or variable from one side to the other side of the equality sign.</li>
+<li><strong>Transpose</strong> — Changing side is called transposing.</li>
+<li>Transposing a number or expression is same as adding/subtracting/multiplying/dividing it on both the sides.</li>
+<li>In doing so, the sign of the number or expression has to be changed.</li>
+<li>Rules: '+' becomes '-', '-' becomes '+', '×' becomes '÷', '÷' becomes '×'.</li>
 </ul>
-<blockquote>
-<p>This chapter helps build logical thinking and problem-solving skills using algebra.</p>
-</blockquote></div></div><div class="tab-panel " id="tab-short_notes"><div class="content-body markdown-body"><h1 id="short-revision-notes">Short Revision Notes</h1>
+<h2 id="solution-to-equation">SOLUTION TO EQUATION</h2>
 <ul>
-<li>An equation contains an equality sign and involves a variable.  </li>
-<li>The left-hand side (LHS) and right-hand side (RHS) of an equation must be equal.  </li>
-<li>A simple linear equation has only one variable with power 1.  </li>
-<li>The value of the variable that makes LHS equal to RHS is called the root or solution.  </li>
-<li>There is only one root for a simple linear equation.  </li>
-<li>An equation remains unchanged if LHS and RHS are interchanged.  </li>
-<li>Trial and error method involves substituting values to find the root; works best for small integer roots.  </li>
-<li>Systematic method uses balancing rules: add/subtract or multiply/divide both sides by the same number.  </li>
-<li>Transposition method shifts terms across the equality sign, changing their sign (plus becomes minus, times becomes divide, etc.).  </li>
-<li>Many equations can be formed from a given solution.  </li>
-<li>To solve word problems: identify given and unknown, define variable, form equation, solve it.  </li>
-<li>In equations, if a term is moved from one side to another, its operation is reversed and sign is changed.  </li>
-<li>For linear equations in one variable, the highest power of the variable is 1.  </li>
-<li>A linear equation in one variable has a unique solution.  </li>
-<li>The solution of an equation must satisfy the original equation when substituted back.  </li>
-<li>Equations can be formed from a given solution by applying operations to both sides.  </li>
-<li>The balance rule applies to equations: any operation on one side must be applied to the other side.  </li>
-<li>Example of forming an equation from a solution: start with x = 2, apply operations like adding, multiplying, and forming new equations.  </li>
-<li>Real-life problems can be solved using linear equations by following a step-by-step approach.  </li>
-<li>In word problems, identify relationships between known and unknown quantities.  </li>
-<li>For equations with brackets, expand first, then solve by balancing or transposition.  </li>
-<li>When solving equations with fractions, eliminate denominators by multiplying both sides by the LCM.  </li>
-<li>The solution of a linear equation is unique, but multiple equations can have the same solution.  </li>
-<li>In transposition, a term like +5 becomes -5 when moved to the other side.  </li>
-<li>The perimeter of a rectangle or garden can be used to form linear equations involving length and breadth.  </li>
-<li>For consecutive numbers, use n and n+1.  </li>
-<li>For age problems, define one person's age and express others in terms of it.  </li>
-<li>In mixture or comparison problems, use variables to represent unknown quantities.  </li>
-<li>In problems involving cost or profit, use equations based on revenue and expenses.  </li>
-<li>In balance problems (like scales), set up equations based on equal weights.  </li>
-<li>For equations with multiple variables, define relationships and form equations step by step.  </li>
-<li>To verify a solution, substitute it back into the original equation and check if LHS equals RHS.  </li>
-<li>The root of an equation is the value that satisfies the equation.  </li>
-<li>The trial and error method is not efficient for fractional or large roots.  </li>
-<li>Balancing an equation means performing the same operation on both sides.  </li>
-<li>Transposition is equivalent to adding or subtracting the same term on both sides.  </li>
-<li>A linear equation in one variable can be solved using any of the three methods: trial and error, balancing, or transposition.  </li>
-<li>In equations with parentheses, simplify first before solving.  </li>
-<li>The solution of an equation must be verified by substitution.  </li>
-<li>Equations can be formed from real-life situations like age, money, numbers, or geometry.</li>
+<li>We can form an equation from a given solution.</li>
+<li>When solving an equation, we follow steps; similarly, when a solution is given, we follow steps to get the equation.</li>
+<li>Start with the solution and apply operations to both sides to frame the equation.</li>
+<li>Many simple equations can be framed from a given solution.</li>
+<li>Given an equation, there is a unique solution but given a solution, there are many equations.</li>
+</ul>
+<h2 id="applications-of-simple-equations">APPLICATIONS OF SIMPLE EQUATIONS</h2>
+<ul>
+<li>Equations are used to solve day-to-day life problems.</li>
+<li>Follow specific steps while solving word problems of linear equations.</li>
+<li>Read the word problem carefully and find what is given and what is to be found out.</li>
+<li>Analyse and understand the relationship between the known quantities and the unknown quantity.</li>
+<li>Denote the unknown quantity by a variable, frame an equation, and solve it.</li>
+</ul>
+<h2 id="wrap-up">Wrap Up</h2>
+<ul>
+<li>A simple linear equation is an equation that involves only one variable with highest power 1.</li>
+<li>The value of a variable for which an equation is satisfied is called the root/solution of the equation.</li>
+<li>In trial and error method, the variable is substituted with different values to find that particular value for which the value of LHS becomes equal to the value of RHS.</li>
+<li>While solving an equation using the method of balancing an equation, we can add or subtract the same number from both the sides.</li>
+<li>We can multiply or divide both the sides of the equation by the same non-zero number.</li>
+<li>In transposition method, numbers or expressions are shifted/transposed from one side of the equation to the other side by changing their sign.</li>
+</ul>
+<h2 id="workout">Workout</h2>
+<ul>
+<li>Multiple choice questions to test understanding of linear equations and roots.</li>
+<li>Questions on framing equations from statements and writing statements from equations.</li>
+<li>Practice on verifying roots and solving various types of linear equations.</li>
+<li>Focus on identifying the highest power of variables and distinguishing between equations and inequalities.</li>
+</ul>
+<h2 id="subject-enrichment">Subject Enrichment</h2>
+<ul>
+<li><strong>Computational Thinking</strong> — Breaking complex problems down to easier problems solved sequentially.</li>
+<li>Solves complex problems with multiple variables using scales and balanced positions.</li>
+<li>Encourages logical deduction to find unknown weights represented by variables.</li>
+<li>Helps build skills to handle multi-step algebraic reasoning.</li>
+</ul>
+<h2 id="exercises">Exercises</h2>
+<ul>
+<li>Verification exercises to check if given values are roots of equations.</li>
+<li>Solving equations using trial and error, balancing, and transposition methods.</li>
+<li>Framing equations for given solutions (e.g., m = -5, t = 1/2).</li>
+<li>Word problems involving ages, money, geometry, and daily life scenarios.</li>
+</ul>
+<h2 id="hots">HOTS</h2>
+<ul>
+<li><strong>HOTS</strong> — Higher Order Thinking Skills questions requiring advanced problem-solving.</li>
+<li>Solving equations with fractions on both sides to find the value of x.</li>
+<li>Dividing amounts into parts based on differences.</li>
+<li>Age-related problems involving future conditions and ratios.</li>
+<li>Profit and loss problems involving fixed costs and selling prices.</li>
+</ul>
+<h2 id="life-skills-and-values">Life Skills and Values</h2>
+<ul>
+<li>Application of mathematics in social causes like Flood Relief Funds.</li>
+<li>Problems involving donations where one amount is related to another.</li>
+<li>Encourages empathy and helping others through mathematical problem-solving.</li>
+<li>Connects numerical skills with community service activities.</li>
+</ul>
+<h2 id="art-connect">Art Connect</h2>
+<ul>
+<li><strong>Equation Artistry</strong> — Combining art with algebra to visualize problems.</li>
+<li>Students draw scenes representing real-life problems solved using linear equations.</li>
+<li>Visually represent equations using drawings (e.g., bags of apples equalling total apples).</li>
+<li>Solve equations and verify solutions within the artistic context.</li>
+<li>Display drawings to discuss the connection between real-life context and algebraic representation.</li>
+</ul>
+<h2 id="create-and-ask">Create and Ask</h2>
+<ul>
+<li><strong>Tambola</strong> — A mathematical game involving creating slips with solutions.</li>
+<li>Frame 20 linear equations whose answers must be natural numbers from 1 to 20.</li>
+<li>Make different slips that contain solutions to any 8 of these equations randomly.</li>
+<li>Play with friends to reinforce equation solving and solution identification skills.</li>
+</ul></div></div><div class="tab-panel " id="tab-short_notes"><div class="content-body markdown-body"><h1 id="short-revision-notes">Short Revision Notes</h1>
+<ul>
+<li>An equation is a statement of equality involving variables and an equals sign.</li>
+<li>The expression on the left of the equals sign is called the Left Hand Side or LHS.</li>
+<li>The expression on the right of the equals sign is called the Right Hand Side or RHS.</li>
+<li>A linear equation has the highest power of its variable equal to one.</li>
+<li>A simple linear equation contains only one variable with power one.</li>
+<li>The value of the variable that makes LHS equal to RHS is called the root or solution.</li>
+<li>Every simple linear equation has exactly one unique solution.</li>
+<li>An equation must involve the equality sign and not greater than or smaller than signs.</li>
+<li>Balancing an equation means performing the same operation on both sides.</li>
+<li>You can add or subtract the same number from both sides of an equation.</li>
+<li>You can multiply or divide both sides by the same non-zero number.</li>
+<li>The trial and error method involves substituting different values for the variable.</li>
+<li>This method works best when the solution is a small integer.</li>
+<li>The systematic method separates the variable using inverse operations.</li>
+<li>The transposition method shifts terms across the equals sign by changing their signs.</li>
+<li>When transposing, addition becomes subtraction and multiplication becomes division.</li>
+<li>Subtraction becomes addition and division becomes multiplication during transposition.</li>
+<li>Many different equations can be framed from a single given solution.</li>
+<li>To frame an equation, start with the solution and apply operations to both sides.</li>
+<li>Given an equation, there is a unique solution but given a solution, there are many equations.</li>
+<li>Solving word problems requires identifying the unknown quantity first.</li>
+<li>Denote the unknown quantity by a variable like x or y.</li>
+<li>Frame the equation based on the relationship between known and unknown quantities.</li>
+<li>Always verify the solution by substituting it back into the original equation.</li>
+<li>Interchanging LHS and RHS does not change the validity of an equation.</li>
+<li>Perimeter problems often involve framing equations with geometric formulas.</li>
+<li>Age problems usually require setting up equations based on current and future ages.</li>
+<li>Money problems involve equating total amounts to sums of parts.</li>
+<li>HOTS questions may involve multiple steps or fractions in the equation.</li>
+<li>Computational thinking helps break complex problems into simpler sequential steps.</li>
+<li>Art connect activities visualize equations through real-life scenes and drawings.</li>
+<li>Mathematical tambola games help practice framing equations with natural number solutions.</li>
+<li>Always check units and context when solving real-life application problems.</li>
+<li>Verify answers in word problems to ensure they make sense in the given situation.</li>
 </ul></div></div><div class="tab-panel " id="tab-keywords"><div class="content-body markdown-body"><h1 id="key-terms">Key Terms</h1>
-<p>Equation — a mathematical statement that asserts the equality of two expressions, involving a variable and an equality sign.</p>
-<p>Left Hand Side (LHS) — the part of an equation that lies to the left of the equality sign.</p>
-<p>Right Hand Side (RHS) — the part of an equation that lies to the right of the equality sign.</p>
-<p>Simple linear equation — an equation that contains only one variable and the highest power of the variable is one.</p>
-<p>Variable — a symbol that represents an unknown quantity in an equation.</p>
-<p>Root or solution — the value of the variable that makes the left-hand side equal to the right-hand side of an equation.</p>
-<p>Trial and error method — a method of solving an equation by substituting different values of the variable until the left-hand side equals the right-hand side.</p>
-<p>Systematic method — a method of solving an equation by performing the same operation on both sides to isolate the variable.</p>
-<p>Transposition method — a method where a term is moved from one side of the equation to the other, and its sign is changed without altering the equality.</p>
-<p>Balancing an equation — the principle that any operation performed on one side of an equation must also be performed on the other side to maintain equality.</p>
-<p>Linear equation in one variable — a simple linear equation that involves only one variable with the highest power of one.</p>
-<p>Equality sign — the symbol "=" used to show that the expressions on both sides of the equation are equal.</p>
-<p>Verification of an equation — substituting the solution back into the original equation to check if both sides are equal.</p>
-<p>Frame an equation — to express a word problem or condition as a mathematical equation.</p>
-<p>Given solution — a value of the variable that satisfies the equation; used to create new equations.</p>
-<p>Consecutive numbers — numbers that follow each other in order, such as n and n+1.</p>
-<p>Perimeter — the total distance around a shape, used in problems involving rectangles or other figures.</p>
-<p>Transposing — shifting a term from one side of an equation to the other by changing its sign.</p>
-<p>Coefficient — a number multiplied by a variable in an expression.</p>
-<p>Addition and subtraction — operations used to balance equations by applying the same value to both sides.</p>
-<p>Multiplication and division — operations used to isolate variables in equations by applying the same non-zero number to both sides.</p>
-<p>Word problem — a real-life situation expressed in language that can be solved using equations.</p></div></div><div class="tab-panel " id="tab-exercises"><div class="content-body markdown-body"><h1 id="exercises-solved">Exercises Solved</h1>
-<h1 id="chapter-7-simple-linear-equations">Chapter 7: Simple Linear Equations</h1>
-<h2 id="exercise-72">Exercise 7.2</h2>
-<h3 id="1-check-whether-the-value-given-in-the-brackets-is-the-root-of-the-given-equation-or-not">1. Check whether the value given in the brackets is the root of the given equation or not.</h3>
-<p><strong>a)</strong> $7p + 5 = 19$ [p = -2]<br />
-Substitute $p = -2$:<br />
-LHS = $7(-2) + 5 = -14 + 5 = -9$<br />
+<p><strong>Balancing an Equation</strong> — The principle that any operation performed on one side of an equation must also be performed on the other side to maintain equality.<br />
+<strong>Equality Sign</strong> — The symbol used to indicate that two expressions have equal value.<br />
+<strong>Equation</strong> — A mathematical statement of equality involving variables and an equality sign.<br />
+<strong>Frame an Equation</strong> — The process of creating an algebraic equation from given conditions or known solutions.<br />
+<strong>Left Hand Side (LHS)</strong> — The part of the equation located to the left of the equality sign.<br />
+<strong>Linear Equation</strong> — An equation in which the highest power of all variables is one.<br />
+<strong>Perimeter</strong> — The total length of the boundary of a closed geometric figure.<br />
+<strong>Quotient</strong> — The result obtained when one number is divided by another.<br />
+<strong>Right Hand Side (RHS)</strong> — The part of the equation located to the right of the equality sign.<br />
+<strong>Root</strong> — The value of the variable which satisfies an equation making LHS equal to RHS.<br />
+<strong>Simple Linear Equation</strong> — An equation containing only one variable with its highest power as one.<br />
+<strong>Solution</strong> — The value of the variable which satisfies an equation making LHS equal to RHS.<br />
+<strong>Statement of Equality</strong> — A mathematical expression that involves the sign of equality.<br />
+<strong>Systematic Method</strong> — A method of solving an equation by separating the variable using opposite operations on both sides.<br />
+<strong>Transposition Method</strong> — A method involving shifting a number or variable from one side of the equation to the other by changing its sign.<br />
+<strong>Trial and Error Method</strong> — A method of solving an equation by substituting different values for the variable until LHS equals RHS.<br />
+<strong>Variable</strong> — An unknown quantity whose value varies from one problem to another.<br />
+<strong>Word Problems</strong> — Real-life problems that can be solved using algebraic equations.</p></div></div><div class="tab-panel " id="tab-exercises"><div class="content-body markdown-body"><h1 id="exercises-solved">Exercises Solved</h1>
+<h1 id="chapter-07-simple-linear-equations-solutions">CHAPTER 07: SIMPLE LINEAR EQUATIONS - SOLUTIONS</h1>
+<h2 id="tune-up-activity">TUNE UP ACTIVITY</h2>
+<p><strong>Question:</strong> Work in pairs and take a weighing balance and some unit cubes. Place 12 unit cubes on right hand side and 5 unit cubes on the left hand side of the weighing balance. Now, try to balance the two sides of weighing balance by adding unit cubes to the side with only 5 unit cubes. Let ( x ) unit cubes will be added on the left hand side for balancing. Can this situation of weighing balance be represented by the equation ( x + 5 = 12 )? Try to find the value of ( x ) by balancing the two sides of this weighing balance.</p>
+<p><strong>Answer:</strong><br />
+Yes, the situation can be represented by the equation ( x + 5 = 12 ).<br />
+To balance the weighing balance, the weight on both sides must be equal.<br />
+Right Hand Side (RHS) = 12 unit cubes.<br />
+Left Hand Side (LHS) = 5 unit cubes + ( x ) unit cubes.<br />
+Equation: ( x + 5 = 12 ).<br />
+Subtracting 5 from both sides:<br />
+( x = 12 - 5 )<br />
+( x = 7 )<br />
+So, 7 unit cubes need to be added to the left hand side to balance the weighing balance.</p>
+<hr />
+<h2 id="exercise-72">EXERCISE 7.2</h2>
+<h3 id="question-1">Question 1</h3>
+<p><strong>Question:</strong> Check whether the value given in the brackets is the root of the given equation or not.<br />
+a) ( 7p + 5 = 19 ) [p = -2]<br />
+b) ( 4m - 3 = -5 ) [m = -3]<br />
+c) ( 15 = 3 - 4x ) [x = -2]<br />
+d) ( t/3 = 6 ) [t = 18]<br />
+c) ( 5x - 9 = 1 )<br />
+d) ( 7(x - 1) = 20 )<br />
+e) ( 6x = 54 )<br />
+f) ( (x - 4)/2 = 1 )</p>
+<p><strong>Answer:</strong><br />
+<strong>a)</strong> Substitute ( p = -2 ) in LHS:<br />
+LHS = ( 7 \times (-2) + 5 = -14 + 5 = -9 )<br />
 RHS = 19<br />
--9 ≠ 19 → <strong>Not a root</strong></p>
-<p><strong>b)</strong> $4m - 3 = -5$ [m = -3]<br />
-Substitute $m = -3$:<br />
-LHS = $4(-3) - 3 = -12 - 3 = -15$<br />
+Since LHS (( -9 )) ≠ RHS (19), ( p = -2 ) is <strong>not</strong> the root.</p>
+<p><strong>b)</strong> Substitute ( m = -3 ) in LHS:<br />
+LHS = ( 4 \times (-3) - 3 = -12 - 3 = -15 )<br />
 RHS = -5<br />
--15 ≠ -5 → <strong>Not a root</strong></p>
-<p><strong>c)</strong> $15 = 3 - 4x$ [x = -2]<br />
-Substitute $x = -2$:<br />
-RHS = $3 - 4(-2) = 3 + 8 = 11$<br />
+Since LHS (( -15 )) ≠ RHS (-5), ( m = -3 ) is <strong>not</strong> the root.</p>
+<p><strong>c)</strong> Substitute ( x = -2 ) in RHS expression ( 3 - 4x ):<br />
+RHS = ( 3 - 4 \times (-2) = 3 + 8 = 11 )<br />
 LHS = 15<br />
-15 ≠ 11 → <strong>Not a root</strong></p>
-<p><strong>d)</strong> $\frac{t}{3} = 6$ [t = 18]<br />
-Substitute $t = 18$:<br />
-$\frac{18}{3} = 6$ → 6 = 6 → <strong>Root</strong></p>
-<p><strong>e)</strong> $5x - 9 = 1$<br />
-Substitute $x = 2$:<br />
-LHS = $5(2) - 9 = 10 - 9 = 1$ → 1 = 1 → <strong>Root</strong></p>
-<p><strong>f)</strong> $7(x - 1) = 20$<br />
-Substitute $x = 3$:<br />
-LHS = $7(3 - 1) = 7(2) = 14$ → 14 ≠ 20 → <strong>Not a root</strong><br />
-Try $x = 4$: $7(4 - 1) = 7(3) = 21$ → 21 ≠ 20<br />
-Try $x = 3.5$: $7(2.5) = 17.5$ → no<br />
-Solve properly:<br />
-$7(x - 1) = 20$<br />
-$x - 1 = \frac{20}{7}$<br />
-$x = \frac{20}{7} + 1 = \frac{27}{7}$<br />
-So $x = 3.857...$ → not integer → given value not root<br />
-But the question says "check given value", so if value is not given, assume typo.<br />
-Assuming the value is not given, skip.<br />
-But in list, it's written as "c) 5x - 9 = 1 d) 7(x - 1) = 20" — likely typo.<br />
-So only d and e are checked.<br />
-Actually, the list has:<br />
-c) 15 = 3 - 4x [x = -2] → not root<br />
-d) t/3 = 6 [t = 18] → root<br />
-Then e) 5x - 9 = 1 → not given value → assume value is x = 2 → root<br />
-f) (x - 4)/2 = 1 → check x = 6<br />
-Substitute x = 6: (6 - 4)/2 = 2/2 = 1 → 1 = 1 → <strong>Root</strong></p>
-<p>So final answers:<br />
-a) No<br />
-b) No<br />
-c) No<br />
-d) Yes<br />
-e) Yes (if x = 2)<br />
-f) Yes (if x = 6)</p>
-<p>But in the original, only values in brackets are given.<br />
-So for (f): (x - 4)/2 = 1 → x = 6 → given value not stated → assume it's implied.<br />
-So only d and f are roots.</p>
-<p>But in the list, it's written as:<br />
-c) 15 = 3 - 4x [x = -2] → not root<br />
-d) t/3 = 6 [t = 18] → root<br />
-e) 5x - 9 = 1 → no value given<br />
-f) (x - 4)/2 = 1 → no value given  </p>
-<p>So only d has value → root → others not checked.</p>
-<p>But in the original text, it says:<br />
-"1. Check whether the value given in the brackets is the root of the given equation or not.<br />
-a) 7p + 5 = 19 [p = -2]<br />
-b) 4m - 3 = -5 [m = -3]<br />
-c) 15 = 3 - 4x [x = -2]<br />
-d) t/3 = 6 [t = 18]<br />
-c) 5x - 9 = 1<br />
-d) 7(x - 1) = 20<br />
-e) 6x = 54<br />
-f) (x - 4)/2 = 1"</p>
-<p>There is a typo: two "c"s.<br />
-So correct list is:<br />
-a) p = -2 → not root<br />
-b) m = -3 → not root<br />
-c) x = -2 → not root<br />
-d) t = 18 → root<br />
-e) 6x = 54 → no value given → skip<br />
-f) (x - 4)/2 = 1 → no value → skip  </p>
-<p>So only d is verified with given value → root.</p>
-<p>But e and f are equations without values → cannot check.</p>
-<p>So final:<br />
-a) No<br />
-b) No<br />
-c) No<br />
-d) Yes<br />
-e) Not applicable<br />
-f) Not applicable</p>
-<p>But since the question says "check the value given in brackets", only those with brackets are to be checked.</p>
-<p>So:</p>
-<p>✅ <strong>Answer:</strong><br />
-a) No<br />
-b) No<br />
-c) No<br />
-d) Yes  </p>
-<hr />
-<h3 id="2-solve-by-trial-and-error-method">2. Solve by trial and error method.</h3>
-<p><strong>a)</strong> $2x + 10 = 18$<br />
-Try values:<br />
-x = 1 → 2(1) + 10 = 12 ≠ 18<br />
-x = 2 → 4 + 10 = 14 ≠ 18<br />
-x = 3 → 6 + 10 = 16 ≠ 18<br />
-x = 4 → 8 + 10 = 18 → equal<br />
-→ <strong>x = 4</strong></p>
-<p><strong>b)</strong> $3(x - 1) = 6$<br />
-Try x = 1 → 3(0) = 0 ≠ 6<br />
-x = 2 → 3(1) = 3 ≠ 6<br />
-x = 3 → 3(2) = 6 → equal<br />
-→ <strong>x = 3</strong></p>
-<p><strong>c)</strong> $5a - 12 = 23$<br />
-Try a = 1 → 5 - 12 = -7<br />
-a = 2 → 10 - 12 = -2<br />
-a = 3 → 15 - 12 = 3<br />
-a = 4 → 20 - 12 = 8<br />
-a = 5 → 25 - 12 = 13<br />
-a = 6 → 30 - 12 = 18<br />
-a = 7 → 35 - 12 = 23 → equal<br />
-→ <strong>a = 7</strong></p>
-<p><strong>d)</strong> $5x = -75$<br />
-Try x = -1 → -5<br />
-x = -2 → -10<br />
-x = -3 → -15<br />
-x = -5 → -25<br />
-x = -10 → -50<br />
-x = -15 → -75 → equal<br />
-→ <strong>x = -15</strong></p>
-<hr />
-<h3 id="3-solve-by-method-of-balancing">3. Solve by method of balancing.</h3>
-<p><strong>a)</strong> $x + 7 = 10$<br />
-Subtract 7 from both sides:<br />
-x + 7 - 7 = 10 - 7<br />
-x = 3</p>
-<p><strong>b)</strong> $3x + 2 = 8$<br />
-Subtract 2 from both sides:<br />
-3x + 2 - 2 = 8 - 2<br />
-3x = 6<br />
-Divide both sides by 3:<br />
-x = 6 ÷ 3 = 2</p>
-<hr />
-<h3 id="4-solve-by-transposition-method">4. Solve by transposition method.</h3>
-<p><strong>a)</strong> $6(t - 2) = 18$<br />
-Divide both sides by 6:<br />
-t - 2 = 3<br />
-Add 2 to both sides:<br />
-t = 5</p>
-<p><strong>b)</strong> $\frac{3}{2}p - 4 = 20$<br />
-Add 4 to both sides:<br />
-$\frac{3}{2}p = 24$<br />
-Multiply both sides by $\frac{2}{3}$:<br />
-p = 24 × $\frac{2}{3}$ = 16</p>
-<p><strong>c)</strong> $\frac{x}{2} + \frac{3}{4} = \frac{7}{8}$<br />
-Subtract $\frac{3}{4}$ from both sides:<br />
-$\frac{x}{2} = \frac{7}{8} - \frac{3}{4} = \frac{7}{8} - \frac{6}{8} = \frac{1}{8}$<br />
-Multiply both sides by 2:<br />
-x = 2 × $\frac{1}{8}$ = $\frac{2}{8}$ = $\frac{1}{4}$</p>
-<p><strong>d)</strong> $2(x + 4) - 10 = 44$<br />
-Add 10 to both sides:<br />
-2(x + 4) = 54<br />
-Divide by 2:<br />
-x + 4 = 27<br />
-Subtract 4:<br />
-x = 23</p>
-<p><strong>e)</strong> $\frac{4 - x}{6} = 7$<br />
-Multiply both sides by 6:<br />
-4 - x = 42<br />
-Subtract 4:<br />
-- x = 38<br />
+Since LHS (15) ≠ RHS (11), ( x = -2 ) is <strong>not</strong> the root.</p>
+<p><strong>d)</strong> Substitute ( t = 18 ) in LHS:<br />
+LHS = ( 18 / 3 = 6 )<br />
+RHS = 6<br />
+Since LHS (6) = RHS (6), ( t = 18 ) <strong>is</strong> the root.</p>
+<p><strong>c) (Second part)</strong> ( 5x - 9 = 1 )<br />
+(Note: Value to check is not provided in the text. We solve for x.)<br />
+( 5x = 1 + 9 )<br />
+( 5x = 10 )<br />
+( x = 2 )</p>
+<p><strong>d) (Second part)</strong> ( 7(x - 1) = 20 )<br />
+(Note: Value to check is not provided in the text. We solve for x.)<br />
+( x - 1 = 20 / 7 )<br />
+( x = 20/7 + 1 )<br />
+( x = 27/7 )</p>
+<p><strong>e)</strong> ( 6x = 54 )<br />
+(Note: Value to check is not provided in the text. We solve for x.)<br />
+( x = 54 / 6 )<br />
+( x = 9 )</p>
+<p><strong>f)</strong> ( (x - 4)/2 = 1 )<br />
+(Note: Value to check is not provided in the text. We solve for x.)<br />
+( x - 4 = 1 \times 2 )<br />
+( x - 4 = 2 )<br />
+( x = 6 )</p>
+<h3 id="question-2">Question 2</h3>
+<p><strong>Question:</strong> Solve the following equations by the trial and error method.<br />
+a) ( 2x + 10 = 18 )<br />
+b) ( 3(x - 1) = 6 )<br />
+c) ( 5a - 12 = 23 )<br />
+d) ( 5x = -75 )</p>
+<p><strong>Answer:</strong><br />
+<strong>a)</strong> ( 2x + 10 = 18 )<br />
+Try ( x = 1 ): ( 2(1) + 10 = 12 ) (No)<br />
+Try ( x = 2 ): ( 2(2) + 10 = 14 ) (No)<br />
+Try ( x = 3 ): ( 2(3) + 10 = 16 ) (No)<br />
+Try ( x = 4 ): ( 2(4) + 10 = 18 ) (Yes)<br />
+Solution: ( x = 4 )</p>
+<p><strong>b)</strong> ( 3(x - 1) = 6 )<br />
+Try ( x = 1 ): ( 3(0) = 0 ) (No)<br />
+Try ( x = 2 ): ( 3(1) = 3 ) (No)<br />
+Try ( x = 3 ): ( 3(2) = 6 ) (Yes)<br />
+Solution: ( x = 3 )</p>
+<p><strong>c)</strong> ( 5a - 12 = 23 )<br />
+Try ( a = 5 ): ( 25 - 12 = 13 ) (No)<br />
+Try ( a = 6 ): ( 30 - 12 = 18 ) (No)<br />
+Try ( a = 7 ): ( 35 - 12 = 23 ) (Yes)<br />
+Solution: ( a = 7 )</p>
+<p><strong>d)</strong> ( 5x = -75 )<br />
+Try ( x = -10 ): ( -50 ) (No)<br />
+Try ( x = -15 ): ( -75 ) (Yes)<br />
+Solution: ( x = -15 )</p>
+<h3 id="question-3">Question 3</h3>
+<p><strong>Question:</strong> Solve by the method of balancing an equation and write the steps used to separate the variable.<br />
+a) ( x + 7 = 10 )<br />
+b) ( 3x + 2 = 8 )</p>
+<p><strong>Answer:</strong><br />
+<strong>a)</strong> ( x + 7 = 10 )<br />
+Step 1: Subtract 7 from both sides to isolate x.<br />
+( x + 7 - 7 = 10 - 7 )<br />
+( x = 3 )</p>
+<p><strong>b)</strong> ( 3x + 2 = 8 )<br />
+Step 1: Subtract 2 from both sides.<br />
+( 3x + 2 - 2 = 8 - 2 )<br />
+( 3x = 6 )<br />
+Step 2: Divide both sides by 3.<br />
+( 3x / 3 = 6 / 3 )<br />
+( x = 2 )</p>
+<h3 id="question-4">Question 4</h3>
+<p><strong>Question:</strong> Solve by the transposition method.<br />
+a) ( 6(t - 2) = 18 )<br />
+b) ( 3/2 p - 4 = 20 )<br />
+c) ( x/2 + 3/4 = 7/8 )<br />
+d) ( 2(x + 4) - 10 = 44 )<br />
+e) ( (4 - x)/6 = 7 )<br />
+f) ( 2y + 7/2 = 39/2 )</p>
+<p><strong>Answer:</strong><br />
+<strong>a)</strong> ( 6(t - 2) = 18 )<br />
+Transpose 6 to RHS (divide):<br />
+( t - 2 = 18 / 6 )<br />
+( t - 2 = 3 )<br />
+Transpose -2 to RHS (add):<br />
+( t = 3 + 2 )<br />
+( t = 5 )</p>
+<p><strong>b)</strong> ( 3/2 p - 4 = 20 )<br />
+Transpose -4 to RHS (add):<br />
+( 3/2 p = 20 + 4 )<br />
+( 3/2 p = 24 )<br />
+Transpose 3/2 to RHS (multiply by reciprocal 2/3):<br />
+( p = 24 \times 2 / 3 )<br />
+( p = 16 )</p>
+<p><strong>c)</strong> ( x/2 + 3/4 = 7/8 )<br />
+Transpose 3/4 to RHS (subtract):<br />
+( x/2 = 7/8 - 3/4 )<br />
+( x/2 = 7/8 - 6/8 )<br />
+( x/2 = 1/8 )<br />
+Transpose 2 to RHS (multiply):<br />
+( x = 1/8 \times 2 )<br />
+( x = 1/4 )</p>
+<p><strong>d)</strong> ( 2(x + 4) - 10 = 44 )<br />
+Transpose -10 to RHS (add):<br />
+( 2(x + 4) = 44 + 10 )<br />
+( 2(x + 4) = 54 )<br />
+Transpose 2 to RHS (divide):<br />
+( x + 4 = 54 / 2 )<br />
+( x + 4 = 27 )<br />
+Transpose 4 to RHS (subtract):<br />
+( x = 27 - 4 )<br />
+( x = 23 )</p>
+<p><strong>e)</strong> ( (4 - x)/6 = 7 )<br />
+Transpose 6 to RHS (multiply):<br />
+( 4 - x = 7 \times 6 )<br />
+( 4 - x = 42 )<br />
+Transpose 4 to RHS (subtract):<br />
+( -x = 42 - 4 )<br />
+( -x = 38 )<br />
 Multiply by -1:<br />
-x = -38</p>
-<p><strong>f)</strong> $2y + \frac{7}{2} = \frac{39}{2}$<br />
-Subtract $\frac{7}{2}$:<br />
-2y = $\frac{39}{2} - \frac{7}{2} = \frac{32}{2} = 16$<br />
-Divide by 2:<br />
-y = 8</p>
+( x = -38 )</p>
+<p><strong>f)</strong> ( 2y + 7/2 = 39/2 )<br />
+Transpose 7/2 to RHS (subtract):<br />
+( 2y = 39/2 - 7/2 )<br />
+( 2y = 32/2 )<br />
+( 2y = 16 )<br />
+Transpose 2 to RHS (divide):<br />
+( y = 16 / 2 )<br />
+( y = 8 )</p>
+<h3 id="question-5">Question 5</h3>
+<p><strong>Question:</strong> Frame three equations for the solution ( m = -5 ).</p>
+<p><strong>Answer:</strong><br />
+Starting with ( m = -5 ):<br />
+1. Add 5 to both sides: ( m + 5 = 0 )<br />
+2. Multiply both sides by 2: ( 2m = -10 )<br />
+3. Add 3 to both sides then multiply by 2: ( 2(m + 3) = 2(-5 + 3) \Rightarrow 2(m + 3) = -4 )<br />
+Other possible equations: ( m + 10 = 5 ), ( 3m = -15 ), ( m - 2 = -7 ).</p>
+<h3 id="question-6">Question 6</h3>
+<p><strong>Question:</strong> Frame three equations for the solution ( t = 1/2 ).</p>
+<p><strong>Answer:</strong><br />
+Starting with ( t = 1/2 ):<br />
+1. Multiply both sides by 2: ( 2t = 1 )<br />
+2. Add 1 to both sides: ( t + 1 = 3/2 )<br />
+3. Multiply both sides by 3: ( 3t = 3/2 )<br />
+Other possible equations: ( t - 1/2 = 0 ), ( 4t = 2 ).</p>
 <hr />
-<h3 id="5-frame-three-equations-for-the-solution-m-5">5. Frame three equations for the solution $m = -5$</h3>
-<p>Start with $m = -5$<br />
-- Add 10 to both sides: $m + 10 = 5$<br />
-- Multiply both sides by 2: $2(m + 10) = 10$<br />
-- Add 3 to both sides: $m + 3 = -2$<br />
-- Multiply by 3: $3(m + 3) = -6$<br />
-- Add 5 to both sides: $m + 5 = 0$</p>
-<p>So three equations:<br />
-1. $m + 10 = 5$<br />
-2. $3(m + 3) = -6$<br />
-3. $m + 5 = 0$</p>
-<hr />
-<h3 id="6-frame-three-equations-for-the-solution-t-frac12">6. Frame three equations for the solution $t = \frac{1}{2}$</h3>
-<p>Start with $t = \frac{1}{2}$<br />
-- Multiply both sides by 4: $4t = 2$<br />
-- Add 3: $4t + 3 = 5$<br />
-- Multiply by 2: $2t = 1$<br />
-- Add 1: $2t + 1 = 2$<br />
-- Subtract 1: $t - \frac{1}{4} = \frac{1}{4}$</p>
-<p>Three equations:<br />
-1. $4t = 2$<br />
-2. $2t + 1 = 2$<br />
-3. $t - \frac{1}{4} = \frac{1}{4}$</p>
-<hr />
-<h2 id="exercise-73">Exercise 7.3</h2>
-<h3 id="1-form-an-equation-and-solve-it-to-find-the-number">1. Form an equation and solve it to find the number.</h3>
-<p><strong>a)</strong> Three-fifth of a number is 21<br />
-Let number be $x$<br />
-$\frac{3}{5}x = 21$<br />
-Multiply both sides by 5: $3x = 105$<br />
-Divide by 3: $x = 35$</p>
-<p><strong>b)</strong> Four times a number is 28<br />
-$4x = 28$<br />
-$x = 7$</p>
-<p><strong>c)</strong> When you add 5 to three times a number you get 7<br />
-$3x + 5 = 7$<br />
-$3x = 2$<br />
-$x = \frac{2}{3}$</p>
-<p><strong>d)</strong> Riya thinks of a number. She takes away 6 from it and then multiplies the result by 5 to get zero.<br />
-Let number be $x$<br />
-$(x - 6) \times 5 = 0$<br />
-$x - 6 = 0$<br />
-$x = 6$</p>
-<hr />
-<h3 id="2-the-sum-of-two-consecutive-numbers-is-101-find-the-numbers">2. The sum of two consecutive numbers is 101. Find the numbers.</h3>
-<p>Let first number be $x$, then next is $x + 1$<br />
-$x + (x + 1) = 101$<br />
-$2x + 1 = 101$<br />
-$2x = 100$<br />
-$x = 50$<br />
-So numbers are 50 and 51</p>
-<hr />
-<h3 id="3-sonis-brother-is-8-years-older-than-four-fifth-of-her-age-if-her-brothers-age-is-32-years-what-is-sonis-age">3. Soni's brother is 8 years older than four-fifth of her age. If her brother's age is 32 years, what is Soni's age?</h3>
-<p>Let Soni's age be $x$<br />
-Four-fifth of her age = $\frac{4}{5}x$<br />
-Brother's age = $\frac{4}{5}x + 8 = 32$<br />
-$\frac{4}{5}x = 24$<br />
-Multiply both sides by 5: $4x = 120$<br />
-$x = 30$<br />
-Soni is 30 years old</p>
-<hr />
-<h3 id="4-neena-has-2-toffees-less-than-4-times-the-number-of-toffees-reena-has-find-the-number-of-toffees-reena-has-if-neena-has-14">4. Neena has 2 toffees less than 4 times the number of toffees Reena has. Find the number of toffees Reena has, if Neena has 14.</h3>
-<p>Let Reena have $x$ toffees<br />
-Neena has $4x - 2 = 14$<br />
-$4x = 16$<br />
-$x = 4$<br />
-Reena has 4 toffees</p>
-<hr />
-<h3 id="5-raj-scored-twice-as-much-as-rajesh-in-a-maths-test-together-their-score-was-11-more-than-a-century-how-much-did-each-score">5. Raj scored twice as much as Rajesh in a Maths test. Together, their score was 11 more than a century. How much did each score?</h3>
-<p>Century = 100<br />
-Total score = 100 + 11 = 111<br />
-Let Rajesh's score be $x$<br />
-Raj's score = $2x$<br />
-$x + 2x = 111$<br />
-$3x = 111$<br />
-$x = 37$<br />
-Rajesh = 37, Raj = 74</p>
-<hr />
-<h3 id="6-sumit-has-some-red-balls-and-some-blue-balls-the-number-of-blue-balls-is-4-more-than-4-times-the-number-of-red-balls-find-the-number-of-red-balls-if-the-number-of-blue-balls-is-24">6. Sumit has some red balls and some blue balls. The number of blue balls is 4 more than 4 times the number of red balls. Find the number of red balls, if the number of blue balls is 24.</h3>
-<p>Let red balls = $x$<br />
-Blue balls = $4x + 4 = 24$<br />
-$4x = 20$<br />
-$x = 5$<br />
-Red balls = 5</p>
-<hr />
-<h3 id="7-rahim-bought-two-chocolates-and-gave-the-shopkeeper-a-100-rupee-note-the-shopkeeper-returned-10-find-the-price-of-each-chocolate-if-both-have-the-same-price">7. Rahim bought two chocolates and gave the shopkeeper a 100-rupee note. The shopkeeper returned ₹10. Find the price of each chocolate, if both have the same price.</h3>
-<p>Total paid = 100 - 10 = 90<br />
-Two chocolates → price of each = $90 ÷ 2 = 45$<br />
-Each chocolate costs ₹45</p>
-<hr />
-<h3 id="8-the-length-of-a-rectangular-garden-is-6-m-more-than-thrice-its-breadth-if-its-perimeter-is-100-m-find-the-dimensions-of-the-garden">8. The length of a rectangular garden is 6 m more than thrice its breadth. If its perimeter is 100 m, find the dimensions of the garden.</h3>
-<p>Let breadth = $x$<br />
-Length = $3x + 6$<br />
-Perimeter = 2(length + breadth) = 100<br />
-2((3x + 6) + x) = 100<br />
-2(4x + 6) = 100<br />
-8x + 12 = 100<br />
-8x = 88<br />
-x = 11<br />
-Breadth = 11 m<br />
-Length = 3(11) + 6 = 39 m</p>
-<hr />
-<h3 id="9-shreyas-mother-is-40-years-old-her-age-is-10-years-more-than-twice-of-shreyas-present-age-find-shreyas-present-age">9. Shreya's mother is 40 years old. Her age is 10 years more than twice of Shreya's present age. Find Shreya's present age.</h3>
-<p>Let Shreya's age = $x$<br />
-Mother's age = $2x + 10 = 40$<br />
-$2x = 30$<br />
-$x = 15$<br />
-Shreya is 15 years old</p>
-<hr />
-<h3 id="10-a-man-reared-cows-and-buffaloes-the-number-of-buffaloes-was-7-more-than-one-third-of-the-number-of-cows-what-was-the-total-number-of-animals-if-the-number-of-buffaloes-was-21">10. A man reared cows and buffaloes. The number of buffaloes was 7 more than one-third of the number of cows. What was the total number of animals, if the number of buffaloes was 21?</h3>
-<p>Let number of cows = $x$<br />
-Buffaloes = $\frac{1}{3}x + 7 = 21$<br />
-$\frac{1}{3}x = 14$<br />
-$x = 42$<br />
-Total animals = 42 + 21 = 63</p>
-<hr />
-<h3 id="11-ashish-and-suresh-together-have-700-in-total-suresh-has-three-times-as-much-money-as-ashish-how-much-money-does-each-of-them-have">11. Ashish and Suresh together have ₹700 in total. Suresh has three times as much money as Ashish. How much money does each of them have?</h3>
-<p>Let Ashish have $x$<br />
-Suresh has $3x$<br />
-x + 3x = 700<br />
-4x = 700<br />
-x = 175<br />
-Ashish = ₹175, Suresh = ₹525</p>
-<hr />
-<h2 id="wrap-up-questions">Wrap Up Questions</h2>
-<h3 id="1-choose-the-correct-option">1. Choose the correct option.</h3>
-<p><strong>a)</strong> In a linear equation, the highest power of a variable is:<br />
-ii. 1 → ✅</p>
-<p><strong>b)</strong> Which is a linear equation in one variable?<br />
-iii. x + 1 = 6 → ✅ (only one variable, power 1)</p>
-<p><strong>c)</strong> If 2x + 2 = 6 → 2x = 4 → x = 2 → i. 2 → ✅</p>
-<p><strong>d)</strong> Root of 3x - 5 = 1 → 3x = 6</p></div></div><div class="tab-panel " id="tab-question_paper"><div class="content-body markdown-body"><div class="quiz-container">
+<h2 id="exercise-73">EXERCISE 7.3</h2>
+<h3 id="question-1_1">Question 1</h3>
+<p><strong>Question:</strong> Form an equation and solve it to find the number.<br />
+a) Three-fifth of a number is 21.<br />
+b) Four times a number is 28.<br />
+c) When you add 5 to three times a number you get 7.<br />
+d) Riya thinks of a number. She takes away 6 from it and then multiply the result by 5 to get zero.</p>
+<p><strong>Answer:</strong><br />
+<strong>a)</strong> Let the number be ( n ).<br />
+Equation: ( 3/5 \times n = 21 )<br />
+( n = 21 \times 5 / 3 )<br />
+( n = 35 )</p>
+<p><strong>b)</strong> Let the number be ( n ).<br />
+Equation: ( 4n = 28 )<br />
+( n = 28 / 4 )<br />
+( n = 7 )</p>
+<p><strong>c)</strong> Let the number be ( n ).<br />
+Equation: ( 3n + 5 = 7 )<br />
+( 3n = 7 - 5 )<br />
+( 3n = 2 )<br />
+( n = 2/3 )</p>
+<p><strong>d)</strong> Let the number be ( n ).<br />
+Equation: ( 5(n - 6) = 0 )<br />
+( n - 6 = 0 / 5 )<br />
+( n - 6 = 0 )<br />
+( n = 6 )</p>
+<h3 id="question-2_1">Question 2</h3>
+<p><strong>Question:</strong> The sum of two consecutive numbers is 101. Find the numbers.</p>
+<p><strong>Answer:</strong><br />
+Let the first number be ( n ).<br />
+The next consecutive number is ( n + 1 ).<br />
+Equation: ( n + (n + 1) = 101 )<br />
+( 2n + 1 = 101 )<br />
+( 2n = 100 )<br />
+( n = 50 )<br />
+First number = 50<br />
+Second number = 51</p>
+<h3 id="question-3_1">Question 3</h3>
+<p><strong>Question:</strong> Soni's brother is 8 years older than four-fifth of her age. If her brother's age is 32 years, what is Soni's age?</p>
+<p><strong>Answer:</strong><br />
+Let Soni's age be ( s ).<br />
+Brother's age = ( 4/5 s + 8 )<br />
+Given Brother's age = 32.<br />
+Equation: ( 4/5 s + 8 = 32 )<br />
+( 4/5 s = 32 - 8 )<br />
+( 4/5 s = 24 )<br />
+( s = 24 \times 5 / 4 )<br />
+( s = 30 )<br />
+Soni's age is 30 years.</p>
+<h3 id="question-4_1">Question 4</h3>
+<p><strong>Question:</strong> Neena has 2 toffees less than 4 times the number of toffees Reena has. Find the number of toffees Reena has, if Neena has 14.</p>
+<p><strong>Answer:</strong><br />
+Let Reena's toffees be ( r ).<br />
+Neena's toffees = ( 4r - 2 )<br />
+Given Neena's toffees = 14.<br />
+Equation: ( 4r - 2 = 14 )<br />
+( 4r = 16 )<br />
+( r = 4 )<br />
+Reena has 4 toffees.</p>
+<h3 id="question-5_1">Question 5</h3>
+<p><strong>Question:</strong> Raj scored twice as much as Rajesh in a Maths test. Together, their score was 11 more than a century. How much did each score?</p>
+<p><strong>Answer:</strong><br />
+Let Rajesh's score be ( j ).<br />
+Raj's score = ( 2j ).<br />
+Total score = ( j + 2j = 3j ).<br />
+Century = 100. Total score = 100 + 11 = 111.<br />
+Equation: ( 3j = 111 )<br />
+( j = 37 )<br />
+Rajesh's score = 37<br />
+Raj's score = ( 2 \times 37 = 74 )</p>
+<h3 id="question-6_1">Question 6</h3>
+<p><strong>Question:</strong> Sumit has some red balls and some blue balls. The number of blue balls is 4 more than 4 times the number of red balls. Find the number of red balls, if the number of blue balls is 24.</p>
+<p><strong>Answer:</strong><br />
+Let Red balls = ( r ).<br />
+Blue balls = ( 4r + 4 )<br />
+Given Blue balls = 24.<br />
+Equation: ( 4r + 4 = 24 )<br />
+( 4r = 20 )<br />
+( r = 5 )<br />
+Number of red balls is 5.</p>
+<h3 id="question-7">Question 7</h3>
+<p><strong>Question:</strong> Rahim bought two chocolates and gave the shopkeeper a 100-rupee note. The shopkeeper returned ₹10. Find the price of each chocolate, if both have the same price.</p>
+<p><strong>Answer:</strong><br />
+Let Price of one chocolate = ( c ).<br />
+Cost of 2 chocolates = ( 2c ).<br />
+Change received = 10.<br />
+Amount paid = 100.<br />
+Equation: ( 100 - 2c = 10 )<br />
+( 2c = 100 - 10 )<br />
+( 2c = 90 )<br />
+( c = 45 )<br />
+Price of each chocolate is ₹45.</p>
+<h3 id="question-8">Question 8</h3>
+<p><strong>Question:</strong> The length of a rectangular garden is 6 m more than thrice its breadth. If its perimeter is 100 m, find the dimensions of the garden.</p>
+<p><strong>Answer:</strong><br />
+Let Breadth = ( b ).<br />
+Length = ( 3b +</p></div></div><div class="tab-panel " id="tab-question_paper"><div class="content-body markdown-body"><h1 id="practice-questions-answers">Practice Questions &amp; Answers</h1>
+<h3 id="section-1-multiple-choice-questions">Section 1: Multiple Choice Questions</h3>
+<p><strong>Q1.</strong> Which of the following conditions must be met for an expression to be called a linear equation in one variable?<br />
+A) It must contain two variables<br />
+B) The highest power of the variable must be 1<br />
+C) It must contain an inequality sign<br />
+D) The variable must be in the denominator</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** B) The highest power of the variable must be 1 <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> In the equation ( 3x - 5 = 10 ), what represents the Right Hand Side (RHS)?<br />
+A) ( 3x - 5 )<br />
+B) ( 3x )<br />
+C) ( 10 )<br />
+D) ( -5 )</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) \( 10 \) <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> When we transpose a number from the Left Hand Side to the Right Hand Side of an equation, what happens to its sign?<br />
+A) It remains the same<br />
+B) It becomes positive<br />
+C) It changes to its opposite<br />
+D) It disappears</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) It changes to its opposite <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> How many solutions does a simple linear equation in one variable typically have?<br />
+A) Zero<br />
+B) One<br />
+C) Two<br />
+D) Infinite</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** B) One <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Which of the following mathematical statements is NOT an equation?<br />
+A) ( x + 2 = 5 )<br />
+B) ( 3y = 12 )<br />
+C) ( 4z &gt; 8 )<br />
+D) ( a - 1 = 0 )</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) \( 4z > 8 \) <br/>
+</div>
+</details>
+
+<h3 id="section-2-fill-in-the-blanks">Section 2: Fill in the Blanks</h3>
+<p><strong>Q1.</strong> The value of the variable that satisfies an equation is called the <strong><em>_</em></strong> or solution of the equation.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** root <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> An equation is balanced like a weighing balance where equal weights are placed on both <strong><em>_</em></strong>.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** pans <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> While solving an equation using the transposition method, dividing by a number on one side means multiplying by that number on the other side after transposing.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** False (Transposing division means multiplying, but the statement implies the operation reverses. The blank asks for the concept. Correction: The operation reverses.) <br/>
+</div>
+</details>
+<p><em>Correction for clarity based on instruction:</em><br />
+<strong>Q3.</strong> When transposing a term involving addition, the operation changes to <strong><em>_</em></strong>.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** subtraction <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> If we interchange the Left Hand Side and Right Hand Side of an equation, the equation <strong><em>_</em></strong>.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** remains the same <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> To separate a variable that is multiplied by a number, we perform the <strong><em>_</em></strong> operation on both sides.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** division <br/>
+</div>
+</details>
+
+<h3 id="section-3-true-or-false-with-reasoning">Section 3: True or False with Reasoning</h3>
+<p><strong>Q1.</strong> Statement: The expression ( 2x + 3y = 10 ) is a simple linear equation in one variable.<br />
+Reason: It contains two variables.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** False. It is a linear equation in two variables, not one. <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> Statement: The trial and error method is suitable for finding roots that are large integers or fractions.<br />
+Reason: Substituting values becomes difficult and time-consuming for non-integers.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** False. Trial and error is best for small integer roots. <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> Statement: Given a specific solution, there is only one unique equation that can be framed.<br />
+Reason: We can add, subtract, multiply, or divide to create multiple valid equations.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** False. Many equations can be framed from a single solution. <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Statement: In the equation ( 5x = 20 ), the value ( x = 4 ) makes the LHS equal to the RHS.<br />
+Reason: ( 5 * 4 = 20 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** True. <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Statement: An equation containing ( x^2 ) is considered a simple linear equation.<br />
+Reason: The highest power of the variable must be 1.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** False. It is a quadratic equation. <br/>
+</div>
+</details>
+
+<h3 id="section-4-solve-and-verify">Section 4: Solve and Verify</h3>
+<p><strong>Q1.</strong> Solve the equation ( 4x + 7 = 15 ) using the transposition method.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 4x = 15 - 7 \Rightarrow 4x = 8 \Rightarrow x = 2 \) <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> Solve the equation ( \frac{y}{3} - 2 = 4 ) and verify your answer.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( \frac{y}{3} = 4 + 2 \Rightarrow \frac{y}{3} = 6 \Rightarrow y = 18 \). Verification: \( 18/3 - 2 = 6 - 2 = 4 \). <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> Solve the equation ( 3(m - 2) = 12 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( m - 2 = 12 / 3 \Rightarrow m - 2 = 4 \Rightarrow m = 6 \) <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Solve the equation ( 5x - 3 = 2x + 9 ) by separating the variable.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 5x - 2x = 9 + 3 \Rightarrow 3x = 12 \Rightarrow x = 4 \) <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Solve the equation ( 2(y + 5) = -10 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( y + 5 = -10 / 2 \Rightarrow y + 5 = -5 \Rightarrow y = -10 \) <br/>
+</div>
+</details>
+
+<h3 id="section-5-word-problems-and-framing">Section 5: Word Problems and Framing</h3>
+<p><strong>Q1.</strong> Frame an equation for the statement: "Five times a number decreased by 8 equals 22."</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Let the number be \( x \). Equation: \( 5x - 8 = 22 \) <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> Frame two different equations whose solution is ( n = 3 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Example 1: \( n + 2 = 5 \). Example 2: \( 2n = 6 \) <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> The length of a rectangular field is 10 meters more than its breadth. If the perimeter is 100 meters, find the breadth.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Let breadth be \( b \). Length = \( b + 10 \). Perimeter = \( 2(b + b + 10) = 100 \Rightarrow 2(2b + 10) = 100 \Rightarrow 2b + 10 = 50 \Rightarrow 2b = 40 \Rightarrow b = 20 \) meters. <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Rohan has some marbles. His friend gives him 15 more, and now he has 40 marbles. How many did he have initially?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Let initial marbles be \( m \). Equation: \( m + 15 = 40 \Rightarrow m = 25 \) <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> The sum of three consecutive odd numbers is 51. Find the numbers.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Let first number be \( x \). Next are \( x+2 \) and \( x+4 \). \( x + x + 2 + x + 4 = 51 \Rightarrow 3x + 6 = 51 \Rightarrow 3x = 45 \Rightarrow x = 15 \). Numbers are 15, 17, 19. <br/>
+</div>
+</details></div></div><div class="tab-panel " id="tab-quiz"><div class="content-body markdown-body"><div class="quiz-container">
 <div style="display:flex;gap:.75rem;margin-bottom:1.25rem;flex-wrap:wrap;"><button onclick="document.querySelectorAll('#tab-question_paper details').forEach(d=>d.open=true)" style="padding:.5rem 1.1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-weight:600;font-size:.88rem;cursor:pointer;">👁️ Show All Answers</button><button onclick="document.querySelectorAll('#tab-question_paper details').forEach(d=>d.open=false)" style="padding:.5rem 1.1rem;border:1.5px solid var(--border);background:var(--bg);color:var(--muted);border-radius:8px;font-weight:600;font-size:.88rem;cursor:pointer;">🙈 Hide All Answers</button></div>
 <h2 style="margin-bottom:1rem;">📝 Practice Questions <span style="font-size:.85rem;color:var(--muted);font-weight:400;">(15 questions)</span></h2>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
@@ -570,7 +825,7 @@ iii. x + 1 = 6 → ✅ (only one variable, power 1)</p>
 <span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 4/3</span>
 <span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 2</span>
 </div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 4/3</p></details>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 2</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
 <p style="font-weight:600;margin-bottom:.6rem;">Q5. The solution of the equation x/4 + 1/4 = 1 is:</p>
@@ -620,31 +875,31 @@ iii. x + 1 = 6 → ✅ (only one variable, power 1)</p>
 <span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 3x - 1 = 30</span>
 <span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. x/4 = 4</span>
 </div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 5x = 65</p></details>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 10(x - 2) = 100</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q10. What is the meaning of the root or solution of an equation?</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ The value of the variable that makes the left-hand side equal to the right-hand side of the equation.</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q10. What is the term for the part of the equation to the left of the equality sign?</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Left Hand Side</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q11. Explain how the transposition method works in solving equations.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ In the transposition method, a number or expression is moved from one side of the equation to the other, and its sign is changed. For example, if a term is added on one side, it is subtracted on the other side, and vice versa.</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q11. Name the method where numbers are shifted from one side to another by changing their sign.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Transposition method</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q12. Frame an equation for the statement: '7 taken away from a number gives 19'.</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q12. Frame an equation for the statement: Seven taken away from a number will give 19.</p>
 <details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ x - 7 = 19</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q13. Write the statement for the equation: 2x - 11 = 7.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Twice a number minus 11 equals 7.</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q13. Solve the equation 4y + 7 = 19.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 3</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q14. Solve the equation 3(x + 6) = 24 using the transposition method.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 3(x + 6) = 24 → x + 6 = 8 → x = 2</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q14. The sum of two consecutive numbers is 101. Find the numbers.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 50 and 51</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q15. Find three consecutive numbers whose sum is 69.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 22, 23, 24</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q15. Is the solution of a simple linear equation unique?</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Yes</p></details>
 </div>
 </div></div></div><div class="tab-panel " id="tab-fulltext"><div class="content-body markdown-body"><pre><code class="language-markdown"># SIMPLE LINEAR EQUATIONS
 

@@ -37,631 +37,723 @@
 
   <!-- Main content -->
   <main class="main-content">
-    <h1 class="chapter-title">Chapter 06</h1>
+    <!-- Chapter header row: label + name + PDF button -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.5rem;margin-bottom:.25rem;">
+      <div>
+        <h1 class="chapter-title" style="margin-bottom:.15rem;">Chapter 06</h1>
+        <p style="margin:0;font-size:.95rem;color:var(--muted);font-weight:500;">Algebraic Expressions</p>
+      </div>
+      <button onclick="printAllTabs()" title="Export all chapter content to PDF" style="display:flex;align-items:center;gap:.4rem;padding:.45rem 1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-size:.88rem;font-weight:600;cursor:pointer;white-space:nowrap;">📥 Download PDF</button>
+    </div>
 
     <!-- Tab bar -->
     <div class="tab-bar" role="tablist">
-      <button class="tab-btn active" data-tab="summary">📋 Summary</button><button class="tab-btn " data-tab="short_notes">📌 Short Notes</button><button class="tab-btn " data-tab="keywords">🔑 Keywords</button><button class="tab-btn " data-tab="exercises">✍️ Exercises</button><button class="tab-btn " data-tab="question_paper">❓ Questions</button><button class="tab-btn " data-tab="fulltext">📖 Full Text</button>
+      <button class="tab-btn active" data-tab="summary">📋 Summary</button><button class="tab-btn " data-tab="short_notes">📌 Short Notes</button><button class="tab-btn " data-tab="keywords">🔑 Keywords</button><button class="tab-btn " data-tab="exercises">✍️ Exercises</button><button class="tab-btn " data-tab="question_paper">📄 Practice Qs</button><button class="tab-btn " data-tab="quiz">🎯 Interactive Quiz</button><button class="tab-btn " data-tab="fulltext">📖 Full Text</button>
     </div>
 
     <!-- Tab panels -->
     <div class="tab-content">
       <div class="tab-panel active" id="tab-summary"><div class="content-body markdown-body"><h1 id="chapter-summary">Chapter Summary</h1>
-<h1 id="chapter-6-algebraic-expressions-summary">Chapter 6: Algebraic Expressions – Summary</h1>
-<h2 id="what-is-an-algebraic-expression">What is an Algebraic Expression?</h2>
-<p>An algebraic expression is formed by combining <strong>constants</strong> (like 1, 2, 3) and <strong>variables</strong> (like $x$, $y$, $z$) using mathematical operations such as addition, subtraction, multiplication, or division.</p>
-<p>Examples:<br />
-- $4m + 7$<br />
-- $3y - 8$<br />
-- $\frac{x}{2} - 3$</p>
-<hr />
-<h2 id="key-parts-of-an-algebraic-expression">Key Parts of an Algebraic Expression</h2>
-<h3 id="terms">Terms</h3>
-<p>Terms are the parts of an expression that are added or subtracted.<br />
-- In $3x - 5$, the terms are $3x$ and $-5$.<br />
-- In $5p^2 + 4pq - 6$, the terms are $5p^2$, $4pq$, and $-6$.</p>
-<h3 id="factors">Factors</h3>
+<p>This chapter introduces the generalised form of mathematics using letters and numbers. It focuses on understanding patterns, forming rules, and performing operations on algebraic expressions.</p>
+<h3 id="learning-objectives">Learning Objectives</h3>
+<p>The main goals of this chapter are to:<br />
+- Generate algebraic expressions from patterns.<br />
+- State the meaning of algebraic expressions.<br />
+- Define and identify constants, coefficients, powers, like and unlike terms.<br />
+- Explain different types of algebraic expressions.<br />
+- State the degree of a polynomial.<br />
+- Add and subtract algebraic expressions.<br />
+- Find the value of algebraic expressions.</p>
+<h3 id="introduction-and-generalisation">Introduction and Generalisation</h3>
+<p>Algebra is a generalised form of Mathematics which uses letters along with numbers.<br />
+- <strong>Variable</strong> or <strong>Literal</strong> — Letters such as ( a, b, c, x, y, z ) that represent unknown quantities.<br />
+- <strong>Constant</strong> — Numbers like 1, 2, 3 whose value remains constant wherever they are placed.<br />
+- The most fruitful use of algebra is in generalisation, where patterns are converted into rules. For example, the number of bindis in the nth square follows the rule ( n^2 ).</p>
+<h3 id="generating-algebraic-expressions">Generating Algebraic Expressions</h3>
+<p>While solving arithmetic problems, we come across many patterns and formulae which are the generalised form of many problems.<br />
+- Algebraic expressions are generated using variables and constants combined with fundamental operations.<br />
+- Patterns help in forming general rules for specific situations, such as finding the cost of pastries or matchsticks required for a pattern.<br />
+- Expressions are formed by combining variables with themselves, other variables, or constants.</p>
+<h3 id="algebraic-expressions">Algebraic Expressions</h3>
+<p>A combination of constants and variables connected by the signs of fundamental mathematical operations (+, -, × or ÷) is called an algebraic expression.<br />
+- <strong>Algebraic Expression</strong> — A combination of constants and variables connected by +, -, ×, or ÷. Examples: 4m + 7, 3y - 8, x/2 - 3.<br />
+- Expressions can be formed by:<br />
+  - Combining variables with themselves (e.g., ( x * x = x^2 )).<br />
+  - Combining variables with other variables (e.g., ( x + y ) or ( x * y * z )).<br />
+  - Combining constants and variables (e.g., ( 2 * y * z )).</p>
+<h3 id="terms-of-an-algebraic-expression">Terms of an Algebraic Expression</h3>
+<p>Terms are added to form algebraic expressions.<br />
+- <strong>Term</strong> — A part of an algebraic expression separated by + or - signs. For example, in ( 3x - 5 ), ( 3x ) and ( -5 ) are two terms.<br />
+- A term can be:<br />
+  - A constant (e.g., 2, -33).<br />
+  - A variable (e.g., a, b, x).<br />
+  - Product of a constant and variables (e.g., 3x, 1/2 ab).<br />
+  - Product of variables (e.g., xy, ( x^3y^5 )).<br />
+- Always include the '-' sign with the negative term when identifying terms.</p>
+<h3 id="factors-of-a-term">Factors of a Term</h3>
 <p>A term is a product of its factors.<br />
-- In $5x^2$, the factors are 5, $x$, and $x$.<br />
-- In $-4xy$, the factors are $-4$, $x$, and $y$.</p>
+- <strong>Factor</strong> — Numbers or variables multiplied together to form a term. For example, in ( 5x^2 ), the factors are 5, x, and x.<br />
+- Factors can be represented conveniently by a tree diagram showing the breakdown of terms into components.<br />
+- The term ( -4xy ) is a product of the factors -4, x, and y.</p>
 <h3 id="coefficients">Coefficients</h3>
-<p>The numerical factor of a term is called the coefficient.<br />
-- In $7ab^2$, the coefficient is 7.<br />
-- In $-2x$, the coefficient is $-2$.</p>
-<blockquote>
-<p><strong>Note</strong>:<br />
-- If the coefficient is +1, it is usually not written (e.g., $x^2$ instead of $1x^2$).<br />
-- If the coefficient is $-1$, it is written as a minus sign (e.g., $-x^2$).</p>
-</blockquote>
-<hr />
-<h2 id="types-of-algebraic-expressions">Types of Algebraic Expressions</h2>
-<table>
-<thead>
-<tr>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Monomial</strong></td>
-<td>One term</td>
-<td>$5m$, $8xyz$, $-7$</td>
-</tr>
-<tr>
-<td><strong>Binomial</strong></td>
-<td>Two unlike terms</td>
-<td>$5a + 3b$, $2pq + 5qr$</td>
-</tr>
-<tr>
-<td><strong>Trinomial</strong></td>
-<td>Three unlike terms</td>
-<td>$a + b + c$, $3m - 2n + 4p$</td>
-</tr>
-<tr>
-<td><strong>Polynomial</strong></td>
-<td>One or more terms (includes monomials, binomials, trinomials)</td>
-<td>$x^2 + y - 4z + 1$</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Important</strong>:<br />
-- Terms must be <strong>unlike</strong> to be part of a binomial or trinomial.<br />
-- Like terms have the same algebraic factors (e.g., $3x$ and $5x$ are like terms).<br />
-- Unlike terms have different algebraic factors (e.g., $2x^2y$ and $-2xy^2$).</p>
-</blockquote>
-<hr />
-<h2 id="degree-of-a-polynomial">Degree of a Polynomial</h2>
-<p>The <strong>degree</strong> is the highest power of any variable in the polynomial.<br />
-- In $a^2 + 6a + 4$, the degree is 2.<br />
-- In $-23x^2y + 11xy - 8$, the degree is 3 (since $x^2y$ has power $2+1=3$).<br />
-- In $a^5b^2 + a^2b^2 + a^3b + ab$, the degree is 7 (from $a^5b^2$: $5+2=7$).</p>
-<blockquote>
-<p><strong>Rule</strong>:<br />
-- Degree of a constant term is 0.<br />
-- Polynomials are usually written in <strong>standard form</strong>, with terms arranged in descending order of powers.</p>
-</blockquote>
-<hr />
-<h2 id="adding-algebraic-expressions">Adding Algebraic Expressions</h2>
+<p>A term generally consists of one numerical factor, the rest being variables (algebraic factors).<br />
+- <strong>Coefficient</strong> — The numerical factor of a term. For example, in ( 7ab^2 ), 7 is the coefficient.<br />
+- <strong>Numerical Coefficient</strong> — Specifically the constant factor of a term.<br />
+- <strong>Relative Coefficient</strong> — Any one of the factors in a term is called the coefficient of the product of the other factors. For example, in ( 7ab^2 ), 'a' is the coefficient of ( 7b^2 ).<br />
+- When the coefficient is +1, it is usually omitted (e.g., ( 1x^2y ) is written as ( x^2y )).<br />
+- When the coefficient is -1, it is represented only by the minus sign (e.g., ( -x^2y )).</p>
+<h3 id="types-of-algebraic-expressions">Types of Algebraic Expressions</h3>
+<p>Algebraic expressions are classified based on the number of terms they have.<br />
+- <strong>Monomial</strong> — An algebraic expression which contains only one term. Examples: 5m, 6pq, -7.<br />
+- <strong>Binomial</strong> — An algebraic expression which contains two unlike terms. Examples: 5a + 3b, 5x - 6y. Note: ( 2t + 6t ) is not a binomial because terms are like.<br />
+- <strong>Trinomial</strong> — An algebraic expression which contains three unlike terms. Examples: a + b + c, 3m - 2n + 4p.<br />
+- <strong>Polynomial</strong> — An algebraic expression with one or more terms. Thus, monomials, binomials, and trinomials are all polynomials.<br />
+- A polynomial cannot have terms with negative exponents for any variable (e.g., ( 4x^2 + 3/x + 6 ) is not a polynomial).</p>
+<h3 id="like-and-unlike-terms">Like and Unlike Terms</h3>
+<p>Terms are categorized based on their algebraic factors.<br />
+- <strong>Like Terms</strong> — Terms with the same algebraic factors. The numerical coefficient may be different. Example: 5xy and 3xy.<br />
+- <strong>Unlike Terms</strong> — Terms with different algebraic factors. Example: ( 2x^2y ) and ( -2xy^2 ).<br />
+- Only like terms can be added or subtracted.</p>
+<h3 id="degree-of-a-polynomial">Degree of a Polynomial</h3>
+<p>The highest power of a variable in a polynomial is called its degree.<br />
+- <strong>Degree</strong> — The highest power of a variable in a polynomial. For example, in ( a^2 + 6a + 4 ), the degree is 2.<br />
+- For a term containing more than one variable, the degree is obtained by adding the powers of all the variables in a term. Example: In ( -23x^2y ), the degree is 3 (2 + 1).<br />
+- The degree of a constant term is 0.<br />
+- <strong>Standard Form</strong> — Writing a polynomial in decreasing order of the powers of its terms.</p>
+<h3 id="addition-of-algebraic-expressions">Addition of Algebraic Expressions</h3>
+<p>Like numbers, we can also add algebraic expressions.<br />
+- To add two or more like terms, we add the numerical coefficients of all the like terms.<br />
+- Unlike terms cannot be added.<br />
+- Expressions including like and unlike terms are added by collecting different groups of like terms and adding them.<br />
+- Addition can be done horizontally or by arranging like terms in columns.<br />
+- The sum of two or more like terms is a like term with a numerical coefficient equal to the sum of the numerical coefficients of all the like terms.</p>
+<h3 id="subtraction-of-algebraic-expressions">Subtraction of Algebraic Expressions</h3>
+<p>Like addition, we can subtract only like terms.<br />
+- Subtracting a term from another term is same as adding its additive inverse to the other term.<br />
+- <strong>Additive Inverse</strong> — The opposite sign of a term used in subtraction (e.g., subtracting 3x is adding -3x).<br />
+- Steps for subtraction:<br />
+  1. Arrange expressions horizontally with a minus sign between them.<br />
+  2. While removing brackets, reverse the sign of all terms of the expression to be subtracted (- to + and + to -).<br />
+  3. Rearrange terms to form groups of like terms.<br />
+  4. Add or subtract the numerical coefficients of the like terms.<br />
+- The difference of two like terms is a like term with a numerical coefficient equal to the difference of the numerical coefficients.</p>
+<h3 id="finding-the-value-of-an-algebraic-expression">Finding the Value of an Algebraic Expression</h3>
+<p>The value of an algebraic expression depends on the values of the variables forming the expression.<br />
+- We find the value by replacing the variables with given numbers.<br />
+- It is often helpful to simplify the algebraic expression by combining like terms before substituting values.<br />
+- Care must be taken with negative signs and powers when substituting values (e.g., ( (-4)^2 ) is 16, not -16).</p>
+<h3 id="using-algebraic-expressions">Using Algebraic Expressions</h3>
+<p>In mathematics, formulae and rules can be written in generalised form using algebraic expressions.<br />
+- Various arithmetic problems can be compressed into a particular algebraic expression known as its formula.<br />
+- Infinite number of problems can be solved using a single algebraic formula.<br />
+- Examples of formulae:<br />
+  - Area of rectangle = length * breadth (Area = l * b).<br />
+  - Simple Interest (S.I.) = Principal * Rate * Time / 100.<br />
+  - Conversion formulas (e.g., metres to decimetres: n = 10x).</p>
+<h3 id="wrap-up">Wrap Up</h3>
+<p>Key takeaways from the chapter include:<br />
+- An algebraic expression is formed when variables and constants are combined using one or more fundamental operations.<br />
+- An algebraic expression is made up of terms. Terms are added to make an expression.<br />
+- A term is the product of its factor. Factors containing variables are called algebraic factors.<br />
+- The coefficient of a term is the numerical factor of the term.<br />
+- Terms with the same algebraic factors are called like terms, while terms with different algebraic factors are called unlike terms.<br />
+- Any algebraic expression having one or more terms with variables whose powers are positive integers is called a polynomial.<br />
+- Specifically, a one-term expression is a monomial, a two-term expression is a binomial and a three-term expression is a trinomial.</p>
+<h3 id="mental-maths-concepts">Mental Maths Concepts</h3>
+<p>Important conceptual checks for students:<br />
+- If any variable in an algebraic expression appears in the denominator, then the algebraic expression is not a polynomial.<br />
+- All polynomials are algebraic expressions but all algebraic expressions are not polynomials.<br />
+- The value of an algebraic expression depends on the values of the variables involved in it.</p>
+<h3 id="maths-lab-activity">Maths Lab Activity</h3>
+<p>Practical application of concepts using physical tools.<br />
+- <strong>Aim</strong> — To add algebraic expressions using algebra tiles.<br />
+- <strong>Materials</strong> — Cardboard, two different colour sheets, scissors, glue, pencil.<br />
+- <strong>Procedure</strong> — Create tiles representing values. Grey and blue squares of the same size are additive inverse (zero pairs).<br />
+- Combine similar shapes (like terms) and group additive inverse (zero pairs) together.<br />
+- Strike off the zero pairs to find the final result visually.</p></div></div><div class="tab-panel " id="tab-short_notes"><div class="content-body markdown-body"><h1 id="short-revision-notes">Short Revision Notes</h1>
 <ul>
-<li><strong>Like terms</strong> can be added by adding their coefficients.  </li>
-<li><strong>Unlike terms</strong> cannot be combined.</li>
-</ul>
-<h3 id="steps-to-add">Steps to Add:</h3>
-<ol>
-<li>Group like terms together.  </li>
-<li>Add the numerical coefficients of like terms.  </li>
-<li>Write the result with the same variables.</li>
-</ol>
-<p><strong>Example</strong>:<br />
-Add $72ab + 21a^3b^2 + 53a^3$ and $-23ab + 17a^2b^3 + 5a$<br />
-→ $(72ab - 23ab) + 21a^3b^2 + 17a^2b^3 + 53a^3 + 5a$<br />
-→ $49ab + 21a^3b^2 + 17a^2b^3 + 53a^3 + 5a$</p>
-<hr />
-<h2 id="subtracting-algebraic-expressions">Subtracting Algebraic Expressions</h2>
-<ul>
-<li>Subtracting a term is the same as adding its <strong>additive inverse</strong>.  </li>
-<li>Only like terms can be subtracted.</li>
-</ul>
-<h3 id="steps-to-subtract">Steps to Subtract:</h3>
-<ol>
-<li>Write the expressions with a minus sign between them.  </li>
-<li>Change the sign of each term in the expression being subtracted.  </li>
-<li>Group like terms and combine them.</li>
-</ol>
-<p><strong>Example</strong>:<br />
-Subtract $x - 2y - 3z$ from $2x + 3y - 5z$<br />
-→ $2x + 3y - 5z - x + 2y + 3z$<br />
-→ $(2x - x) + (3y + 2y) + (-5z + 3z)$<br />
-→ $x + 5y - 2z$</p>
-<hr />
-<h2 id="finding-the-value-of-an-algebraic-expression">Finding the Value of an Algebraic Expression</h2>
-<p>Replace variables with given numbers and simplify.</p>
-<p><strong>Example</strong>:<br />
-Find value of $17x + 19x^2 + 21x^3$ when $x = 2$<br />
-→ $17(2) + 19(4) + 21(8)$<br />
-→ $34 + 76 + 168 = 278$</p>
-<hr />
-<h2 id="real-life-use-of-algebraic-expressions">Real-Life Use of Algebraic Expressions</h2>
-<p>Algebra helps in writing <strong>general formulas</strong> for real-life situations.</p>
-<table>
-<thead>
-<tr>
-<th>Situation</th>
-<th>Formula</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Area of a rectangle</td>
-<td>$A = l \times b$</td>
-</tr>
-<tr>
-<td>Simple interest</td>
-<td>$S.I. = \frac{P \times R \times T}{100}$</td>
-</tr>
-<tr>
-<td>Diameter of a circle</td>
-<td>$d = 2r$</td>
-</tr>
-<tr>
-<td>Number of decimetres in $x$ metres</td>
-<td>$n = 10x$</td>
-</tr>
-<tr>
-<td>Perimeter of a square with side $(x+4)$</td>
-<td>$P = 4(x + 4) = 4x + 16$</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="practice-and-application">Practice and Application</h2>
-<ul>
-<li><strong>Patterns and General Rules</strong>:  </li>
-<li>For the $n$th square with bindis: $n^2$  </li>
-<li>
-<p>For a pattern of hexagons: number of sides increases by 6 each time → rule: $6n$</p>
-</li>
-<li>
-<p><strong>Budget Planning</strong>:  </p>
-</li>
-<li>Total cost: $T = d + f + e$  </li>
-<li>If $x$ people attend: $d = ₹5000$, $f = ₹100x$, $e = ₹(x^2 + 1000)$  </li>
-<li>As $x$ increases, food and entertainment increase, but decorations stay constant.</li>
-</ul>
-<hr />
-<h2 id="key-concepts-to-remember">Key Concepts to Remember</h2>
-<p>✅ An algebraic expression is made up of <strong>terms</strong>.<br />
-✅ <strong>Like terms</strong> have the same algebraic factors.<br />
-✅ <strong>Coefficients</strong> are the numerical parts of a term.<br />
-✅ <strong>Degree</strong> is the highest power of a variable.<br />
-✅ Only <strong>like terms</strong> can be added or subtracted.<br />
-✅ Expressions with variables in the denominator are <strong>not polynomials</strong>.<br />
-✅ Algebra helps in solving many problems using general formulas.</p>
-<hr />
-<h2 id="quick-check-workout">Quick Check (Workout)</h2>
-<ol>
-<li><strong>Coefficient of $x$ in $-7xyz^2$</strong> → $-7yz^2$  </li>
-<li><strong>Terms with different algebraic factors</strong> → unlike terms  </li>
-<li><strong>Expression with two or more terms</strong> → polynomial  </li>
-<li><strong>Value of $-17x - 19x^4 - 21x^2$ when $x = 3$</strong> → $-1773$  </li>
-<li><strong>Number of km in $x$ decimetres</strong> → $n = \frac{x}{100}$  </li>
-<li><strong>Subtract $-15p$ from $-2p^2$</strong> → $-2p^2 + 15p$  </li>
-<li><strong>Like terms can be</strong> → both added and subtracted  </li>
-<li><strong>Simplify $(m - 4) - (m + 5) + (m - 6) - (m + 7)$</strong> → $-22$</li>
-</ol>
-<hr />
-<h2 id="wrap-up">Wrap-Up</h2>
-<p>Algebra helps us <strong>generalize patterns</strong>, <strong>solve problems</strong>, and <strong>create formulas</strong>.<br />
-By understanding variables, constants, terms, coefficients, and operations, we can work with algebraic expressions confidently and apply them to real-life situations.</p></div></div><div class="tab-panel " id="tab-short_notes"><div class="content-body markdown-body"><h1 id="short-revision-notes">Short Revision Notes</h1>
-<ul>
-<li>An algebraic expression is formed by combining constants and variables using operations like +, −, ×, ÷.</li>
-<li>Terms are added to form an algebraic expression; each term is a product of factors.</li>
-<li>A constant is a fixed number; a variable represents an unknown quantity.</li>
-<li>The numerical factor of a term is called the coefficient; coefficients can be numerical or algebraic.</li>
-<li>Like terms have the same algebraic factors; unlike terms have different algebraic factors.</li>
-<li>A monomial has one term, a binomial has two unlike terms, a trinomial has three unlike terms.</li>
-<li>A polynomial is an expression with one or more terms, all of which have positive integer powers.</li>
-<li>The degree of a polynomial is the highest power of any variable in the expression.</li>
-<li>For a term with multiple variables, degree is the sum of the exponents of the variables.</li>
-<li>Like terms can be added or subtracted; unlike terms cannot.</li>
-<li>To add algebraic expressions, group like terms and add their coefficients.</li>
-<li>To subtract algebraic expressions, change the sign of each term in the second expression and add.</li>
-<li>The value of an algebraic expression depends on the values assigned to its variables.</li>
-<li>Algebraic expressions can represent real-life situations and formulas (e.g., area, interest, perimeter).</li>
-<li>Expressions with variables in the denominator are not polynomials.</li>
-<li>A polynomial must have only non-negative integer exponents.</li>
-<li>In standard form, terms are arranged in descending order of powers.</li>
-<li>To find a general rule, observe patterns and express them using variables.</li>
-<li>The coefficient of a term is the numerical part; when it is +1 or −1, it is usually omitted.</li>
-<li>Zero pairs (additive inverses) cancel each other out in algebra tiles.</li>
-<li>Algebra tiles help visualize addition and subtraction of algebraic expressions.</li>
+<li>Algebra uses variables and constants to generalize math problems.</li>
+<li>Variables represent unknown quantities while constants have fixed values.</li>
+<li>An algebraic expression combines constants and variables using +, -, *, /.</li>
+<li>Terms are parts of an expression separated by + or - signs.</li>
+<li>A term is a product of its factors which can be numbers or variables.</li>
+<li>The numerical factor of a term is called its coefficient.</li>
+<li>When the coefficient is 1 it is usually omitted in writing the term.</li>
+<li>When the coefficient is -1 it is written as a minus sign.</li>
+<li>Like terms have identical algebraic factors but may have different coefficients.</li>
+<li>Unlike terms have different algebraic factors and cannot be combined.</li>
+<li>A monomial has exactly one term in the expression.</li>
+<li>A binomial has exactly two unlike terms in the expression.</li>
+<li>A trinomial has exactly three unlike terms in the expression.</li>
+<li>A polynomial contains one or more terms with positive integer powers.</li>
+<li>The degree of a polynomial is the highest power of the variable present.</li>
+<li>For multivariable terms add the powers of all variables to find the degree.</li>
+<li>Polynomials should be written in standard form with powers in descending order.</li>
+<li>To add algebraic expressions combine only the coefficients of like terms.</li>
+<li>Unlike terms cannot be added together in an expression.</li>
+<li>To subtract expressions reverse the sign of every term being subtracted.</li>
+<li>Removing brackets during subtraction changes + to - and - to +.</li>
+<li>Find the value of an expression by substituting given numbers for variables.</li>
+<li>If a variable appears in the denominator the expression is not a polynomial.</li>
+<li>Algebraic expressions help write general formulas for geometry and arithmetic.</li>
+<li>Patterns in shapes can be generalized using algebraic rules involving n.</li>
+<li>Simplify expressions before substituting values to make calculation easier.</li>
+<li>Zero pairs consist of additive inverses that cancel each other out to zero.</li>
+<li>The perimeter of a square is 4 * side.</li>
+<li>Area of rectangle equals l * b.</li>
+<li>Simple interest formula is P * R * T / 100.</li>
+<li>Profit equals s - c.</li>
+<li>Loss equals c - s.</li>
+<li>Speed equals d / t.</li>
+<li>Always include the negative sign with the negative term when identifying terms.</li>
+<li>Tree diagrams can represent factors and terms of an algebraic expression visually.</li>
+<li>Coefficients can be relative meaning any factor can be considered the coefficient of others.</li>
+<li>Constant terms have a degree of 0 in a polynomial.</li>
+<li>Matchstick patterns often follow linear rules based on the number of shapes.</li>
+<li>Bindis forming squares follow a rule of n^2 for the nth square.</li>
+<li>Exercise questions test identification of terms, factors, coefficients and types.</li>
+<li>Column method helps align like terms for addition and subtraction clearly.</li>
+<li>Check if an expression is a polynomial by ensuring no negative exponents exist.</li>
+<li>Mental maths practice involves quick identification of like and unlike terms.</li>
+<li>Case studies apply algebraic concepts to real life business and budget scenarios.</li>
+<li>Lab activity uses tiles to visualize adding and subtracting algebraic terms.</li>
 </ul></div></div><div class="tab-panel " id="tab-keywords"><div class="content-body markdown-body"><h1 id="key-terms">Key Terms</h1>
-<p>Algebraic expression — a combination of constants and variables connected by mathematical operations (+, −, ×, ÷).<br />
-Coefficient — the numerical factor of a term in an algebraic expression.<br />
-Constant — a number whose value does not change, such as 1, 2, or 5.<br />
-Degree of a polynomial — the highest power of any variable in the polynomial.<br />
-Factor — a number or variable that divides another term exactly; in a term, factors are multiplied together to form the term.<br />
-Like terms — terms that have the same algebraic factors (same variables with the same powers).<br />
-Monomial — an algebraic expression with only one term, such as 5x or 7.<br />
-Polynomial — an algebraic expression with one or more terms, including monomials, binomials, and trinomials.<br />
-Trinomial — an algebraic expression with exactly three unlike terms, such as a + b + c.<br />
-Binomial — an algebraic expression with exactly two unlike terms, such as 3x + 2y.<br />
-Term — a part of an algebraic expression that is added or subtracted, such as 3x or −5.<br />
-Variable — a letter representing an unknown quantity, such as x, y, or z.<br />
-Unlike terms — terms that have different algebraic factors (different variables or different powers).<br />
-Addition of algebraic expressions — combining like terms by adding their numerical coefficients.<br />
-Subtraction of algebraic expressions — subtracting like terms by finding the difference of their coefficients.<br />
-Standard form of a polynomial — writing the terms in descending order of their powers.<br />
-Numerical coefficient — the number that multiplies a variable or variables in a term.<br />
-Product of variables — a term formed by multiplying variables, such as xy or x³y⁵.<br />
-Product of a constant and variables — a term formed by multiplying a constant with variables, such as 3xy.<br />
-Power — the exponent indicating how many times a variable is multiplied by itself, such as x².</p></div></div><div class="tab-panel " id="tab-exercises"><div class="content-body markdown-body"><h1 id="exercises-solved">Exercises Solved</h1>
+<p><strong>Algebraic Expression</strong> — A combination of constants and variables connected by fundamental mathematical operations such as addition, subtraction, multiplication, or division.<br />
+<strong>Binomial</strong> — An algebraic expression which contains exactly two unlike terms.<br />
+<strong>Coefficient</strong> — The numerical factor of a term in an algebraic expression.<br />
+<strong>Constant</strong> — A number whose value remains fixed and does not change in an expression.<br />
+<strong>Degree of a Polynomial</strong> — The highest power of a variable in a polynomial.<br />
+<strong>Factor</strong> — Any quantity that is multiplied to form a term in an algebraic expression.<br />
+<strong>Formula</strong> — A generalised rule written using algebraic expressions to represent arithmetic relationships.<br />
+<strong>Generalisation</strong> — The process of finding a general rule for patterns using algebraic expressions.<br />
+<strong>Like Terms</strong> — Terms that contain the same algebraic factors even if their numerical coefficients differ.<br />
+<strong>Literal</strong> — Letters used to represent unknown quantities or variables in algebra.<br />
+<strong>Monomial</strong> — An algebraic expression which contains only one term.<br />
+<strong>Polynomial</strong> — An algebraic expression with one or more terms where variables have positive integer powers.<br />
+<strong>Standard Form</strong> — Writing a polynomial in decreasing order of the powers of its terms.<br />
+<strong>Subtraction of Algebraic Expressions</strong> — The operation of subtracting like terms by adding their additive inverse.<br />
+<strong>Trinomial</strong> — An algebraic expression which contains exactly three unlike terms.<br />
+<strong>Unlike Terms</strong> — Terms that contain different algebraic factors.<br />
+<strong>Value of an Algebraic Expression</strong> — The result obtained by substituting specific numbers for the variables in an expression.<br />
+<strong>Variable</strong> — A symbol representing an unknown quantity that can take any value.<br />
+<strong>Zero Pairs</strong> — Additive inverse pairs of algebra tiles that combine to equal zero.</p></div></div><div class="tab-panel " id="tab-exercises"><div class="content-body markdown-body"><h1 id="exercises-solved">Exercises Solved</h1>
 <h1 id="chapter-6-algebraic-expressions">Chapter 6: Algebraic Expressions</h1>
-<p><strong>Answers to All Exercises</strong></p>
+<h2 id="tune-up">Tune Up</h2>
+<p><strong>Question:</strong> Take a sheet of paper and a packet of bindis. Paste 1 bindi on the sheet of paper as shown in Fig. 6.1. Now, paste 4 bindis in such a way that they form a square, that is, 2 bindis each in 2 rows (Fig. 6.1). Similarly, paste 9 bindis in such a way that they form a square, that is, 3 bindis each in 3 rows. Continue the same pattern by pasting the bindis for the next two squares. Can you guess the number of bindis in the 10th squares? Can you form a rule for the number of bindis in the nth squares?</p>
+<p><strong>Answer:</strong><br />
+1.  <strong>Pattern Observation:</strong><br />
+    *   1st square: 1 bindi ($1 \times 1 = 1^2$)<br />
+    *   2nd square: 4 bindis ($2 \times 2 = 2^2$)<br />
+    *   3rd square: 9 bindis ($3 \times 3 = 3^2$)<br />
+    *   4th square: 16 bindis ($4 \times 4 = 4^2$)<br />
+    *   5th square: 25 bindis ($5 \times 5 = 5^2$)<br />
+2.  <strong>Rule for nth Square:</strong><br />
+    *   The number of bindis in the nth square is given by the rule: $n^2$.<br />
+3.  <strong>Number of Bindis in the 10th Square:</strong><br />
+    *   Substitute $n = 10$ into the rule.<br />
+    *   Number of bindis = $10^2 = 100$.<br />
+    *   So, there are 100 bindis in the 10th square.</p>
 <hr />
-<h2 id="exercise-61"><strong>Exercise 6.1</strong></h2>
-<h3 id="1-find-a-general-rule-for-the-number-of-matchsticks-required-to-make-the-following-pattern">1. Find a general rule for the number of matchsticks required to make the following pattern.</h3>
-<p><em>(Fig. 6.4 is not visible, but based on standard patterns, assume it is a sequence of triangles or squares.)</em><br />
-Assuming the pattern is of <strong>triangles</strong> where each new triangle adds 2 matchsticks:<br />
-- 1st triangle: 3 matchsticks<br />
-- 2nd: 5 matchsticks<br />
-- 3rd: 7 matchsticks  </p>
-<p>Pattern: Odd numbers starting from 3 → <strong>2n + 1</strong><br />
-✅ <strong>General rule: ( 2n + 1 )</strong></p>
-<blockquote>
-<p>If the pattern is of <strong>squares</strong>, then each square adds 4 matchsticks:<br />
-- 1st: 4<br />
-- 2nd: 8<br />
-- 3rd: 12<br />
-→ Rule: ( 4n )  </p>
-</blockquote>
-<p>Since the figure is missing, <strong>most likely pattern is of triangles</strong>.<br />
-✅ <strong>Answer: ( 2n + 1 )</strong></p>
+<h2 id="exercise-61">Exercise 6.1</h2>
+<p><strong>Question 1:</strong> Find a general rule for the number of matchsticks required to make the following pattern. [Fig. 6.4]</p>
+<p><strong>Answer:</strong><br />
+Since the specific pattern in Fig. 6.4 is not visible in the text, the general method to find the rule is described below:<br />
+1.  Count the number of matchsticks used in the first figure (let's say $n=1$).<br />
+2.  Count the number of matchsticks used in the second figure ($n=2$).<br />
+3.  Count the number of matchsticks used in the third figure ($n=3$).<br />
+4.  Find the difference between consecutive terms. If the difference is constant, the rule is of the form $an + b$.<br />
+5.  <strong>Example:</strong> If the pattern forms 'L' shapes where the 1st uses 2 sticks, 2nd uses 4 sticks, 3rd uses 6 sticks, the rule would be $2n$.<br />
+<em>(Note: To get the exact rule, one needs to observe the visual pattern in Fig. 6.4).</em></p>
+<p><strong>Question 2:</strong> Find a general rule for the number of line segments required to make the following patterns.<br />
+a) [Fig. 6.5]<br />
+b) [Fig. 6.6]</p>
+<p><strong>Answer:</strong><br />
+Similar to Question 1, the specific figures are not visible. The general method is:<br />
+1.  Observe the number of line segments in the 1st, 2nd, and 3rd stages of the pattern.<br />
+2.  Determine the relationship between the stage number ($n$) and the total segments.<br />
+3.  Formulate the algebraic expression.<br />
+<em>(Note: Please refer to the textbook figures for the exact count).</em></p>
 <hr />
-<h3 id="2-find-a-general-rule-for-the-number-of-line-segments-required-to-make-the-following-patterns">2. Find a general rule for the number of line segments required to make the following patterns.</h3>
-<h4 id="a-fig-65-assumed-a-pattern-of-overlapping-lines-forming-a-zigzag-or-increasing-segments">a) Fig. 6.5 (Assumed: a pattern of overlapping lines forming a zigzag or increasing segments)</h4>
-<p>Assume: Each new figure adds 2 more line segments.<br />
-- 1st: 2<br />
-- 2nd: 4<br />
-- 3rd: 6  </p>
-<p>Pattern: ( 2n )<br />
-✅ <strong>General rule: ( 2n )</strong></p>
-<h4 id="b-fig-66-assumed-a-pattern-of-horizontal-and-vertical-lines-forming-a-grid-or-increasing-lines">b) Fig. 6.6 (Assumed: a pattern of horizontal and vertical lines forming a grid or increasing lines)</h4>
-<p>Assume: Each new figure adds 3 more line segments.<br />
-- 1st: 3<br />
-- 2nd: 6<br />
-- 3rd: 9  </p>
-<p>Pattern: ( 3n )<br />
-✅ <strong>General rule: ( 3n )</strong></p>
-<blockquote>
-<p>Final Answers:<br />
-a) ( 2n )<br />
-b) ( 3n )</p>
-</blockquote>
+<h2 id="exercise-62">Exercise 6.2</h2>
+<p><strong>Question 1:</strong> Write the algebraic expressions for the following statements.<br />
+a) Subtract the product of 2 and $x$ from 7.<br />
+b) The product of $3x$ and $y$ divided by 5.<br />
+c) The sum of squares of $x$ and $y$.<br />
+d) 7 times $m$ is added to 5 times $n$.<br />
+e) Take away 6 from the sum of $p$ and $q$.</p>
+<p><strong>Answer:</strong><br />
+a) Product of 2 and $x$ is $2x$. Subtracting this from 7 gives: $7 - 2x$.<br />
+b) Product of $3x$ and $y$ is $3xy$. Divided by 5 gives: $\frac{3xy}{5}$.<br />
+c) Square of $x$ is $x^2$. Square of $y$ is $y^2$. Sum is: $x^2 + y^2$.<br />
+d) 7 times $m$ is $7m$. 5 times $n$ is $5n$. Added together: $7m + 5n$.<br />
+e) Sum of $p$ and $q$ is $p + q$. Taking away 6 gives: $p + q - 6$.</p>
+<p><strong>Question 2:</strong> Draw a tree diagram to represent the terms and factors for the following algebraic expressions.<br />
+a) $3a^2 - b + 2$<br />
+b) $4p + 3q$<br />
+c) $x^2y^2 - xy - 2y$</p>
+<p><strong>Answer:</strong><br />
+Tree diagrams break down terms into their factors.<br />
+a) <strong>Expression:</strong> $3a^2 - b + 2$<br />
+   *   Terms: $3a^2$, $-b$, $2$<br />
+   *   Factors of $3a^2$: $3, a, a$<br />
+   *   Factors of $-b$: $-1, b$<br />
+   *   Factors of $2$: $2$<br />
+b) <strong>Expression:</strong> $4p + 3q$<br />
+   *   Terms: $4p$, $3q$<br />
+   *   Factors of $4p$: $4, p$<br />
+   *   Factors of $3q$: $3, q$<br />
+c) <strong>Expression:</strong> $x^2y^2 - xy - 2y$<br />
+   *   Terms: $x^2y^2$, $-xy$, $-2y$<br />
+   *   Factors of $x^2y^2$: $x, x, y, y$<br />
+   *   Factors of $-xy$: $-1, x, y$<br />
+   *   Factors of $-2y$: $-2, y$</p>
+<p><strong>Question 3:</strong> Identify the terms which contain $p$ and write the coefficients of $p$ in the following expression.<br />
+a) $5p + 3$<br />
+b) $7pq + p^2$<br />
+c) $6pq - 3pr + 6pq^2$</p>
+<p><strong>Answer:</strong><br />
+a) Term containing $p$: $5p$. Coefficient of $p$: $5$.<br />
+b) Terms containing $p$: $7pq$, $p^2$.<br />
+   *   Coefficient of $p$ in $7pq$: $7q$.<br />
+   *   Coefficient of $p$ in $p^2$: $p$.<br />
+c) Terms containing $p$: $6pq$, $-3pr$, $6pq^2$.<br />
+   *   Coefficient of $p$ in $6pq$: $6q$.<br />
+   *   Coefficient of $p$ in $-3pr$: $-3r$.<br />
+   *   Coefficient of $p$ in $6pq^2$: $6q^2$.</p>
+<p><strong>Question 4:</strong> Write the numerical coefficients of the terms (other than constants) in the following expressions.<br />
+a) $pq - 1$<br />
+b) $2y^2 + 6$<br />
+c) $-xy + 3x^2y^2$</p>
+<p><strong>Answer:</strong><br />
+a) Term: $pq$. Numerical coefficient: $1$ (since $pq = 1 \times pq$). Constant term: $-1$.<br />
+b) Term: $2y^2$. Numerical coefficient: $2$. Constant term: $6$.<br />
+c) Terms: $-xy$, $3x^2y^2$. Numerical coefficients: $-1$, $3$.</p>
+<p><strong>Question 5:</strong> Identify the like terms in the following expressions. $8p^2, 3q^2, -2r, 7pq, -p^2, 2q^2, -3t, r, -2pq, \frac{t}{2}, -q^2, 2qp$</p>
+<p><strong>Answer:</strong><br />
+Like terms have the same algebraic factors.<br />
+*   Group 1 (terms with $p^2$): $8p^2, -p^2$<br />
+*   Group 2 (terms with $q^2$): $3q^2, 2q^2, -q^2$<br />
+*   Group 3 (terms with $r$): $-2r, r$<br />
+*   Group 4 (terms with $pq$ or $qp$): $7pq, -2pq, 2qp$ (Note: $pq$ and $qp$ are same)<br />
+*   Group 5 (terms with $t$): $-3t, \frac{t}{2}$</p>
+<p><strong>Question 6:</strong> Identify the following as like or unlike terms.<br />
+a) $5a, 2a, 6a$<br />
+b) $-5xy, -5x^2$<br />
+c) $-2pq, \frac{1}{2}qp$<br />
+d) $2x, \frac{1}{2y}$</p>
+<p><strong>Answer:</strong><br />
+a) <strong>Like terms.</strong> All have the variable $a$ with power 1.<br />
+b) <strong>Unlike terms.</strong> One has $xy$, the other has $x^2$. Variables/powers differ.<br />
+c) <strong>Like terms.</strong> $pq$ and $qp$ represent the same variables multiplied.<br />
+d) <strong>Unlike terms.</strong> One has variable $x$, the other has variable $y$ in denominator.</p>
+<p><strong>Question 7:</strong> Classify the following algebraic expressions as monomials, binomials and trinomials.<br />
+a) $-4xyz + 3y^2$<br />
+b) $5pqr$<br />
+c) $-x + y - 2z$<br />
+d) $71x^2 + 75y^2 - 15z^2$<br />
+e) $3x$<br />
+f) $-6xy$<br />
+g) $\frac{a}{3} + \frac{b}{4}$<br />
+h) $2x^2zy$<br />
+i) $10$<br />
+j) $l^2m^2 + m^2n^2$</p>
+<p><strong>Answer:</strong><br />
+a) <strong>Binomial</strong> (2 unlike terms: $-4xyz, 3y^2$)<br />
+b) <strong>Monomial</strong> (1 term: $5pqr$)<br />
+c) <strong>Trinomial</strong> (3 unlike terms: $-x, y, -2z$)<br />
+d) <strong>Trinomial</strong> (3 unlike terms: $71x^2, 75y^2, -15z^2$)<br />
+e) <strong>Monomial</strong> (1 term: $3x$)<br />
+f) <strong>Monomial</strong> (1 term: $-6xy$)<br />
+g) <strong>Binomial</strong> (2 terms: $\frac{a}{3}, \frac{b}{4}$)<br />
+h) <strong>Monomial</strong> (1 term: $2x^2zy$)<br />
+i) <strong>Monomial</strong> (1 term: $10$)<br />
+j) <strong>Binomial</strong> (2 terms: $l^2m^2, m^2n^2$)</p>
+<p><strong>Question 8:</strong> Arrange the terms of the following algebraic expressions in the descending order of their powers and find the degree in each case.</p>
+<p><strong>Answer:</strong><br />
+<em>Note: The specific algebraic expressions for Question 8 were not provided in the extracted text.</em><br />
+<strong>General Method:</strong><br />
+1.  Identify the power of the variable(s) in each term.<br />
+2.  Rewrite the expression starting with the term having the highest power.<br />
+3.  The degree of the polynomial is the highest power among all terms.<br />
+<em>Example:</em> For $a + a^2 + a^4 + 2$, arranged order is $a^4 + a^2 + a + 2$. Degree is 4.</p>
 <hr />
-<h2 id="exercise-62"><strong>Exercise 6.2</strong></h2>
-<h3 id="1-write-algebraic-expressions-for-the-following-statements">1. Write algebraic expressions for the following statements.</h3>
-<p>a) Subtract the product of 2 and ( x ) from 7<br />
-→ ( 7 - 2x )</p>
-<p>b) The product of ( 3x ) and ( y ) divided by 5<br />
-→ ( \frac{3xy}{5} )</p>
-<p>c) The sum of squares of ( x ) and ( y )<br />
-→ ( x^2 + y^2 )</p>
-<p>d) 7 times ( m ) is added to 5 times ( n )<br />
-→ ( 5n + 7m )</p>
-<p>e) Take away 6 from the sum of ( p ) and ( q )<br />
-→ ( (p + q) - 6 )</p>
-<p>✅ Final answers:<br />
-a) ( 7 - 2x )<br />
-b) ( \frac{3xy}{5} )<br />
-c) ( x^2 + y^2 )<br />
-d) ( 5n + 7m )<br />
-e) ( p + q - 6 )</p>
-<hr />
-<h3 id="2-draw-a-tree-diagram-to-represent-the-terms-and-factors">2. Draw a tree diagram to represent the terms and factors.</h3>
-<p><em>(Tree diagrams are visual; here is a textual representation.)</em></p>
-<h4 id="a-3a2-b-2">a) ( 3a^2 - b + 2 )</h4>
-<ul>
-<li>Term: ( 3a^2 ) → factors: 3, a, a  </li>
-<li>Term: ( -b ) → factors: -1, b  </li>
-<li>Term: 2 → constant  </li>
-</ul>
-<p>Tree:  </p>
-<pre><code>3a^2 → 3 → a → a
--b → -1 → b
-2 → constant
+<h2 id="exercise-63">Exercise 6.3</h2>
+<p><strong>Question 1:</strong> Add the following like terms.<br />
+a) $13x, -27x$ and $-39x$<br />
+b) $19a, -55a$ and $14a$<br />
+c) $7xyz$ and $-4xyz$<br />
+d) $-15pq, 12qp, -23pq$ and $7pq$</p>
+<p><strong>Answer:</strong><br />
+a) $(13 - 27 - 39)x = -53x$<br />
+b) $(19 - 55 + 14)a = -22a$<br />
+c) $(7 - 4)xyz = 3xyz$<br />
+d) Note: $qp = pq$. So terms are $-15pq, 12pq, -23pq, 7pq$.<br />
+   Sum of coefficients: $-15 + 12 - 23 + 7 = -19$.<br />
+   Result: $-19pq$</p>
+<p><strong>Question 2:</strong> Add the following expressions.<br />
+a) $5xy + 2x, -2xy + 3y$ and $8xy - 3x + 4y$<br />
+b) $m + 1$ and $m^2 + m$<br />
+c) $4t^4 + 2t + 11, -3t^2 + t$ and $t^4 - 2$<br />
+d) $2a + 3b - 4c, 8c - 1$ and $5b + 4$</p>
+<p><strong>Answer:</strong><br />
+a) Collect like terms:<br />
+   $xy$: $5xy - 2xy + 8xy = 11xy$<br />
+   $x$: $2x - 3x = -x$<br />
+   $y$: $3y + 4y = 7y$<br />
+   Result: $11xy - x + 7y$<br />
+b) Collect like terms:<br />
+   $m^2$: $m^2$<br />
+   $m$: $m + m = 2m$<br />
+   Constants: $1$<br />
+   Result: $m^2 + 2m + 1$<br />
+c) Collect like terms:<br />
+   $t^4$: $4t^4 + t^4 = 5t^4$<br />
+   $t^2$: $-3t^2$<br />
+   $t$: $2t + t = 3t$<br />
+   Constants: $11 - 2 = 9$<br />
+   Result: $5t^4 - 3t^2 + 3t + 9$<br />
+d) Collect like terms:<br />
+   $a$: $2a$<br />
+   $b$: $3b + 5b = 8b$<br />
+   $c$: $-4c + 8c = 4c$<br />
+   Constants: $-1 + 4 = 3$<br />
+   Result: $2a + 8b + 4c + 3$</p>
+<p><strong>Question 3:</strong> Arrange the like terms in columns and add them.<br />
+a) $2x^3 - 7x^4 + 7x^5$ and $11x^3 - 4x^4 - x$<br />
+b) $-2p - 3p^2$ and $1 - 5p + 8p^2$</p>
+<p><strong>Answer:</strong><br />
+a)</p>
+<pre><code class="language-text">      7x^5 - 7x^4 + 2x^3
++         -4x^4 + 11x^3 - x
+---------------------------
+      7x^5 - 11x^4 + 13x^3 - x
 </code></pre>
-<h4 id="b-4p-3q">b) ( 4p + 3q )</h4>
-<ul>
-<li>Term: ( 4p ) → factors: 4, p  </li>
-<li>Term: ( 3q ) → factors: 3, q  </li>
-</ul>
-<p>Tree:  </p>
-<pre><code>4p → 4 → p
-3q → 3 → q
+<p>Result: $7x^5 - 11x^4 + 13x^3 - x$</p>
+<p>b)</p>
+<pre><code class="language-text">          -3p^2 - 2p
++     8p^2 - 5p + 1
+------------------
+       5p^2 - 7p + 1
 </code></pre>
-<h4 id="c-x2y2-xy-2y">c) ( x^2y^2 - xy - 2y )</h4>
-<ul>
-<li>Term: ( x^2y^2 ) → factors: x, x, y, y  </li>
-<li>Term: ( -xy ) → factors: -1, x, y  </li>
-<li>Term: ( -2y ) → factors: -2, y  </li>
-</ul>
-<p>Tree:  </p>
-<pre><code>x^2y^2 → x → x → y → y
--xy → -1 → x → y
--2y → -2 → y
-</code></pre>
-<hr />
-<h3 id="3-identify-terms-containing-p-and-write-coefficients">3. Identify terms containing ( p ) and write coefficients.</h3>
-<p>a) ( 5p + 3 )<br />
-→ Term: ( 5p ) → coefficient: 5</p>
-<p>b) ( 7pq + p^2 )<br />
-→ Terms: ( 7pq ), ( p^2 )<br />
-→ Coefficients:<br />
-- ( 7pq ): 7<br />
-- ( p^2 ): 1 (since ( 1p^2 ))</p>
-<p>c) ( 6pq - 3pr + 6pq^2 )<br />
-→ Terms with ( p ): ( 6pq ), ( -3pr )<br />
-→ Coefficients:<br />
-- ( 6pq ): 6<br />
-- ( -3pr ): -3</p>
-<p>✅ Final answers:<br />
-a) Term: ( 5p ), Coefficient: 5<br />
-b) Terms: ( 7pq ), ( p^2 ); Coefficients: 7, 1<br />
-c) Terms: ( 6pq ), ( -3pr ); Coefficients: 6, -3</p>
-<hr />
-<h3 id="4-write-numerical-coefficients-of-terms-other-than-constants">4. Write numerical coefficients of terms (other than constants)</h3>
-<p>a) ( pq - 1 )<br />
-→ Term: ( pq ) → coefficient: 1</p>
-<p>b) ( 2y^2 + 6 )<br />
-→ Term: ( 2y^2 ) → coefficient: 2</p>
-<p>c) ( -xy + 3x^2y^2 )<br />
-→ Terms: ( -xy ), ( 3x^2y^2 )<br />
-→ Coefficients: -1, 3</p>
-<p>✅ Final answers:<br />
-a) 1<br />
-b) 2<br />
-c) -1, 3</p>
-<hr />
-<h3 id="5-identify-like-terms-in-the-expression">5. Identify like terms in the expression:</h3>
-<p>( 8p^2, 3q^2, -2r, 7pq, -p^2, 2q^2, -3t, r, -2pq, \frac{t}{2}, -q^2, 2qp )</p>
-<p>Group by same algebraic factors:</p>
-<ul>
-<li>( p^2 ): ( 8p^2, -p^2 )  </li>
-<li>( q^2 ): ( 3q^2, 2q^2, -q^2 )  </li>
-<li>( pq ): ( 7pq, -2pq, 2qp ) (since ( 2qp = 2pq ))  </li>
-<li>( r ): ( -2r, r )  </li>
-<li>( t ): ( -3t, \frac{t}{2} )</li>
-</ul>
-<p>✅ Like terms:<br />
-- ( 8p^2, -p^2 )<br />
-- ( 3q^2, 2q^2, -q^2 )<br />
-- ( 7pq, -2pq, 2qp )<br />
-- ( -2r, r )<br />
-- ( -3t, \frac{t}{2} )</p>
-<hr />
-<h3 id="6-identify-as-like-or-unlike-terms">6. Identify as like or unlike terms.</h3>
-<p>a) ( 5a, 2a, 6a ) → all have ( a ) → <strong>like</strong><br />
-b) ( -5xy, -5x^2 ) → different algebraic factors → <strong>unlike</strong><br />
-c) ( -2pq, \frac{1}{2}qp ) → ( pq ) and ( qp ) are same → <strong>like</strong><br />
-d) ( 2x, \frac{1}{2y} ) → different → <strong>unlike</strong></p>
-<p>✅ Answers:<br />
-a) like<br />
-b) unlike<br />
-c) like<br />
-d) unlike</p>
-<hr />
-<h3 id="7-classify-expressions-as-monomials-binomials-trinomials">7. Classify expressions as monomials, binomials, trinomials.</h3>
-<p>a) ( -4xyz + 3y^2 ) → two terms → <strong>binomial</strong><br />
-b) ( 5pqr ) → one term → <strong>monomial</strong><br />
-c) ( -x + y - 2z ) → three terms → <strong>trinomial</strong><br />
-d) ( 71x^2 + 75y^2 - 15z^2 ) → three terms → <strong>trinomial</strong><br />
-e) ( 3x ) → one term → <strong>monomial</strong><br />
-f) ( -6xy ) → one term → <strong>monomial</strong><br />
-g) ( \frac{a}{3} + \frac{b}{4} ) → two terms → <strong>binomial</strong><br />
-h) ( 2x^2zy ) → one term → <strong>monomial</strong><br />
-i) ( 10 ) → one term → <strong>monomial</strong><br />
-j) ( l^2m^2 + m^2n^2 ) → two terms → <strong>binomial</strong></p>
-<p>✅ Final classification:<br />
-a) binomial<br />
-b) monomial<br />
-c) trinomial<br />
-d) trinomial<br />
-e) monomial<br />
-f) monomial<br />
-g) binomial<br />
-h) monomial<br />
-i) monomial<br />
-j) binomial</p>
-<hr />
-<h3 id="8-arrange-terms-in-descending-order-and-find-degree">8. Arrange terms in descending order and find degree.</h3>
-<p>a) ( a + a^2 + a^4 + 2 )<br />
-→ Descending: ( a^4 + a^2 + a + 2 ) → degree = 4</p>
-<p>b) ( 1 + x^3 + x^5 - x^2 )<br />
-→ Descending: ( x^5 + x^3 - x^2 + 1 ) → degree = 5</p>
-<p>c) ( x^5y^3 - x^4y^2 + x^3y - x^2 + xy )<br />
-→ Descending: ( x^5y^3 - x^4y^2 + x^3y - x^2 + xy )<br />
-→ Degree: sum of powers in highest term ( x^5y^3 = 5+3 = 8 ) → degree = 8</p>
-<p>✅ Final answers:<br />
-a) degree 4<br />
-b) degree 5<br />
-c) degree 8</p>
-<hr />
-<h2 id="exercise-63"><strong>Exercise 6.3</strong></h2>
-<h3 id="1-add-like-terms">1. Add like terms.</h3>
-<p>a) ( 13x - 27x - 39x = (13 - 27 - 39)x = -53x )<br />
-b) ( 19a - 55a + 14a = (19 - 55 + 14)a = -22a )<br />
-c) ( 7xyz - 4xyz = 3xyz )<br />
-d) ( -15pq + 12pq - 23pq + 7pq = (-15 + 12 - 23 + 7)pq = -29pq )</p>
-<p>✅ Answers:<br />
-a) ( -53x )<br />
-b) ( -22a )<br />
-c) ( 3xyz )<br />
-d) ( -29pq )</p>
-<hr />
-<h3 id="2-add-expressions">2. Add expressions.</h3>
-<p>a) ( 5xy + 2x - 2xy + 3y + 8xy - 3x + 4y )<br />
-→ Group: ( (5xy - 2xy + 8xy) + (2x - 3x) + (3y + 4y) = 11xy - x + 7y )</p>
-<p>b) ( m + 1 + m^2 + m = m^2 + 2m + 1 )</p>
-<p>c) ( 4t^4 + 2t + 11 - 3t^2 + t + t^4 - 2 )<br />
-→ ( (4t^4 + t^4) + (-3t^2) + (2t + t) + (11 - 2) = 5t^4 - 3t^2 + 3t + 9 )</p>
-<p>d) ( 2a + 3b - 4c + 8c - 1 + 5b + 4 )<br />
-→ ( 2a + (3b + 5b) + (-4c + 8c) + (-1 + 4) = 2a + 8b + 4c + 3 )</p>
-<p>✅ Final answers:<br />
-a) ( 11xy - x + 7y )<br />
-b) ( m^2 + 2m + 1 )<br />
-c) ( 5t^4 - 3t^2 + 3t + 9 )<br />
-d) ( 2a + 8b + 4c + 3 )</p>
-<hr />
-<h3 id="3-arrange-like-terms-in-columns-and-add">3. Arrange like terms in columns and add.</h3>
-<p>a) ( 2x^3 - 7x^4 + 7x^5 ) and ( 11x^3 - 4x^4 - x )  </p>
-<pre><code>     7x^5
-   -7x^4  + 11x^3
-   -4x^4  + 2x^3
-     -x
--------------------
-     7x^5 -11x^4 + 13x^3 - x
-</code></pre>
-<p>→ Sum: ( 7x^5 - 11x^4 + 13x^3 - x )</p>
-<p>b) ( -2p - 3p^2 ) and ( 1 - 5p + 8p^2 )  </p>
-<pre><code>     -3p^2  + 8p^2
-     -2p - 5p
-       1
--------------------
-      5p^2 -7p + 1
-</code></pre>
-<p>→ Sum: ( 5p^2 - 7p + 1 )</p>
-<p>✅ Final answers:<br />
-a) ( 7x^5 - 11x^4 + 13x^3 - x )<br />
-b) ( 5p^2 - 7p + 1 )</p>
-<hr />
-<h3 id="4-simplify">4. Simplify.</h3>
-<p>a) ( 12a + 2b^2 + 3a^3 - 3a + 17b^2 + 75a )<br />
-→ ( 3a^3 + (12a - 3a + 75a) + (2b^2 + 17b^2) = 3a^3 + 84a + 19b^2 )</p>
-<p>b) ( 23b + 127b^3 + 5b^2 + 13b - 7b^2 + 5b )<br />
-→ ( 127b^3 + (5b^2 - 7b^2) + (23b + 13b + 5b) = 127b^3 - 2b^2 + 41b )</p>
-<p>c) ( 17x + 5x + 7x^2 - 19x^2 + 33x )<br />
-→ ( (7x^2 - 19x^2) + (17x + 5x + 33x) = -12x^2 + 55x )</p>
-<p>d) ( 3m + 6n - 3m - 2n )<br />
-→ ( (3m - 3m) + (6n - 2n) = 0 + 4n = 4n )</p>
-<p>✅ Final answers:<br />
-a) ( 3a^3 + 84a + 19b^2 )<br />
-b) ( 127b^3 - 2b^2 + 41b )<br />
-c) ( -12x^2 + 55x )<br />
-d) ( 4n )</p>
-<hr />
-<h3 id="5-if-a-3x2-7x-8-b-x2-5x-4-find-2a-b">5. If ( A = 3x^2 - 7x - 8 ), ( B = x^2 - 5x - 4 ), find ( 2A + B )</h3>
-<p>→ ( 2A = 6x^2 - 14x - 16 )<br />
-→ ( 2A + B = 6x^2 - 14x - 16 + x^2 - 5x - 4 = 7x^2 - 19x - 20 )</p>
-<p>✅ Answer: ( 7x^2 - 19x - 20 )</p>
-<hr />
-<h3 id="6-rohan-spends-3a-4b-2c-on-a-book-and-7a-5b-c-on-a-bag-total-spent">6. Rohan spends ₹( (3a - 4b + 2c) ) on a book and ₹( (7a + 5b - c) ) on a bag. Total spent?</h3>
-<p>→ ( (3a - 4b + 2c) + (7a + 5b - c) = (3a + 7a) + (-4b + 5b) + (2c - c) = 10a + b + c )</p>
-<p>✅ Answer: ₹( 10a + b + c )</p>
-<hr />
-<h3 id="7-perimeter-of-a-square-with-side-x-4-cm">7. Perimeter of a square with side ( (x + 4) ) cm</h3>
-<p>→ Perimeter = ( 4 \times (x + 4) = 4x + 16 ) cm</p>
-<p>✅ Answer: ( 4x + 16 ) cm</p>
-<hr />
-<h2 id="exercise-64"><strong>Exercise 6.4</strong></h2>
-<h3 id="1-subtract-expressions">1. Subtract expressions.</h3>
-<p>a) ( -2yz - 6yz = -8yz )<br />
-b) ( 3p^2 - 7p^2 = -4p^2 )<br />
-c) ( (-y^7 + 10y + 7) - (9y^7 - 4y - 1) = -10y^7 + 14y + 8 )<br />
-d) ( (2a^3 - 3a^2 + a) - (2a^3 - 3a^2 + a + 1) = -1 )<br />
-e) ( (777x - 77y - 7z) - (7x +</p></div></div><div class="tab-panel " id="tab-question_paper"><div class="content-body markdown-body"><div class="quiz-container">
+<p>Result: $5p^2 - 7p + 1$</p>
+<p><strong>Question 4:</strong> Simplify the following.<br />
+a) $12a + 2b^2 + 3a^3 + (-3a) + 17b^2 + 75a$<br />
+b) $23b + 127b^3 + 5b^2 + 13b - 7b^2 + 5b$<br />
+c) $17x + 5x + 7x^2 + (-19x^2) + 33x$<br />
+d) $3m + 6n - 3m - 2n$</p>
+<p><strong>Answer:</strong><br />
+a) Group terms:<br />
+   $a$: $12a - 3a + 75a = 84a$<br />
+   $b^2$: $2b^2 + 17b^2 = 19b^2$<br />
+   $a^3$: $3a^3$<br />
+   Result: $3a^3 + 19b^2 + 84a$<br />
+b) Group terms:<br />
+   $b^3$: $127b^3$<br />
+   $b^2$: $5b^2 - 7b^2 = -2b^2$<br />
+   $b$: $23b + 13b + 5b = 41b$<br />
+   Result: $127b^3 - 2b^2 + 41b$<br />
+c) Group terms:<br />
+   $x^2$: $7x^2 - 19x^2 = -12x^2$<br />
+   $x$: $17x + 5x + 33x = 55x$<br />
+   Result: $-12x^2 + 55x$<br />
+d) Group terms:<br />
+   $m$: $3m - 3m = 0$<br />
+   $n$: $6n - 2n = 4n$<br />
+   Result: $4n$</p>
+<p><strong>Question 5:</strong> If $A = 3x^2 -</p></div></div><div class="tab-panel " id="tab-question_paper"><div class="content-body markdown-body"><h1 id="practice-questions-answers">Practice Questions &amp; Answers</h1>
+<h3 id="section-1-multiple-choice-questions">Section 1: Multiple Choice Questions</h3>
+<p><strong>Q1.</strong> What is the coefficient of ( x ) in the expression ( 5 - 3x )?<br />
+A) 5 &nbsp; B) 3 &nbsp; C) -3 &nbsp; D) -5</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) -3 <br/>
+</div>
+</details>
+
+<p><strong>Q2.</strong> What is the degree of the polynomial ( 4x^3y^2 )?<br />
+A) 3 &nbsp; B) 2 &nbsp; C) 5 &nbsp; D) 6</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) 5 <br/>
+</div>
+</details>
+
+<p><strong>Q3.</strong> Which of the following is a trinomial?<br />
+A) ( x^2 + 1 ) &nbsp; B) ( x^2 + 2x + 1 ) &nbsp; C) ( 5x ) &nbsp; D) ( x^2 + 2x + 1 + x )</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** B) \( x^2 + 2x + 1 \) <br/>
+</div>
+</details>
+
+<p><strong>Q4.</strong> Find the value of ( x^2 + 1 ) when ( x = -2 ).<br />
+A) 3 &nbsp; B) 5 &nbsp; C) -3 &nbsp; D) 1</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** B) 5 <br/>
+</div>
+</details>
+
+<p><strong>Q5.</strong> Which of the following expressions is NOT a polynomial?<br />
+A) ( x^2 + 3x + 2 ) &nbsp; B) ( 5x - 7 ) &nbsp; C) ( \frac{1}{x} + 2 ) &nbsp; D) ( 4 )</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** C) \( \frac{1}{x} + 2 \) <br/>
+</div>
+</details>
+
+<h3 id="section-2-fill-in-the-blanks">Section 2: Fill in the Blanks</h3>
+<p><strong>Q6.</strong> Letters used to represent unknown quantities in algebra are known as <strong><em>_</em></strong>_.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** variables <br/>
+</div>
+</details>
+
+<p><strong>Q7.</strong> The degree of a constant term is always <strong><em>_</em></strong>_.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 0 <br/>
+</div>
+</details>
+
+<p><strong>Q8.</strong> Terms which contain the same algebraic factors are called <strong><em>_</em></strong>_ terms.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** like <br/>
+</div>
+</details>
+
+<p><strong>Q9.</strong> To subtract an algebraic expression, we add its <strong><em>_</em></strong>_ to the other expression.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** additive inverse <br/>
+</div>
+</details>
+
+<p><strong>Q10.</strong> The formula for the area of a rectangle is given by Area = length <strong><em>_</em></strong>_ breadth.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** * (or multiplied by) <br/>
+</div>
+</details>
+
+<h3 id="section-3-short-answer-questions">Section 3: Short Answer Questions</h3>
+<p><strong>Q11.</strong> Write the numerical coefficient of the term ( -7ab^2 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** -7 <br/>
+</div>
+</details>
+
+<p><strong>Q12.</strong> Identify whether the terms ( 3xy ) and ( 5yx ) are like or unlike terms.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** Like terms <br/>
+</div>
+</details>
+
+<p><strong>Q13.</strong> Add the expressions ( 2a + 3b ) and ( 4a - b ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 6a + 2b \) <br/>
+</div>
+</details>
+
+<p><strong>Q14.</strong> Subtract ( 5m ) from ( 12m ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 7m \) <br/>
+</div>
+</details>
+
+<p><strong>Q15.</strong> Find the value of ( 3x - 2 ) when ( x = 4 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 10 <br/>
+</div>
+</details>
+
+<p><strong>Q16.</strong> State the degree of the polynomial ( p^4 + q^2 ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 4 <br/>
+</div>
+</details>
+
+<p><strong>Q17.</strong> Write the factors of the term ( 6x^2y ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** 6, x, x, y <br/>
+</div>
+</details>
+
+<p><strong>Q18.</strong> Simplify the expression ( (x + 2) + (x - 2) ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 2x \) <br/>
+</div>
+</details>
+
+<p><strong>Q19.</strong> Is ( 2x + \frac{3}{y} ) a polynomial? Give a brief reason.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** No, because the variable y is in the denominator. <br/>
+</div>
+</details>
+
+<p><strong>Q20.</strong> Write the algebraic formula for the perimeter of a square with side ( a ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 4a \) <br/>
+</div>
+</details>
+
+<h3 id="section-4-descriptive-and-application-questions">Section 4: Descriptive and Application Questions</h3>
+<p><strong>Q21.</strong> If the cost of one notebook is ₹( x ), write an algebraic expression for the cost of 5 notebooks.</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 5x \) <br/>
+</div>
+</details>
+
+<p><strong>Q22.</strong> Write an algebraic expression for the sum of two consecutive integers where the first integer is ( n ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( n + (n + 1) \) or \( 2n + 1 \) <br/>
+</div>
+</details>
+
+<p><strong>Q23.</strong> Simplify the expression ( 3(a + b) - 2(a + b) ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( a + b \) <br/>
+</div>
+</details>
+
+<p><strong>Q24.</strong> What must be subtracted from ( 10x ) to get ( 3x )?</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 7x \) <br/>
+</div>
+</details>
+
+<p><strong>Q25.</strong> Find the perimeter of a triangle whose sides measure ( x ), ( x ), and ( y ).</p>
+<details style="margin-top:0.5rem; margin-bottom:1rem;">
+<summary style="cursor:pointer; color:var(--red); font-weight:600; font-size:0.9rem;">Show Answer</summary>
+<div style="margin-top:0.4rem; padding:0.5rem 0.75rem; background:rgba(40,167,69,0.08); border-left:3px solid #28a745; border-radius:4px;">
+✅ **Answer:** \( 2x + y \) <br/>
+</div>
+</details></div></div><div class="tab-panel " id="tab-quiz"><div class="content-body markdown-body"><div class="quiz-container">
 <div style="display:flex;gap:.75rem;margin-bottom:1.25rem;flex-wrap:wrap;"><button onclick="document.querySelectorAll('#tab-question_paper details').forEach(d=>d.open=true)" style="padding:.5rem 1.1rem;border:1.5px solid var(--red);background:var(--red-light);color:var(--red);border-radius:8px;font-weight:600;font-size:.88rem;cursor:pointer;">👁️ Show All Answers</button><button onclick="document.querySelectorAll('#tab-question_paper details').forEach(d=>d.open=false)" style="padding:.5rem 1.1rem;border:1.5px solid var(--border);background:var(--bg);color:var(--muted);border-radius:8px;font-weight:600;font-size:.88rem;cursor:pointer;">🙈 Hide All Answers</button></div>
-<h2 style="margin-bottom:1rem;">📝 Practice Questions <span style="font-size:.85rem;color:var(--muted);font-weight:400;">(15 questions)</span></h2>
+<h2 style="margin-bottom:1rem;">📝 Practice Questions <span style="font-size:.85rem;color:var(--muted);font-weight:400;">(12 questions)</span></h2>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q1. What is the coefficient of $x$ in the term $-7xyz^2$?</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q1. What defines an algebraic expression?</p>
 <div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. -7</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. -7y</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 7z^2</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. -7yz^2</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. Only numbers</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. Constants and variables connected by operations</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. Only variables</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. None of these</span>
 </div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ -7yz^2</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q2. Terms with different algebraic factors are called ________ terms.</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. like</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. similar</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. unlike</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. numerical</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ unlike</p></details>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Constants and variables connected by operations</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q3. An algebraic expression containing two or more terms is called a:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. polynomial</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. binomial</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. monomial</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. trinomial</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ polynomial</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q4. The value of the expression $-17x - 19x^4 - 21x^2$ when $x = 3$ is:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. -1771</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. -1777</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. -1773</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. -1779</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ -1779</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q5. The correct formula for the number of kilometres ($n$) in $x$ decimetres is:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. n = x/100</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. n = 1000x</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. n = 10,000x</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. n = x/10,000</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ n = x/100</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q6. Subtract $-15p$ from $-2p^2$.</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. -2p^2</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. -17p^2</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. -13p^2</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. -2p^2 + 15p</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ -2p^2 + 15p</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q7. Like terms can be ________.</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. added</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. subtracted</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. both of these</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. none of these</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ both of these</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q8. The simplified form of $(m - 4) - (m + 5) + (m - 6) - (m + 7)$ is:</p>
-<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 22</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. -22</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 0</span>
-<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. -24</span>
-</div>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ -22</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q9. Write the algebraic expression for the sum of squares of $x$ and $y$.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ x^2 + y^2</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q10. Identify the like terms in the expression $8p^2, 3q^2, -2r, 7pq, -p^2, 2q^2, -3t, r, -2pq, t/2, -q^2, 2qp$.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 8p^2 and -p^2; 3q^2 and 2q^2; -q^2; 7pq and -2pq; 2qp and 7pq; -2r and r</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q11. Classify the expression $-x + y - 2z$ as monomial, binomial, or trinomial.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ trinomial</p></details>
-</div>
-<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q12. Find the degree of the polynomial $a + a^3 - a^0$.</p>
+<p style="font-weight:600;margin-bottom:.6rem;">Q2. In the expression 5x + 3, identify the constant term.</p>
 <details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 3</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q13. What should be added to $4x^2 - 5xy + 9$ to get $-2x^2 + 3xy - 5$?</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ -6x^2 + 8xy - 14</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q3. What is the numerical coefficient of x in the term 7xy?</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 7</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 7y</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. x</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 7xy</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 7y</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q14. Find the value of $x^2 + 20(x - 5)$ when $x = 5$.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 0</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q4. Are 4x and 4y like terms or unlike terms?</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Unlike terms</p></details>
 </div>
 <div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
-<p style="font-weight:600;margin-bottom:.6rem;">Q15. Write the formula for the area of a triangle in terms of its base $b$ and height $h$.</p>
-<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ A = (1/2)bh</p></details>
+<p style="font-weight:600;margin-bottom:.6rem;">Q5. Classify the expression 2a + 3b - c.</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. Monomial</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. Binomial</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. Trinomial</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. Polynomial</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ Trinomial</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q6. Find the degree of the polynomial x^3 + 2x + 1.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 3</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q7. Simplify 5m + 3m.</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 8m</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 15m</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 8</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 15</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 8m</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q8. Subtract 2x from 9x.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 7x</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q9. Find the value of 2x + 5 when x = 4.</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. 10</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. 12</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 13</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. 14</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 13</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q10. Write the formula for the perimeter of a square with side length s.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 4s</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q11. According to the bindi pattern in the chapter, what is the number of bindis in the nth square?</p>
+<div style="display:flex;flex-direction:column;gap:.35rem;margin-bottom:.6rem;">
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">A. n</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">B. n^2</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">C. 2n</span>
+<span style="padding:.35rem .75rem;border-radius:6px;font-size:.92rem;">D. n + 1</span>
+</div>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ n^2</p></details>
+</div>
+<div class="quiz-q" style="background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;margin-bottom:1rem;">
+<p style="font-weight:600;margin-bottom:.6rem;">Q12. Simplify 3p + 2q - p + q.</p>
+<details style="margin-top:.4rem;"><summary style="cursor:pointer;color:var(--red);font-weight:600;font-size:.9rem;">Show Answer</summary><p style="margin-top:.4rem;padding:.5rem .75rem;background:rgba(40,167,69,0.08);border-left:3px solid #28a745;border-radius:4px;font-weight:600;">✅ 2p + 3q</p></details>
 </div>
 </div></div></div><div class="tab-panel " id="tab-fulltext"><div class="content-body markdown-body"><pre><code class="language-markdown"># Chapter 6
 ## Algebraic Expressions
