@@ -65,15 +65,21 @@ if (sidebarToggle && sidebar) {
   });
 }
 
-// ── MathJax (lazy-load for Maths chapters) ─────────────────────────────────
-if (document.querySelector('.markdown-body') &&
-    document.querySelector('.markdown-body').textContent.includes('$')) {
-  window.MathJax = {
-    tex: { inlineMath: [['$','$'],['\\(','\\)']], displayMath: [['$$','$$']] },
-    svg: { fontCache: 'global' }
-  };
-  const s = document.createElement('script');
-  s.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
-  s.async = true;
-  document.head.appendChild(s);
+// ── MathJax (always load for LaTeX math) ─────────────────────────────────
+window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\(', '\)']],
+    displayMath: [['$$', '$$'], ['\[', '\]']],
+    processEscapes: true,
+  },
+  svg: { fontCache: 'global' }
+};
+const script = document.createElement('script');
+script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+script.async = true;
+document.head.appendChild(script);
+
+// ── Print all tabs as PDF ──────────────────────────────────────────────────
+function printAllTabs() {
+  window.print();
 }
